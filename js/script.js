@@ -10,23 +10,38 @@
 // wrapping it with an "anonymous closure". See:
 // - https://drupal.org/node/1446420
 // - http://www.adequatelygood.com/2010/3/JavaScript-Module-Pattern-In-Depth
-(function ($) {
+(function($) {
 
 /* START: SMARTMENUS */
-    (function($) {
+
     // initialise smartmenus for main menu
     // $('#main-menu').smartmenus();
-    })(jQuery);
+
 /* END: SMARTMENUS */
 
-// To understand behaviors, see https://drupal.org/node/756722#behaviors
-Drupal.behaviors.my_custom_behavior = {
-  attach: function(context, settings) {
+/* START: ISOTOPE */
 
-    // Place your code here.
+    // add btn class to isotope filter lists for all views
+    $(document).ready(function() {
+        $('ul.isotope-filters li>a').addClass('isotope-button'); // add a class to the button links
 
-  }
-};
+/* START: Isotope settings for the "Busreisen" view let's set the filter to "Busreisen" and assign the class "selected" to the "Busreisen" button */
+        // Pre-select second option "Busreisen" in option sets.
 
+/*
+        $('.view-display-id-page_2 .isotope-options .option-set li:first-child a').removeClass('selected');
+        $('.view-display-id-page_2 .isotope-options .option-set li:nth-child(2) a').addClass('selected');
+        // for the Busreisen view set the initial filter to "Busreisen"
+        $('.view-display-id-page_2 #isotope-container').isotope({
+        // options...
+        filter: '.busreisen'
+        }); 
+*/
 
+/* END: Isotope settings for the "Busreisen" view */
+
+/* END: ISOTOPE */
+    });
 })(jQuery);
+
+
