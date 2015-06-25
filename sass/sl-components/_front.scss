@@ -50,6 +50,12 @@
 
 // flexslider
 
+// flexslider takes a long time to load
+// fix from: https://stackoverflow.com/questions/12717097/flexslider-slow-image-load/12727900#12727900
+
+.flexslider .slides > li:not(:first-child) {display: none; -webkit-backface-visibility: hidden;}
+
+
 .front {
     .flexslider {
         background: transparent;
