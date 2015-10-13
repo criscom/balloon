@@ -8,10 +8,7 @@
 
 .front {
     .panel-2col {
-        @include breakpoint($range769-1044) {
-            margin-top: 24px;
-            margin-top: 1.5rem;
-        }
+       
     }
     .pane-title {
         text-align: center;

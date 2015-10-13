@@ -560,7 +560,7 @@ input[type="button"].btn-block {
 .jumbotron > hr {
   border-top-color: #d5d5d5;
 }
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   /* line 6, ../sass/bootstrap/_jumbotron.scss */
   .jumbotron {
     border-radius: 6px;
@@ -1488,7 +1488,7 @@ th {
     width: 100%;
   }
 }
-@media all and (min-width: 480px) and (min-width: 769px) {
+@media all and (min-width: 480px) and (min-width: 768px) {
   /* line 66, ../sass/layouts/_responsive.scss */
   .main-navigation {
     top: 56px;
@@ -3353,7 +3353,7 @@ body, [role='main'] p,
 .wohnungsdetails-link a,
 li a,
 .link a,
-.field-slideshow-caption-text a, h1, ul.nice-menu li a, .webform-component label {
+.field-slideshow-caption-text a, h1, .webform-component label {
   font-weight: 300;
 }
 
@@ -3452,7 +3452,7 @@ body {
 .main-content {
   background-color: white;
 }
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   /* line 14, ../sass/sl-components/_default.scss */
   .main-content {
     margin-right: 52px;
@@ -3469,7 +3469,7 @@ body {
   flex: 1 16px;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   /* line 32, ../sass/sl-components/_default.scss */
   .node-type-projekt .main-content {
     display: flex;
@@ -3577,14 +3577,7 @@ footer a:active {
 ** /front
 **
 */
-@media (min-width: 769px) and (max-width: 1044px) {
-  /* line 10, ../sass/sl-components/_front.scss */
-  .front .panel-2col {
-    margin-top: 24px;
-    margin-top: 1.5rem;
-  }
-}
-/* line 16, ../sass/sl-components/_front.scss */
+/* line 13, ../sass/sl-components/_front.scss */
 .front .pane-title {
   text-align: center;
   margin-bottom: 24px !important;
@@ -3601,19 +3594,19 @@ footer a:active {
   display: table;
   clear: both;
 }
-/* line 27, ../sass/sl-components/_front.scss */
+/* line 24, ../sass/sl-components/_front.scss */
 .front .center-wrapper.one .panel-col-first .panel-pane {
   float: left;
   width: 49%;
 }
 @media (max-width: 767px) {
-  /* line 27, ../sass/sl-components/_front.scss */
+  /* line 24, ../sass/sl-components/_front.scss */
   .front .center-wrapper.one .panel-col-first .panel-pane {
     float: none;
     width: 100%;
   }
 }
-/* line 36, ../sass/sl-components/_front.scss */
+/* line 33, ../sass/sl-components/_front.scss */
 .front .center-wrapper.one .panel-col-first .pane-block {
   margin-left: 2%;
   background-color: transparent;
@@ -3622,7 +3615,7 @@ footer a:active {
   border-radius: 4px;
 }
 @media (max-width: 767px) {
-  /* line 36, ../sass/sl-components/_front.scss */
+  /* line 33, ../sass/sl-components/_front.scss */
   .front .center-wrapper.one .panel-col-first .pane-block {
     float: none;
     width: 100%;
@@ -3630,23 +3623,23 @@ footer a:active {
   }
 }
 
-/* line 56, ../sass/sl-components/_front.scss */
+/* line 53, ../sass/sl-components/_front.scss */
 .flexslider .slides > li:not(:first-child), .flexslider-events .slides > li:not(:first-child) {
   display: none;
   -webkit-backface-visibility: hidden;
 }
 
-/* line 60, ../sass/sl-components/_front.scss */
+/* line 57, ../sass/sl-components/_front.scss */
 .front .flexslider, .front .flexslider-events {
   background: transparent;
 }
-/* line 62, ../sass/sl-components/_front.scss */
+/* line 59, ../sass/sl-components/_front.scss */
 .front .flexslider h2, .front .flexslider-events h2 {
   margin-bottom: 24px !important;
   margin-bottom: 1.5rem !important;
   text-align: center;
 }
-/* line 67, ../sass/sl-components/_front.scss */
+/* line 64, ../sass/sl-components/_front.scss */
 .front .flexslider img, .front .flexslider-events img {
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
@@ -3654,23 +3647,23 @@ footer a:active {
   margin-bottom: 24px !important;
   margin-bottom: 1.5rem !important;
 }
-/* line 72, ../sass/sl-components/_front.scss */
+/* line 69, ../sass/sl-components/_front.scss */
 .front .flexslider .miete-wrapper, .front .flexslider-events .miete-wrapper {
   margin-bottom: 24px;
   margin-bottom: 24px;
 }
-/* line 79, ../sass/sl-components/_front.scss */
+/* line 76, ../sass/sl-components/_front.scss */
 .front .flexslider .wohnungsdetails-link, .front .flexslider-events .wohnungsdetails-link {
   margin: 24px 0;
   margin: 1.5rem 0;
 }
-/* line 83, ../sass/sl-components/_front.scss */
+/* line 80, ../sass/sl-components/_front.scss */
 .front .flexslider .padding-front, .front .flexslider-events .padding-front {
   padding: 0 16px;
   padding: 0 1rem;
 }
 
-/* line 93, ../sass/sl-components/_front.scss */
+/* line 90, ../sass/sl-components/_front.scss */
 .front .field-name-field-image img {
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
@@ -3687,34 +3680,34 @@ footer a:active {
   display: table;
   clear: both;
 }
-/* line 99, ../sass/sl-components/_front.scss */
+/* line 96, ../sass/sl-components/_front.scss */
 .front .center-wrapper.two .panel-col-first {
   width: 49%;
 }
 @media (max-width: 767px) {
-  /* line 99, ../sass/sl-components/_front.scss */
+  /* line 96, ../sass/sl-components/_front.scss */
   .front .center-wrapper.two .panel-col-first {
     width: 100%;
   }
 }
-/* line 106, ../sass/sl-components/_front.scss */
+/* line 103, ../sass/sl-components/_front.scss */
 .front .center-wrapper.two .panel-col-last {
   width: 49%;
   margin-left: 2%;
 }
 @media (max-width: 767px) {
-  /* line 106, ../sass/sl-components/_front.scss */
+  /* line 103, ../sass/sl-components/_front.scss */
   .front .center-wrapper.two .panel-col-last {
     width: 100%;
     margin-left: 0;
   }
 }
-/* line 115, ../sass/sl-components/_front.scss */
+/* line 112, ../sass/sl-components/_front.scss */
 .front .center-wrapper.two .node {
   margin-bottom: 0;
   border: 0;
 }
-/* line 119, ../sass/sl-components/_front.scss */
+/* line 116, ../sass/sl-components/_front.scss */
 .front .center-wrapper.two .node .field-name-body a.more-link {
   display: block;
   text-align: left;
@@ -3935,7 +3928,7 @@ ul.language-switcher-locale-url li a:active {
     padding: .5rem .25rem;
   }
 }
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   /* line 35, ../sass/sl-components/_language-switcher.scss */
   .block-locale {
     position: absolute;
@@ -3972,21 +3965,26 @@ ul.nice-menu li {
   padding-top: 8px;
   padding-bottom: 12px;
 }
-@media (min-width: 769px) and (max-width: 961px) {
+/* line 40, ../sass/sl-components/_main-menu-desktop.scss */
+ul.nice-menu li.first {
+  padding-left: 12px;
+  padding-left: .75rem;
+}
+@media (min-width: 768px) and (max-width: 799px) {
   /* line 33, ../sass/sl-components/_main-menu-desktop.scss */
   ul.nice-menu li {
-    padding-bottom: 14px;
+    padding-right: 4px;
+    padding-right: .25rem;
+    padding-left: 4px;
+    padding-left: .25rem;
+  }
+  /* line 49, ../sass/sl-components/_main-menu-desktop.scss */
+  ul.nice-menu li.first {
+    padding-left: 12px;
+    padding-left: .75rem;
   }
 }
-@media (min-width: 769px) and (max-width: 876px) {
-  /* line 33, ../sass/sl-components/_main-menu-desktop.scss */
-  ul.nice-menu li {
-    padding-top: 12px;
-    padding-right: 0.75rem;
-    padding-right: 2%;
-  }
-}
-@media (min-width: 769px) {
+@media (min-width: 800px) and (max-width: 876px) {
   /* line 33, ../sass/sl-components/_main-menu-desktop.scss */
   ul.nice-menu li {
     padding-right: 8px;
@@ -3995,24 +3993,56 @@ ul.nice-menu li {
     padding-left: .5rem;
   }
 }
-@media (min-width: 769px) and (max-width: 876px) {
+@media (min-width: 877px) and (max-width: 980px) {
   /* line 33, ../sass/sl-components/_main-menu-desktop.scss */
   ul.nice-menu li {
-    padding-right: 4px;
-    padding-right: .25rem;
-    padding-left: 4px;
-    padding-left: .25rem;
+    padding-right: 20px;
+    padding-right: 1.25rem;
+    padding-left: 20px;
+    padding-left: 1.25rem;
+  }
+  /* line 67, ../sass/sl-components/_main-menu-desktop.scss */
+  ul.nice-menu li.first {
+    padding-left: 12px;
+    padding-left: .75rem;
   }
 }
-/* line 64, ../sass/sl-components/_main-menu-desktop.scss */
-ul.nice-menu li.first {
-  padding-left: 0;
+@media (min-width: 980px) and (max-width: 1049px) {
+  /* line 33, ../sass/sl-components/_main-menu-desktop.scss */
+  ul.nice-menu li {
+    padding-right: 32px;
+    padding-right: 2rem;
+    padding-left: 32px;
+    padding-left: 2rem;
+  }
 }
-/* line 67, ../sass/sl-components/_main-menu-desktop.scss */
+@media (min-width: 1050px) and (max-width: 1199px) {
+  /* line 33, ../sass/sl-components/_main-menu-desktop.scss */
+  ul.nice-menu li {
+    padding-right: 40px;
+    padding-right: 2.5rem;
+    padding-left: 40px;
+    padding-left: 2.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 33, ../sass/sl-components/_main-menu-desktop.scss */
+  ul.nice-menu li {
+    padding-right: 8px;
+    padding-right: .5rem;
+    padding-left: 8px;
+    padding-left: .5rem;
+  }
+  /* line 92, ../sass/sl-components/_main-menu-desktop.scss */
+  ul.nice-menu li.first {
+    padding-left: 0;
+  }
+}
+/* line 97, ../sass/sl-components/_main-menu-desktop.scss */
 ul.nice-menu li.last {
   padding-right: 0;
 }
-/* line 70, ../sass/sl-components/_main-menu-desktop.scss */
+/* line 100, ../sass/sl-components/_main-menu-desktop.scss */
 ul.nice-menu li a {
   text-decoration: none;
   color: #404040;
@@ -4029,50 +4059,36 @@ ul.nice-menu li a:visited {
 ul.nice-menu li a:active {
   color: #404040;
 }
-@media (min-width: 769px) and (max-width: 961px) {
-  /* line 70, ../sass/sl-components/_main-menu-desktop.scss */
-  ul.nice-menu li a {
-    font-size: 16px;
-    font-size: 1rem;
-  }
-}
-@media (min-width: 769px) and (max-width: 876px) {
-  /* line 70, ../sass/sl-components/_main-menu-desktop.scss */
-  ul.nice-menu li a {
-    font-size: 14px;
-    font-size: 0.875rem;
-  }
-}
-/* line 88, ../sass/sl-components/_main-menu-desktop.scss */
+/* line 110, ../sass/sl-components/_main-menu-desktop.scss */
 ul.nice-menu li.active-trail {
   background-color: white !important;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
 }
-/* line 92, ../sass/sl-components/_main-menu-desktop.scss */
+/* line 114, ../sass/sl-components/_main-menu-desktop.scss */
 ul.nice-menu li.active-trail a {
   color: black;
 }
-/* line 95, ../sass/sl-components/_main-menu-desktop.scss */
+/* line 117, ../sass/sl-components/_main-menu-desktop.scss */
 ul.nice-menu li.active-trail a:hover {
   color: black !important;
 }
 
-/* line 104, ../sass/sl-components/_main-menu-desktop.scss */
+/* line 126, ../sass/sl-components/_main-menu-desktop.scss */
 ul.nice-menu-down li.menuparent,
 ul.nice-menu-down li.menuparent:hover {
   background-color: transparent;
   background-image: none;
 }
 
-/* line 114, ../sass/sl-components/_main-menu-desktop.scss */
+/* line 136, ../sass/sl-components/_main-menu-desktop.scss */
 ul.nice-menu ul {
   top: 50px;
   top: 3.125rem;
   border-top: 0;
   background-color: white;
 }
-/* line 123, ../sass/sl-components/_main-menu-desktop.scss */
+/* line 145, ../sass/sl-components/_main-menu-desktop.scss */
 ul.nice-menu ul li a {
   text-decoration: none;
   color: black;
@@ -4250,7 +4266,7 @@ ul.nice-menu ul li a:active {
     margin-bottom: 1.5rem;
   }
 }
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   /* line 91, ../sass/sl-components/_panel-two-two.scss */
   .center-wrapper.two .panel-col-last {
     width: 30%;
