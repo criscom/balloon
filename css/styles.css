@@ -588,7 +588,7 @@ input[type="button"].btn-block {
   font-size: 75%;
   font-weight: bold;
   line-height: 1;
-  color: #231f20;
+  color: #404040;
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
@@ -1422,7 +1422,8 @@ th {
  * by setting a max-width.
  */
 /* line 33, ../sass/layouts/_responsive.scss */
-.page,
+.main,
+.header-wrapper,
 .region-bottom {
   margin-left: auto;
   margin-right: auto;
@@ -1430,7 +1431,7 @@ th {
 }
 
 /* Apply the shared properties of grid items in a single, efficient ruleset. */
-/* line 41, ../sass/layouts/_responsive.scss */
+/* line 42, ../sass/layouts/_responsive.scss */
 .header,
 .main-content,
 .main-navigation,
@@ -1447,7 +1448,7 @@ th {
 }
 
 /* Containers for grid items and flow items. */
-/* line 52, ../sass/layouts/_responsive.scss */
+/* line 53, ../sass/layouts/_responsive.scss */
 .header,
 .main,
 .footer {
@@ -1472,22 +1473,31 @@ th {
 
 /* Navigation bar */
 @media all and (min-width: 480px) {
-  /* line 60, ../sass/layouts/_responsive.scss */
-  .main {
-    /* Move all the children of .main down to make room. */
-    padding-top: 3em;
+  /* line 61, ../sass/layouts/_responsive.scss */
+  .page {
+    /* Move all the children of .page down to make room. */
     position: relative;
   }
 
-  /* line 65, ../sass/layouts/_responsive.scss */
+  /* line 66, ../sass/layouts/_responsive.scss */
   .main-navigation {
-    /* Move the navbar up inside .main's padding. */
+    /* Move the navbar up inside .page's padding. */
     position: absolute;
     top: 0;
     height: 3em;
     width: 100%;
   }
 }
+@media all and (min-width: 480px) and (min-width: 769px) {
+  /* line 66, ../sass/layouts/_responsive.scss */
+  .main-navigation {
+    top: 56px;
+    top: 3.5rem;
+    margin-left: 16em;
+    width: auto;
+  }
+}
+
 /**
  * Use 3 grid columns for smaller screens.
  */
@@ -1495,12 +1505,12 @@ th {
   /**
    * The layout when there is only one sidebar, the left one.
    */
-  /* line 86, ../sass/layouts/_responsive.scss */
+  /* line 94, ../sass/layouts/_responsive.scss */
   .sidebar-first {
     /* Span 2 columns, starting in 2nd column from left. */
     /* Span 1 column, starting in 1st column from left. */
   }
-  /* line 88, ../sass/layouts/_responsive.scss */
+  /* line 96, ../sass/layouts/_responsive.scss */
   .sidebar-first .main-content {
     float: left;
     width: 66.66667%;
@@ -1508,7 +1518,7 @@ th {
     margin-right: -100%;
     *margin-right: -99.9%;
   }
-  /* line 93, ../sass/layouts/_responsive.scss */
+  /* line 101, ../sass/layouts/_responsive.scss */
   .sidebar-first .region-sidebar-first {
     float: left;
     width: 33.33333%;
@@ -1520,12 +1530,12 @@ th {
   /**
    * The layout when there is only one sidebar, the right one.
    */
-  /* line 101, ../sass/layouts/_responsive.scss */
+  /* line 109, ../sass/layouts/_responsive.scss */
   .sidebar-second {
     /* Span 2 columns, starting in 1st column from left. */
     /* Span 1 column, starting in 3rd column from left. */
   }
-  /* line 103, ../sass/layouts/_responsive.scss */
+  /* line 111, ../sass/layouts/_responsive.scss */
   .sidebar-second .main-content {
     float: left;
     width: 66.66667%;
@@ -1533,7 +1543,7 @@ th {
     margin-right: -100%;
     *margin-right: -99.9%;
   }
-  /* line 108, ../sass/layouts/_responsive.scss */
+  /* line 116, ../sass/layouts/_responsive.scss */
   .sidebar-second .region-sidebar-second {
     float: left;
     width: 33.33333%;
@@ -1545,13 +1555,13 @@ th {
   /**
    * The layout when there are two sidebars.
    */
-  /* line 116, ../sass/layouts/_responsive.scss */
+  /* line 124, ../sass/layouts/_responsive.scss */
   .two-sidebars {
     /* Span 2 columns, starting in 2nd column from left. */
     /* Span 1 column, starting in 1st column from left. */
     /* Start a new row and span all 3 columns. */
   }
-  /* line 118, ../sass/layouts/_responsive.scss */
+  /* line 126, ../sass/layouts/_responsive.scss */
   .two-sidebars .main-content {
     float: left;
     width: 66.66667%;
@@ -1559,7 +1569,7 @@ th {
     margin-right: -100%;
     *margin-right: -99.9%;
   }
-  /* line 123, ../sass/layouts/_responsive.scss */
+  /* line 131, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-first {
     float: left;
     width: 33.33333%;
@@ -1567,7 +1577,7 @@ th {
     margin-right: -100%;
     *margin-right: -99.9%;
   }
-  /* line 128, ../sass/layouts/_responsive.scss */
+  /* line 136, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second {
     float: left;
     width: 100%;
@@ -1593,7 +1603,7 @@ th {
   .two-sidebars .region-sidebar-second:after {
     clear: both;
   }
-  /* line 134, ../sass/layouts/_responsive.scss */
+  /* line 142, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second .block {
     padding-left: 10px;
     padding-right: 10px;
@@ -1603,7 +1613,7 @@ th {
     box-sizing: border-box;
     *word-wrap: break-word;
   }
-  /* line 138, ../sass/layouts/_responsive.scss */
+  /* line 146, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second .block:nth-child(3n+1) {
     float: left;
     width: 33.33333%;
@@ -1612,7 +1622,7 @@ th {
     *margin-right: -99.9%;
     clear: left;
   }
-  /* line 143, ../sass/layouts/_responsive.scss */
+  /* line 151, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second .block:nth-child(3n+2) {
     float: left;
     width: 33.33333%;
@@ -1620,7 +1630,7 @@ th {
     margin-right: -100%;
     *margin-right: -99.9%;
   }
-  /* line 147, ../sass/layouts/_responsive.scss */
+  /* line 155, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second .block:nth-child(3n) {
     float: left;
     width: 33.33333%;
@@ -1636,12 +1646,12 @@ th {
   /**
    * The layout when there is only one sidebar, the left one.
    */
-  /* line 164, ../sass/layouts/_responsive.scss */
+  /* line 172, ../sass/layouts/_responsive.scss */
   .sidebar-first {
     /* Span 4 columns, starting in 2nd column from left. */
     /* Span 1 column, starting in 1st column from left. */
   }
-  /* line 166, ../sass/layouts/_responsive.scss */
+  /* line 174, ../sass/layouts/_responsive.scss */
   .sidebar-first .main-content {
     float: left;
     width: 80%;
@@ -1649,7 +1659,7 @@ th {
     margin-right: -100%;
     *margin-right: -99.9%;
   }
-  /* line 171, ../sass/layouts/_responsive.scss */
+  /* line 179, ../sass/layouts/_responsive.scss */
   .sidebar-first .region-sidebar-first {
     float: left;
     width: 20%;
@@ -1661,12 +1671,12 @@ th {
   /**
    * The layout when there is only one sidebar, the right one.
    */
-  /* line 179, ../sass/layouts/_responsive.scss */
+  /* line 187, ../sass/layouts/_responsive.scss */
   .sidebar-second {
     /* Span 4 columns, starting in 1st column from left. */
     /* Span 1 column, starting in 5th column from left. */
   }
-  /* line 181, ../sass/layouts/_responsive.scss */
+  /* line 189, ../sass/layouts/_responsive.scss */
   .sidebar-second .main-content {
     float: left;
     width: 80%;
@@ -1674,7 +1684,7 @@ th {
     margin-right: -100%;
     *margin-right: -99.9%;
   }
-  /* line 186, ../sass/layouts/_responsive.scss */
+  /* line 194, ../sass/layouts/_responsive.scss */
   .sidebar-second .region-sidebar-second {
     float: left;
     width: 20%;
@@ -1686,13 +1696,13 @@ th {
   /**
    * The layout when there are two sidebars.
    */
-  /* line 194, ../sass/layouts/_responsive.scss */
+  /* line 202, ../sass/layouts/_responsive.scss */
   .two-sidebars {
     /* Span 3 columns, starting in 2nd column from left. */
     /* Span 1 column, starting in 1st column from left. */
     /* Span 1 column, starting in 5th column from left. */
   }
-  /* line 196, ../sass/layouts/_responsive.scss */
+  /* line 204, ../sass/layouts/_responsive.scss */
   .two-sidebars .main-content {
     float: left;
     width: 60%;
@@ -1700,7 +1710,7 @@ th {
     margin-right: -100%;
     *margin-right: -99.9%;
   }
-  /* line 201, ../sass/layouts/_responsive.scss */
+  /* line 209, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-first {
     float: left;
     width: 20%;
@@ -1708,7 +1718,7 @@ th {
     margin-right: -100%;
     *margin-right: -99.9%;
   }
-  /* line 206, ../sass/layouts/_responsive.scss */
+  /* line 214, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second {
     float: left;
     width: 20%;
@@ -3431,10 +3441,42 @@ li a,
 ** added by criscom
 */
 /* line 6, ../sass/sl-components/_default.scss */
-.main h1 {
-  text-transform: uppercase;
+body {
+  background-color: white;
+  background-image: radial-gradient(#f3f0e9 15%, rgba(0, 0, 0, 0) 16%), radial-gradient(#f3f0e9 15%, rgba(0, 0, 0, 0) 16%);
+  background-size: 60px 60px;
+  background-position: 0 0, 30px 30px;
 }
 
+/* line 14, ../sass/sl-components/_default.scss */
+.main-content {
+  background-color: white;
+}
+@media (min-width: 769px) {
+  /* line 14, ../sass/sl-components/_default.scss */
+  .main-content {
+    margin-right: 52px;
+    margin-right: 3.25rem;
+  }
+}
+
+/* line 22, ../sass/sl-components/_default.scss */
+.main-content h1 {
+  margin-top: 0;
+  padding-top: 1rem;
+  padding-top: 16px;
+  text-transform: uppercase;
+  flex: 1 16px;
+}
+
+@media (min-width: 769px) {
+  /* line 32, ../sass/sl-components/_default.scss */
+  .node-type-projekt .main-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
 /* CSS code for the fonts integration
 ** added by criscom
 ** this file contains general font declarations that apply to fonts across the site
@@ -3443,7 +3485,7 @@ li a,
 */
 /* line 8, ../sass/sl-components/_fonts.scss */
 body {
-  color: #231f20;
+  color: #404040;
 }
 
 /* line 35, ../sass/sl-components/_fonts.scss */
@@ -3452,7 +3494,7 @@ body {
 li a,
 .link a,
 .field-slideshow-caption-text a {
-  color: #231f20;
+  color: #404040;
   text-decoration: underline;
 }
 /* line 13, ../sass/library/_link.scss */
@@ -3469,7 +3511,7 @@ li a:hover,
 li a:visited,
 .link a:visited,
 .field-slideshow-caption-text a:visited {
-  color: #3e3739;
+  color: #5a5a5a;
 }
 /* line 15, ../sass/library/_link.scss */
 .inline-link:active, div.download-file a:active, div p a:active,
@@ -3477,7 +3519,7 @@ li a:visited,
 li a:active,
 .link a:active,
 .field-slideshow-caption-text a:active {
-  color: #231f20;
+  color: #404040;
 }
 
 /* line 49, ../sass/sl-components/_fonts.scss */
@@ -3588,17 +3630,23 @@ footer a:active {
   }
 }
 
-/* line 54, ../sass/sl-components/_front.scss */
+/* line 56, ../sass/sl-components/_front.scss */
+.flexslider .slides > li:not(:first-child), .flexslider-events .slides > li:not(:first-child) {
+  display: none;
+  -webkit-backface-visibility: hidden;
+}
+
+/* line 60, ../sass/sl-components/_front.scss */
 .front .flexslider, .front .flexslider-events {
   background: transparent;
 }
-/* line 56, ../sass/sl-components/_front.scss */
+/* line 62, ../sass/sl-components/_front.scss */
 .front .flexslider h2, .front .flexslider-events h2 {
   margin-bottom: 24px !important;
   margin-bottom: 1.5rem !important;
   text-align: center;
 }
-/* line 61, ../sass/sl-components/_front.scss */
+/* line 67, ../sass/sl-components/_front.scss */
 .front .flexslider img, .front .flexslider-events img {
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
@@ -3606,23 +3654,23 @@ footer a:active {
   margin-bottom: 24px !important;
   margin-bottom: 1.5rem !important;
 }
-/* line 66, ../sass/sl-components/_front.scss */
+/* line 72, ../sass/sl-components/_front.scss */
 .front .flexslider .miete-wrapper, .front .flexslider-events .miete-wrapper {
   margin-bottom: 24px;
   margin-bottom: 24px;
 }
-/* line 73, ../sass/sl-components/_front.scss */
+/* line 79, ../sass/sl-components/_front.scss */
 .front .flexslider .wohnungsdetails-link, .front .flexslider-events .wohnungsdetails-link {
   margin: 24px 0;
   margin: 1.5rem 0;
 }
-/* line 77, ../sass/sl-components/_front.scss */
+/* line 83, ../sass/sl-components/_front.scss */
 .front .flexslider .padding-front, .front .flexslider-events .padding-front {
   padding: 0 16px;
   padding: 0 1rem;
 }
 
-/* line 87, ../sass/sl-components/_front.scss */
+/* line 93, ../sass/sl-components/_front.scss */
 .front .field-name-field-image img {
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
@@ -3639,128 +3687,39 @@ footer a:active {
   display: table;
   clear: both;
 }
-/* line 93, ../sass/sl-components/_front.scss */
+/* line 99, ../sass/sl-components/_front.scss */
 .front .center-wrapper.two .panel-col-first {
   width: 49%;
 }
 @media (max-width: 767px) {
-  /* line 93, ../sass/sl-components/_front.scss */
+  /* line 99, ../sass/sl-components/_front.scss */
   .front .center-wrapper.two .panel-col-first {
     width: 100%;
   }
 }
-/* line 100, ../sass/sl-components/_front.scss */
+/* line 106, ../sass/sl-components/_front.scss */
 .front .center-wrapper.two .panel-col-last {
   width: 49%;
   margin-left: 2%;
 }
 @media (max-width: 767px) {
-  /* line 100, ../sass/sl-components/_front.scss */
+  /* line 106, ../sass/sl-components/_front.scss */
   .front .center-wrapper.two .panel-col-last {
     width: 100%;
     margin-left: 0;
   }
 }
-/* line 109, ../sass/sl-components/_front.scss */
+/* line 115, ../sass/sl-components/_front.scss */
 .front .center-wrapper.two .node {
   margin-bottom: 0;
   border: 0;
 }
-/* line 113, ../sass/sl-components/_front.scss */
+/* line 119, ../sass/sl-components/_front.scss */
 .front .center-wrapper.two .node .field-name-body a.more-link {
   display: block;
   text-align: left;
   margin-top: 16px;
   margin-top: 1rem;
-}
-
-/* CSS code for the front page
-** added by criscom
-** on all sections on frontpage
-*/
-/* CSS code for the HEADER TEXT
-** added by criscom
-** not on front
-
-*/
-/* line 7, ../sass/sl-components/_header-text.scss */
-.header__region {
-  position: relative;
-}
-
-/* line 12, ../sass/sl-components/_header-text.scss */
-#block-block-3 {
-  position: relative;
-  float: right;
-  margin: 0;
-  margin-top: 12px;
-  margin-top: .75rem;
-  padding: 12px;
-  padding: .75rem;
-  color: white;
-  background-color: #231f20;
-}
-@media (max-width: 768px) {
-  /* line 12, ../sass/sl-components/_header-text.scss */
-  #block-block-3 {
-    display: none;
-  }
-}
-@media (min-width: 569px) {
-  /* line 12, ../sass/sl-components/_header-text.scss */
-  #block-block-3 {
-    width: 412px;
-  }
-}
-@media (min-width: 769px) {
-  /* line 12, ../sass/sl-components/_header-text.scss */
-  #block-block-3 {
-    width: 557px;
-    margin-right: 0;
-  }
-}
-/* line 49, ../sass/sl-components/_header-text.scss */
-#block-block-3 h1 {
-  margin: 0;
-  text-transform: none;
-}
-@media (min-width: 569px) {
-  /* line 49, ../sass/sl-components/_header-text.scss */
-  #block-block-3 h1 {
-    font-size: 24px;
-    font-size: 1.5rem;
-  }
-}
-@media (min-width: 769px) {
-  /* line 49, ../sass/sl-components/_header-text.scss */
-  #block-block-3 h1 {
-    font-size: 32px;
-    font-size: 2rem;
-  }
-}
-
-/* line 67, ../sass/sl-components/_header-text.scss */
-.header-date {
-  color: yellow;
-}
-@media (min-width: 569px) {
-  /* line 67, ../sass/sl-components/_header-text.scss */
-  .header-date {
-    font-size: 24px;
-    font-size: 1.5rem;
-  }
-}
-@media (min-width: 769px) {
-  /* line 67, ../sass/sl-components/_header-text.scss */
-  .header-date {
-    font-size: 32px;
-    font-size: 2rem;
-  }
-}
-
-/* line 83, ../sass/sl-components/_header-text.scss */
-.region-blockgroup-header-wrapper {
-  clear: both;
 }
 
 /* CSS code for the header section
@@ -3769,25 +3728,56 @@ footer a:active {
 ** different header heights for frontpage and other pages
 ** no drupal logo in use
 */
-/* line 9, ../sass/sl-components/_header.scss */
-header.header {
-  background-color: transparent;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
-  padding: 8px 0;
+/* line 8, ../sass/sl-components/_header.scss */
+.header {
+  padding-top: 1rem;
+  padding-top: 16px;
+  background: white;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 1px dotted black;
 }
 
 /* line 17, ../sass/sl-components/_header.scss */
-.header__site-link:hover {
-  text-decoration: none;
-  color: #428bca;
+.header__logo-image {
+  width: 16em;
+  height: auto;
 }
-/* line 21, ../sass/sl-components/_header.scss */
-.header__site-link span {
-  font-size: 48px;
-  padding-left: 16px;
-  padding-left: 1rem;
+
+/* line 22, ../sass/sl-components/_header.scss */
+.header__site-link {
+  display: none;
+}
+
+/* line 26, ../sass/sl-components/_header.scss */
+.header-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  /* line 26, ../sass/sl-components/_header.scss */
+  .header-wrapper {
+    margin-top: 40px;
+  }
+}
+
+/* line 37, ../sass/sl-components/_header.scss */
+.header-link-1 img,
+.header-link-2 img {
+  display: block;
+  width: 50px;
+}
+
+/* line 43, ../sass/sl-components/_header.scss */
+.header-link-2 img {
+  margin-top: 8px;
+  margin-top: .5rem;
+  -moz-border-radius: 32px;
+  -webkit-border-radius: 32px;
+  border-radius: 32px;
 }
 
 /* styles for isotope filter and isotope views like events/reisen */
@@ -3936,7 +3926,7 @@ ul.language-switcher-locale-url li a:active {
 @media (max-width: 768px) {
   /* line 35, ../sass/sl-components/_language-switcher.scss */
   .block-locale {
-    background-color: #231f20;
+    background-color: #404040;
   }
   /* line 42, ../sass/sl-components/_language-switcher.scss */
   .block-locale ul.language-switcher-locale-url {
@@ -3961,7 +3951,21 @@ ul.language-switcher-locale-url li a:active {
 ** min-width: 768px
 ** 
 */
-/* line 25, ../sass/sl-components/_main-menu-desktop.scss */
+/* line 20, ../sass/sl-components/_main-menu-desktop.scss */
+ul.nice-menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+@media (min-width: 1200px) {
+  /* line 20, ../sass/sl-components/_main-menu-desktop.scss */
+  ul.nice-menu {
+    width: 940px;
+  }
+}
+
+/* line 33, ../sass/sl-components/_main-menu-desktop.scss */
 ul.nice-menu li {
   border: 0;
   background-color: transparent;
@@ -3969,20 +3973,21 @@ ul.nice-menu li {
   padding-bottom: 12px;
 }
 @media (min-width: 769px) and (max-width: 961px) {
-  /* line 25, ../sass/sl-components/_main-menu-desktop.scss */
+  /* line 33, ../sass/sl-components/_main-menu-desktop.scss */
   ul.nice-menu li {
     padding-bottom: 14px;
   }
 }
 @media (min-width: 769px) and (max-width: 876px) {
-  /* line 25, ../sass/sl-components/_main-menu-desktop.scss */
+  /* line 33, ../sass/sl-components/_main-menu-desktop.scss */
   ul.nice-menu li {
     padding-top: 12px;
     padding-right: 0.75rem;
+    padding-right: 2%;
   }
 }
 @media (min-width: 769px) {
-  /* line 25, ../sass/sl-components/_main-menu-desktop.scss */
+  /* line 33, ../sass/sl-components/_main-menu-desktop.scss */
   ul.nice-menu li {
     padding-right: 8px;
     padding-right: .5rem;
@@ -3991,7 +3996,7 @@ ul.nice-menu li {
   }
 }
 @media (min-width: 769px) and (max-width: 876px) {
-  /* line 25, ../sass/sl-components/_main-menu-desktop.scss */
+  /* line 33, ../sass/sl-components/_main-menu-desktop.scss */
   ul.nice-menu li {
     padding-right: 4px;
     padding-right: .25rem;
@@ -3999,10 +4004,18 @@ ul.nice-menu li {
     padding-left: .25rem;
   }
 }
-/* line 55, ../sass/sl-components/_main-menu-desktop.scss */
+/* line 64, ../sass/sl-components/_main-menu-desktop.scss */
+ul.nice-menu li.first {
+  padding-left: 0;
+}
+/* line 67, ../sass/sl-components/_main-menu-desktop.scss */
+ul.nice-menu li.last {
+  padding-right: 0;
+}
+/* line 70, ../sass/sl-components/_main-menu-desktop.scss */
 ul.nice-menu li a {
   text-decoration: none;
-  color: #231f20;
+  color: #404040;
 }
 /* line 13, ../sass/library/_link.scss */
 ul.nice-menu li a:hover {
@@ -4010,56 +4023,56 @@ ul.nice-menu li a:hover {
 }
 /* line 14, ../sass/library/_link.scss */
 ul.nice-menu li a:visited {
-  color: #231f20;
+  color: #404040;
 }
 /* line 15, ../sass/library/_link.scss */
 ul.nice-menu li a:active {
-  color: #231f20;
+  color: #404040;
 }
 @media (min-width: 769px) and (max-width: 961px) {
-  /* line 55, ../sass/sl-components/_main-menu-desktop.scss */
+  /* line 70, ../sass/sl-components/_main-menu-desktop.scss */
   ul.nice-menu li a {
     font-size: 16px;
     font-size: 1rem;
   }
 }
 @media (min-width: 769px) and (max-width: 876px) {
-  /* line 55, ../sass/sl-components/_main-menu-desktop.scss */
+  /* line 70, ../sass/sl-components/_main-menu-desktop.scss */
   ul.nice-menu li a {
     font-size: 14px;
     font-size: 0.875rem;
   }
 }
-/* line 73, ../sass/sl-components/_main-menu-desktop.scss */
+/* line 88, ../sass/sl-components/_main-menu-desktop.scss */
 ul.nice-menu li.active-trail {
   background-color: white !important;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
 }
-/* line 77, ../sass/sl-components/_main-menu-desktop.scss */
+/* line 92, ../sass/sl-components/_main-menu-desktop.scss */
 ul.nice-menu li.active-trail a {
   color: black;
 }
-/* line 80, ../sass/sl-components/_main-menu-desktop.scss */
+/* line 95, ../sass/sl-components/_main-menu-desktop.scss */
 ul.nice-menu li.active-trail a:hover {
   color: black !important;
 }
 
-/* line 89, ../sass/sl-components/_main-menu-desktop.scss */
+/* line 104, ../sass/sl-components/_main-menu-desktop.scss */
 ul.nice-menu-down li.menuparent,
 ul.nice-menu-down li.menuparent:hover {
   background-color: transparent;
   background-image: none;
 }
 
-/* line 99, ../sass/sl-components/_main-menu-desktop.scss */
+/* line 114, ../sass/sl-components/_main-menu-desktop.scss */
 ul.nice-menu ul {
   top: 50px;
   top: 3.125rem;
   border-top: 0;
   background-color: white;
 }
-/* line 108, ../sass/sl-components/_main-menu-desktop.scss */
+/* line 123, ../sass/sl-components/_main-menu-desktop.scss */
 ul.nice-menu ul li a {
   text-decoration: none;
   color: black;
@@ -4091,8 +4104,8 @@ ul.nice-menu ul li a:active {
 
   /* line 16, ../sass/sl-components/_main-menu-mobile.scss */
   .responsive-menus.responsified span.toggler, .responsive-menus.responsified .responsive-menus-simple {
-    background: #231f20;
-    box-shadow: 2px 2px 2px #080707;
+    background: #bbbbbb;
+    box-shadow: 2px 2px 2px #a2a2a2;
     color: white;
   }
   /* line 20, ../sass/sl-components/_main-menu-mobile.scss */
@@ -4249,6 +4262,81 @@ ul.nice-menu ul li a:active {
   .center-wrapper.two .panel-col-last {
     width: 100%;
   }
+}
+
+/* CSS code for projekte Content Type
+**
+** display powered by Display suite
+** view mode: view-mode-full
+** added by criscom
+** /projekte/node:title
+**
+*/
+/* line 10, ../sass/sl-components/_projekt-detail.scss */
+.node-projekt {
+  padding-top: 16px;
+  padding-top: 1rem;
+  padding-right: 16px;
+  padding-right: 1rem;
+  flex: 3 0px;
+}
+
+/* line 18, ../sass/sl-components/_projekt-detail.scss */
+.flexslider, .flexslider-events {
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 1.5tem;
+  margin-bottom: 24px;
+}
+
+/* line 26, ../sass/sl-components/_projekt-detail.scss */
+.node-projekt h2 {
+  margin-top: 0;
+}
+
+/* line 30, ../sass/sl-components/_projekt-detail.scss */
+.node-projekt .group-left {
+  width: 60%;
+}
+
+/* line 34, ../sass/sl-components/_projekt-detail.scss */
+.node-projekt .group-right {
+  width: 40%;
+  text-align: right;
+}
+/* line 37, ../sass/sl-components/_projekt-detail.scss */
+.node-projekt .group-right .label-above {
+  text-transform: uppercase;
+}
+
+/* line 44, ../sass/sl-components/_projekt-detail.scss */
+.field-name-field-projekt-ort p, .field-name-field-projekt-status p, .field-name-field-projekt-bauherr p, .field-name-field-projekt-wettbewerb p, .field-name-field-projekt-team p {
+  margin-top: 0;
+}
+
+/* line 50, ../sass/sl-components/_projekt-detail.scss */
+.field-name-field-projekt-kategorie,
+.field-name-field-projekt-links {
+  margin-bottom: 20px;
+  margin-bottom: 1.5rem;
+}
+/* line 54, ../sass/sl-components/_projekt-detail.scss */
+.field-name-field-projekt-kategorie a,
+.field-name-field-projekt-links a {
+  display: block;
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
+}
+
+/* line 60, ../sass/sl-components/_projekt-detail.scss */
+.service-links img {
+  -moz-border-radius: 32px;
+  -webkit-border-radius: 32px;
+  border-radius: 32px;
 }
 
 /* line 1, ../sass/sl-components/_projekte-landing-page.scss */

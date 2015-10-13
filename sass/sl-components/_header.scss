@@ -5,23 +5,43 @@
 ** no drupal logo in use
 */
 
+.header {
+    padding-top: 1rem;
+    padding-top: 16px;
+    background: white;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px dotted black;
+}
 
-header.header {
-    background-color: $header-color;
-    @include border-radius(4px);
-    padding: 8px 0;
-
+.header__logo-image {
+    width: $nav-margin;
+    height: auto;
 }
 
 .header__site-link {
-    &:hover {
-        text-decoration: none;
-        color: $brand-primary;
-    }
-    span {
-    font-size: 1.5 * $h1-font-size;
-    padding-left: 16px;
-    padding-left: 1rem;
+    display: none;
+}
 
+.header-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    @include breakpoint($iphone5-6) {
+        margin-top: 40px;
     }
+}
+
+.header-link-1 img,
+.header-link-2 img {
+    display: block;
+    width: 50px;
+}
+
+.header-link-2 img {
+    margin-top: 8px;
+    margin-top: .5rem;
+    @include border-radius(32px);
 }

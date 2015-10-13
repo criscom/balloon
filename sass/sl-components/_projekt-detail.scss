@@ -1,0 +1,62 @@
+/* CSS code for projekte Content Type
+**
+** display powered by Display suite
+** view mode: view-mode-full
+** added by criscom
+** /projekte/node:title
+**
+*/
+
+.node-projekt {
+    padding-top: 16px;
+    padding-top: 1rem;
+    padding-right: 16px;
+    padding-right: 1rem;
+    flex: 3 0px;
+}
+
+.flexslider {
+    border: 0;
+    border-radius: 0;
+    // box-shadow: none;
+    margin-bottom: 1.5tem;
+    margin-bottom: 24px;
+}
+
+.node-projekt h2 {
+    margin-top: 0;
+}
+
+.node-projekt .group-left {
+    width: 60%;
+}
+
+.node-projekt .group-right {
+    width: 40%;
+    text-align: right;
+        .label-above {
+            text-transform: uppercase;
+        }
+}
+
+.field-name-field-projekt- {
+    &ort, &status, &bauherr, &wettbewerb, &team {
+        p {
+            margin-top: 0;
+        }
+    }
+}
+
+.field-name-field-projekt-kategorie,
+.field-name-field-projekt-links {
+    margin-bottom: 20px;
+    margin-bottom: 1.5rem;
+    a {
+        display: block;
+        @include hyphens(auto);
+    }
+}
+
+.service-links img {
+    @include border-radius(32px);
+}
