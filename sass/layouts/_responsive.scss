@@ -57,27 +57,27 @@ $zen-auto-include-grid-item-base: false;
 }
 
 /* Navigation bar */
-@media all and (min-width: 480px) {
-  .page {
-    /* Move all the children of .page down to make room. */
-    // padding-top: $nav-height;
-    position: relative;
-  }
-  .main-navigation {
-    /* Move the navbar up inside .page's padding. */
-    position: absolute;
-    top: 0;
-    height: $nav-height;
-    width: $zen-grid-width;
-    @include breakpoint($desktop) {
-    top: 56px;
-    top: 3.5rem;
-    margin-left: $nav-margin;
-    width: auto;
-    // width: 96%;
-    }
-  }
-}
+// @media all and (min-width: 480px) {
+//   .page {
+//     /* Move all the children of .page down to make room. */
+//     // padding-top: $nav-height;
+//     position: relative;
+//   }
+//   .main-navigation {
+//     /* Move the navbar up inside .page's padding. */
+//     position: absolute;
+//     top: 0;
+//     height: $nav-height;
+//     width: $zen-grid-width;
+//     @include breakpoint($desktop) {
+//     top: 56px;
+//     top: 3.5rem;
+//     margin-left: $nav-margin;
+//     width: auto;
+//     // width: 96%;
+//     }
+//   }
+// }
 
 } // End of @if $zen-switch-direction == false
 

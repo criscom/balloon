@@ -12,36 +12,55 @@
     margin-left: auto;
     margin-right: auto;
     border-bottom: 1px dotted black;
-}
-
-.header__logo-image {
-    width: $nav-margin;
-    height: auto;
-}
-
-.header__site-link {
-    display: none;
+    @include breakpoint($iphone5-6) {
+        padding-top: 40px;
+        padding-top: 2.5rem;
+        padding-bottom: 20px;
+    }
 }
 
 .header-wrapper {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    @include breakpoint($iphone5-6) {
-        margin-top: 40px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.logo-wrapper {
+    @include breakpoint($desktop){
+        flex-basis: 25%;
+        padding-right: 1rem;
+    }
+
+}
+
+.header__logo-image {
+    width: 100%; 
+}
+
+.header__region {
+
+    @include breakpoint($desktop)
+    {
+        flex-basis: 5%;
     }
 }
 
 .header-link-1 img,
 .header-link-2 img {
     display: block;
-    width: 50px;
+    width: auto;
+    max-width: 100%;
 }
 
 .header-link-2 img {
     margin-top: 8px;
     margin-top: .5rem;
-    @include border-radius(32px);
+    margin-left: 4px;
+    @include border-radius(28px);
 }
