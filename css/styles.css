@@ -4315,6 +4315,27 @@ ul.nice-menu li.active-trail a:hover {
   }
 }
 
+/* line 46, ../sass/sl-components/_projekte-landing-page.scss */
+.projekte-wrapper {
+  position: relative;
+}
+
+/* line 50, ../sass/sl-components/_projekte-landing-page.scss */
+.projekte-titel,
+.projekte-ort {
+  position: absolute;
+}
+
+/* line 55, ../sass/sl-components/_projekte-landing-page.scss */
+.projekte-titel {
+  top: 0;
+}
+
+/* line 59, ../sass/sl-components/_projekte-landing-page.scss */
+.projekte-ort {
+  top: 24px;
+}
+
 /* CSS code for wohnung detail page
 ** added by criscom
 ** /wohnung/wohnung-1-4-zimmer-wohnung-4-er-wg

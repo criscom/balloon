@@ -42,3 +42,20 @@
         }
     }
 }
+
+.projekte-wrapper {
+    position: relative;
+}
+
+.projekte-titel,
+.projekte-ort {
+    position: absolute;
+}
+
+.projekte-titel {
+    top: 0;
+}
+
+.projekte-ort {
+    top: 24px;
+}
