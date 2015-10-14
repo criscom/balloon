@@ -20,21 +20,11 @@ body {
     }    
 }
 
-.main-content h1{
+.main-content h1 { // Static Page header on left side
     margin-top: 0;
     padding-top: 1rem;
     padding-top: 16px;
     text-transform: uppercase;
     flex: 1 16px;
     font-weight: 700;
-}
-
-@include breakpoint($desktop){
-    .node-type-projekt.not-logged-in { // when logged in the tabs break the design
-        .main-content {
-            display: flex;
-            flex-direction: row;
-            align-items: flex-start;
-        }
-    }
 }

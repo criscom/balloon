@@ -3446,14 +3446,6 @@ body {
   font-weight: 700;
 }
 
-@media (min-width: 768px) {
-  /* line 34, ../sass/sl-components/_default.scss */
-  .node-type-projekt.not-logged-in .main-content {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-  }
-}
 /* CSS code for the fonts integration
 ** added by criscom
 ** this file contains general font declarations that apply to fonts across the site
@@ -3776,7 +3768,7 @@ footer a:active {
 /* line 8, ../sass/sl-components/_isotope-filter.scss */
 .isotope-element {
   width: 373px;
-  height: 373px;
+  height: 233px;
 }
 /* line 11, ../sass/sl-components/_isotope-filter.scss */
 .isotope-element img {
@@ -4204,7 +4196,15 @@ ul.nice-menu li.active-trail a:hover {
 ** /projekte/node:title
 **
 */
-/* line 10, ../sass/sl-components/_projekt-detail.scss */
+@media (min-width: 768px) {
+  /* line 14, ../sass/sl-components/_projekt-detail.scss */
+  .node-type-projekt.not-logged-in .main-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+/* line 22, ../sass/sl-components/_projekt-detail.scss */
 .node-projekt {
   padding-top: 16px;
   padding-top: 1rem;
@@ -4213,7 +4213,7 @@ ul.nice-menu li.active-trail a:hover {
   flex: 3 0px;
 }
 
-/* line 18, ../sass/sl-components/_projekt-detail.scss */
+/* line 30, ../sass/sl-components/_projekt-detail.scss */
 .flexslider, .flexslider-events {
   border: 0;
   border-radius: 0;
@@ -4221,38 +4221,38 @@ ul.nice-menu li.active-trail a:hover {
   margin-bottom: 24px;
 }
 
-/* line 26, ../sass/sl-components/_projekt-detail.scss */
+/* line 38, ../sass/sl-components/_projekt-detail.scss */
 .node-projekt h2 {
   margin-top: 0;
 }
 
-/* line 30, ../sass/sl-components/_projekt-detail.scss */
+/* line 42, ../sass/sl-components/_projekt-detail.scss */
 .node-projekt .group-left {
   width: 60%;
 }
 
-/* line 34, ../sass/sl-components/_projekt-detail.scss */
+/* line 46, ../sass/sl-components/_projekt-detail.scss */
 .node-projekt .group-right {
   width: 40%;
   text-align: right;
 }
-/* line 37, ../sass/sl-components/_projekt-detail.scss */
+/* line 49, ../sass/sl-components/_projekt-detail.scss */
 .node-projekt .group-right .label-above {
   text-transform: uppercase;
 }
 
-/* line 44, ../sass/sl-components/_projekt-detail.scss */
+/* line 56, ../sass/sl-components/_projekt-detail.scss */
 .field-name-field-projekt-ort p, .field-name-field-projekt-status p, .field-name-field-projekt-bauherr p, .field-name-field-projekt-wettbewerb p, .field-name-field-projekt-team p {
   margin-top: 0;
 }
 
-/* line 50, ../sass/sl-components/_projekt-detail.scss */
+/* line 62, ../sass/sl-components/_projekt-detail.scss */
 .field-name-field-projekt-kategorie,
 .field-name-field-projekt-links {
   margin-bottom: 20px;
   margin-bottom: 1.5rem;
 }
-/* line 54, ../sass/sl-components/_projekt-detail.scss */
+/* line 66, ../sass/sl-components/_projekt-detail.scss */
 .field-name-field-projekt-kategorie a,
 .field-name-field-projekt-links a {
   display: block;
@@ -4264,21 +4264,55 @@ ul.nice-menu li.active-trail a:hover {
   hyphens: auto;
 }
 
-/* line 60, ../sass/sl-components/_projekt-detail.scss */
+/* line 72, ../sass/sl-components/_projekt-detail.scss */
 .service-links img {
   -moz-border-radius: 32px;
   -webkit-border-radius: 32px;
   border-radius: 32px;
 }
 
-/* line 1, ../sass/sl-components/_projekte-landing-page.scss */
-.isotope-element {
-  width: 280px;
-  height: 280px;
+/* CSS code for projekte landing page => page view
+**
+** view name: Projekte Isotope View
+** display powered by Views
+** view mode: fields
+** added by criscom
+** /projekte
+**
+*/
+@media (min-width: 569px) {
+  /* line 15, ../sass/sl-components/_projekte-landing-page.scss */
+  .view-projekte-isotope-view > .view-header {
+    float: left;
+    width: 25%;
+  }
+  /* line 19, ../sass/sl-components/_projekte-landing-page.scss */
+  .view-projekte-isotope-view > .view-content {
+    float: left;
+    width: 75%;
+  }
 }
-/* line 4, ../sass/sl-components/_projekte-landing-page.scss */
-.isotope-element img {
-  width: 280px;
+
+@media (min-width: 569px) {
+  /* line 28, ../sass/sl-components/_projekte-landing-page.scss */
+  .isotope-filters {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 569px) {
+  /* line 36, ../sass/sl-components/_projekte-landing-page.scss */
+  .isotope-element {
+    width: 403px;
+    height: 252px;
+  }
+  /* line 40, ../sass/sl-components/_projekte-landing-page.scss */
+  .isotope-element img {
+    width: 403px;
+  }
 }
 
 /* CSS code for wohnung detail page

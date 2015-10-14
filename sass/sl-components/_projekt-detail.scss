@@ -7,6 +7,18 @@
 **
 */
 
+
+// Alignment of content elements inline via flexbox
+@include breakpoint($desktop){
+    .node-type-projekt.not-logged-in { // when logged in the tabs break the design
+        .main-content {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+        }
+    }
+}
+
 .node-projekt {
     padding-top: 16px;
     padding-top: 1rem;

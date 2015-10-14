@@ -1,7 +1,44 @@
+/* CSS code for projekte landing page => page view
+**
+** view name: Projekte Isotope View
+** display powered by Views
+** view mode: fields
+** added by criscom
+** /projekte
+**
+*/
+
+// Alignment of content elements inline via floats
+
+.view-projekte-isotope-view {
+    @include breakpoint($tablet){
+        >.view-header {
+            float: left;
+            width: 25%;
+        }
+        >.view-content {
+            float: left;
+            width: 75%;
+    
+        }
+    }
+}
+
+
+.isotope-filters {
+    @include breakpoint($tablet){
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 0;}
+}
+
 .isotope-element {
-    width: 280px;
-    height: 280px;
-    img {
-        width: 280px;
+    @include breakpoint($tablet){
+        width: 403px;
+        height: 252px;
+        img {
+            width: 403px;
+        }
     }
 }
