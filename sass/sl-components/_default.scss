@@ -4,6 +4,7 @@
 */
 
 body {
+    font-family: $source-sans-pro;
     background-color:white;
     background-image: radial-gradient(#f3f0e9 15%, transparent 16%),
     radial-gradient(#f3f0e9 15%, transparent 16%);
@@ -25,10 +26,11 @@ body {
     padding-top: 16px;
     text-transform: uppercase;
     flex: 1 16px;
+    font-weight: 700;
 }
 
 @include breakpoint($desktop){
-    .node-type-projekt {
+    .node-type-projekt.not-logged-in { // when logged in the tabs break the design
         .main-content {
             display: flex;
             flex-direction: row;

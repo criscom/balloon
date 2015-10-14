@@ -111,11 +111,23 @@ scripts[] = js/jquery.flexslider-min.js
 scripts[] = js/smartmenus/jquery.smartmenus.min.js
 
 ; add smartmenus bootstrap menu support
-scripts[] = js/smartmenus/jquery.smartmenus.bootstrap.min.js
+;scripts[] = js/smartmenus/jquery.smartmenus.bootstrap.min.js
 
 ; custom JS file
 scripts[] = js/flexslider.js
 scripts[] = js/script.js
+
+; Google Webfonts
+fonts[google_fonts_api][] = "Source Sans Pro&subset=latin#200"
+fonts[google_fonts_api][] = "Source Sans Pro&subset=latin#200italic"
+fonts[google_fonts_api][] = "Source Sans Pro&subset=latin#300"
+fonts[google_fonts_api][] = "Source Sans Pro&subset=latin#300italic"
+fonts[google_fonts_api][] = "Source Sans Pro&subset=latin#600"
+fonts[google_fonts_api][] = "Source Sans Pro&subset=latin#600italic"
+fonts[google_fonts_api][] = "Source Sans Pro&subset=latin#700"
+fonts[google_fonts_api][] = "Source Sans Pro&subset=latin#700italic"
+fonts[google_fonts_api][] = "Source Sans Pro&subset=latin#900"
+fonts[google_fonts_api][] = "Source Sans Pro&subset=latin#900italic"
 
 ; Panels layouts. You can place multiple layouts under the "layouts" folder.
 plugins[panels][layouts] = layouts
