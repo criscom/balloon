@@ -8,24 +8,11 @@
 **
 */
 
-// Alignment of content elements inline via floats
-
-.view-projekte-isotope-view {
-    @include breakpoint($tablet){
-        >.view-header {
-            float: left;
-            width: 25%;
-        }
-        >.view-content {
-            float: left;
-            width: 75%;
-    
-        }
-    }
-}
+// isotope filters
 
 
 .isotope-filters {
+    margin-top: 252px;
     @include breakpoint($tablet){
         display: flex;
         flex-direction: column;
@@ -43,19 +30,86 @@
     }
 }
 
-.projekte-wrapper {
+// remove button styling
+
+.isotope-button,
+.isotope-button.selected,
+.isotope-button:hover,
+.isotope-button.selected:hover {
+    border-color: transparent;
+    background-color: transparent;
+    background-image: none;
+    text-shadow: none;
+}
+
+// apply our own stylings
+
+.isotope-button {
+    text-transform: uppercase;
+    &:before {
+        content: "/// ";
+    }
+}
+
+.isotope-button.selected {
+    color: $font-color;
+    font-weight: 600;
+}
+
+.isotope-button:hover {
+    color: lighten($font-color,15%);
+
+}
+
+// Alignment of content elements inline via floats
+
+.view-projekte-isotope-view {
+    padding-top: 6px;
+    padding-top: .375rem;
+    @include clearfix();
+    @include breakpoint($tablet){
+        >.view-header {
+            float: left;
+            width: 25%;
+        }
+        >.view-content {
+            float: left;
+            width: 75%;
+    
+        }
+    }
+}
+
+// Position title and ort as a layer over the image with position:absolute
+
+.projekte-wrapper-outer {
     position: relative;
+}
+
+.projekte-wrapper-inner {
+    position: absolute;
+    top: 4px;
+    top: .375rem;
 }
 
 .projekte-titel,
 .projekte-ort {
-    position: absolute;
+    width: 400px;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
 }
 
-.projekte-titel {
-    top: 0;
+.projekte-titel a {
+    color: $font-color !important;
+    font-weight: 600;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 .projekte-ort {
-    top: 24px;
+    color: $font-color;
+    font-weight: 300;
 }

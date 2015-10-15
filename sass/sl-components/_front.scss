@@ -1,125 +1,78 @@
-/* CSS code for panel page two cols two rows
-** PANEL page
-** Two column criscom
+/* CSS code for front page ==> page view ""
+**
+** view name: frontpage feature
+** display powered by Views
+** views mode: fields
 ** added by criscom
-** /front
+** /frontpage-feature
 **
 */
 
-.front {
-    .panel-2col {
-       
-    }
-    .pane-title {
-        text-align: center;
-        margin-bottom: 24px !important;
-        margin-bottom: 1.5rem !important;
-    }
-    .center-wrapper.one {
-        .panel-panel {
-            @include clearfix;
-            @extend %white-space;
+// Alignment of content elements inline via flexbox
+
+.view-frontpage-feature {
+    padding-top: 16px;
+    padding-top: 1rem;
+    @include clearfix();
+    @include breakpoint($tablet) {
+        >.view-header {
+            float: left;
+            width: 25%;
         }
-        .panel-col-first {
-            .panel-pane {
-                float: left;
-                width: 49%;
-                @include breakpoint($iphone5-6)
-                {
-                    float: none;
-                    width: 100%;
-                }
-            }
-            .pane-block {
-                margin-left: 2%;
-                background-color: $header-color;
-                @include border-radius(4px);
-                @include breakpoint($iphone5-6)
-                    {
-                    float: none;
-                    width: 100%;
-                    margin-left: 0 !important;
-                    }
-            }
+        >.view-content {
+            float: left;
+            width: 75%;
         }
     }
 }
 
-// flexslider
+// Apply background for the body text
 
-// flexslider takes a long time to load
-// fix from: https://stackoverflow.com/questions/12717097/flexslider-slow-image-load/12727900#12727900
+.view-frontpage-feature .views-row {
+    background-color: $box;
+}
 
-.flexslider .slides > li:not(:first-child) {display: none; -webkit-backface-visibility: hidden;}
+// Position title and ort as a layer over the image with position:absolute
 
+.feature-wrapper-outer {
+    position: relative;
+}
 
-.front {
-    .flexslider {
-        background: transparent;
-        h2 {
-            margin-bottom: 24px !important;
-            margin-bottom: 1.5rem !important;
-            text-align: center;
-        }
-        img {
-            @include border-radius(4px);
-            margin-bottom: 24px !important;
-            margin-bottom: 1.5rem !important;
-        }
-        .miete-wrapper {
-            margin-bottom: 24px;
-            margin-bottom: 24px;
-        }
-        .miete-label, .miete {
-            @extend %medium-font-weight;
-        }
-        .wohnungsdetails-link {
-            margin: 24px 0;
-            margin: 1.5rem 0;
-        }
-        .padding-front {
-            padding: 0 16px;
-            padding: 0 1rem;
-        }
-    }
+.feature-wrapper-inner {
+    position: absolute;
+    top: 4px;
+    top: .375rem;
+    width: 96%;
+    height: auto;
+    max-width: 840px;
+    max-height: 526px;
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: center;
+    left: 0;
+    right: 0;
 }
 
 
-.front {
-    .field-name-field-image {
-        img {
-            @include border-radius(4px);
-            }
+.feature-datum {
+    font-weight: 300;
+}
+
+.front .views-field-body {
+    p {
+        margin: 0;
     }
-    .center-wrapper.two {
-        @include clearfix;
-        .panel-col-first {
-            width: 49%;
-            @include breakpoint($iphone5-6)
-            {
-                width: 100%;
-            }
-        }
-        .panel-col-last {
-            width: 49%;
-            margin-left: 2%;
-            @include breakpoint($iphone5-6)
-            {
-                width: 100%;
-                margin-left: 0;
-            }
-        }
-        .node {
-            margin-bottom: 0;
-            border: 0;
-            .field-name-body {
-                a.more-link {
-                    display: block;
-                    text-align: left;
-                    margin-top: 16px;
-                    margin-top: 1rem;
-                }
-            }
+}
+
+.feature-link {
+    text-align: center;
+    a {
+        color: $font-color;
+        font-weight: 300;
+        text-transform: uppercase;
+        &:hover {
+            color: lighten($font-color, 15%);
+            text-decoration: underline;
         }
     }
 }

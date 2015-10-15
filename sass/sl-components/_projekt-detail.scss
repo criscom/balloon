@@ -37,17 +37,37 @@
 
 .node-projekt h2 {
     margin-top: 0;
+    font-weight: 600;
 }
 
 .node-projekt .group-left {
     width: 60%;
 }
 
+.field-name-field-untertitel {
+    font-weight: 600;
+    color: lighten($font-color, 15%);
+}
+
 .node-projekt .group-right {
     width: 40%;
+    margin-top: 13px;
+    margin-top: .8125rem;
     text-align: right;
         .label-above {
             text-transform: uppercase;
+            font-weight: 600;
+            color: lighten($font-color, 30%);
+        }
+        .field p,
+        .field a {
+            font-weight: 600;
+        }
+        .field a {
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
         }
 }
 

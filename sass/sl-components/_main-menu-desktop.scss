@@ -50,22 +50,28 @@ ul.nice-menu li
     a
     {
         text-decoration: none;
-        // text-transform: uppercase;
-
+        text-transform: uppercase;
+        font-weight: 600;
+        font-style: italic;
         @extend %base-font-size;
-        @include link-colors($normal: $black, $hover: $red!important);
+       &:hover {
+        color: lighten($font-color, 15%);
+        text-decoration: underline;
+       }
         // @extend %base-font-weight;
         // padding-right: 0 !important;
     }
     &.active-trail {
-        background-color: white !important;
-        border-top-left-radius: 4px;
-        border-top-right-radius: 4px;
+        // background-color: white !important;
+        // border-top-left-radius: 4px;
+        // border-top-right-radius: 4px;
         a
             {
-            color: black;
+            color: lighten($font-color, 15%);
+            text-decoration: underline;
             &:hover {
                 color: black !important;
+                text-decoration: none;
             }
             }
     }

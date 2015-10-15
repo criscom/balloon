@@ -43,7 +43,8 @@ div p a,
 .wohnungsdetails-link a,
 li a,
 .link a,
-.field-slideshow-caption-text a
+.field-slideshow-caption-text a,
+.group-right .field a
 {
     @extend .inline-link;
     &:hover {
