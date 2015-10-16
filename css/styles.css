@@ -3507,6 +3507,119 @@ footer a:active {
   color: #333 !important;
 }
 
+/* CSS code for frontpage BLOCK
+**
+** view name: frontpage article
+** display powered by Views
+** views mode: fields
+** added by criscom
+** block system
+**
+*/
+/* line 13, ../sass/sl-components/_front-block.scss */
+.view-frontpage-aktuell {
+  padding-top: 16px;
+  padding-top: 1rem;
+}
+/* line 6, ../sass/library/_clearfix.scss */
+.view-frontpage-aktuell:before {
+  content: '';
+  display: table;
+}
+/* line 11, ../sass/library/_clearfix.scss */
+.view-frontpage-aktuell:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+@media (min-width: 569px) {
+  /* line 18, ../sass/sl-components/_front-block.scss */
+  .view-frontpage-aktuell > .view-header {
+    float: left;
+    width: 25%;
+  }
+  /* line 22, ../sass/sl-components/_front-block.scss */
+  .view-frontpage-aktuell > .view-content {
+    float: left;
+    width: 75%;
+  }
+}
+
+/* line 31, ../sass/sl-components/_front-block.scss */
+.view-frontpage-aktuell .views-row {
+  background-color: #e5e5e5;
+  margin-bottom: 16px;
+  margin-bottom: 1rem;
+}
+@media (min-width: 569px) {
+  /* line 31, ../sass/sl-components/_front-block.scss */
+  .view-frontpage-aktuell .views-row {
+    width: 49%;
+    float: left;
+  }
+}
+/* line 39, ../sass/sl-components/_front-block.scss */
+.view-frontpage-aktuell .views-row-odd {
+  margin-right: 1%;
+}
+/* line 42, ../sass/sl-components/_front-block.scss */
+.view-frontpage-aktuell .views-row-even {
+  margin-left: 1%;
+}
+
+/* line 47, ../sass/sl-components/_front-block.scss */
+.article-bilder img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 54, ../sass/sl-components/_front-block.scss */
+.article-wrapper-outer {
+  position: relative;
+}
+
+/* line 58, ../sass/sl-components/_front-block.scss */
+.article-wrapper-inner {
+  position: absolute;
+  top: 4px;
+  top: .375rem;
+  width: 96%;
+  height: auto;
+  max-width: 840px;
+  max-height: 526px;
+  overflow: hidden;
+  margin: 0 auto;
+  text-align: center;
+  left: 0;
+  right: 0;
+}
+
+/* line 74, ../sass/sl-components/_front-block.scss */
+.article-datum {
+  font-weight: 300;
+}
+
+/* line 78, ../sass/sl-components/_front-block.scss */
+.artikel-body {
+  font-weight: 300;
+}
+
+/* line 82, ../sass/sl-components/_front-block.scss */
+.article-link {
+  text-align: center;
+}
+/* line 84, ../sass/sl-components/_front-block.scss */
+.article-link a {
+  color: #404040;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+/* line 88, ../sass/sl-components/_front-block.scss */
+.article-link a:hover {
+  color: #666666;
+  text-decoration: underline;
+}
+
 /* CSS code for front page ==> page view ""
 **
 ** view name: frontpage feature
@@ -3588,7 +3701,7 @@ footer a:active {
 /* line 69, ../sass/sl-components/_front.scss */
 .feature-link a {
   color: #404040;
-  font-weight: 300;
+  font-weight: 600;
   text-transform: uppercase;
 }
 /* line 73, ../sass/sl-components/_front.scss */

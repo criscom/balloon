@@ -1,16 +1,16 @@
-/* CSS code for front page ==> page view ""
+/* CSS code for frontpage BLOCK
 **
-** view name: frontpage feature
+** view name: frontpage article
 ** display powered by Views
 ** views mode: fields
 ** added by criscom
-** /frontpage-feature
+** block system
 **
 */
 
 // Alignment of content elements inline via flexbox
 
-.view-frontpage-feature {
+.view-frontpage-aktuell {
     padding-top: 16px;
     padding-top: 1rem;
     @include clearfix();
@@ -28,17 +28,34 @@
 
 // Apply background for the body text
 
-.view-frontpage-feature .views-row {
+.view-frontpage-aktuell .views-row {
     background-color: $box;
+    margin-bottom: 16px;
+    margin-bottom: 1rem;
+    @include breakpoint ($tablet){
+        width: 49%;
+        float: left;
+    }
+    &-odd {
+        margin-right: 1%
+    }
+    &-even {
+        margin-left: 1%;
+    }
+}
+
+.article-bilder img{
+    display: block;
+    margin: 0 auto;
 }
 
 // Position title and ort as a layer over the image with position:absolute
 
-.feature-wrapper-outer {
+.article-wrapper-outer {
     position: relative;
 }
 
-.feature-wrapper-inner {
+.article-wrapper-inner {
     position: absolute;
     top: 4px;
     top: .375rem;
@@ -54,17 +71,15 @@
 }
 
 
-.feature-datum {
+.article-datum {
     font-weight: 300;
 }
 
-.front .views-field-body {
-    p {
-        margin: 0;
-    }
+.artikel-body {
+    font-weight: 300;
 }
 
-.feature-link {
+.article-link {
     text-align: center;
     a {
         color: $font-color;
