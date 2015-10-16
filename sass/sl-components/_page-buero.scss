@@ -1,0 +1,136 @@
+/* CSS code for content type 'page' ==> "Einfache Seite 1 (1 od 2 spaltig, Title, Text, Bild, Upload)"
+**
+** machine name: page
+** display powered by DS
+** two columns via class .two-col
+** added by criscom
+** 
+**
+*/
+
+// Alignment of content elements inline via float
+
+
+@include breakpoint($tablet){
+    .page-node h1 {
+        float: left;
+        width: 25%;
+    }
+    .page-node .node-page {
+        float: left;
+        width: 75%;
+
+    }
+}
+
+.node-page {
+    padding-top: 16px;
+    padding-top: 1rem;
+    padding-right: 16px;
+    padding-right: 1rem;
+    margin-bottom: 32px;
+    margin-bottom: 2rem;
+}
+
+.two-col {
+    @include column-count(2);
+}
+
+.field-name-field-article-link {
+    a {
+        color: $font-color;
+        font-weight: 600;
+        text-transform: uppercase;
+        &:hover {
+            color: lighten($font-color, 15%);
+            text-decoration: underline;
+        }
+    }
+}
+
+// block views 
+// Partnerinnen
+
+.page-node .block-views {
+    clear: both;
+    @include clearfix();
+    @include breakpoint($range569-768) {
+        margin-left: 25%;
+    }
+}
+
+@include breakpoint($desktop) {
+    .page-node .view-header,
+    .page-node .view-content {
+            float: left;
+        }
+    .page-node .view-header {
+        width: 25%;
+    }
+    .page-node .view-content {
+        width: 75%;
+        // margin-top: 1rem;
+        // margin-top: 13px;
+    }
+}
+
+
+
+.page-node .view-content {
+    display: flex;
+    flex-wrap: wrap;
+    .views-row {
+        flex: 0 0 100%;
+    }
+    @include breakpoint($desktop) {
+        .views-row {
+            flex: 1;
+        }
+    }
+}
+
+.inline-label {
+    font-weight: 300;
+}
+
+
+.telephone {
+    font-weight: 300;
+}
+
+.email {
+    font-weight: 300;
+    a{
+        color: $font-color;
+    }
+}
+
+.panel-heading {
+    padding: 0;
+    .panel-title {
+        font-size: 18px;
+        font-size: 1.125rem;
+        a {
+            text-decoration: underline;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.panel-body {
+    padding: 0;
+    p {
+        margin: 0;
+    }
+}
+
+// view mitarbeiterinnen
+
+.page-node .view-display-id-block_1 {
+    margin-top: 64px;
+    margin-top: 4rem;
+    margin-bottom: 32px;
+    margin-bottom: 2rem;
+}

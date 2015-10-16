@@ -108,13 +108,15 @@ scripts[] = js/css_browser_selector.js
 scripts[] = js/jquery.flexslider-min.js
 
 ; add smartmenus jquery
-scripts[] = js/smartmenus/jquery.smartmenus.min.js
+;scripts[] = js/smartmenus/jquery.smartmenus.min.js
 
 ; add smartmenus bootstrap menu support
 ;scripts[] = js/smartmenus/jquery.smartmenus.bootstrap.min.js
 
 ; custom JS file
 scripts[] = js/flexslider.js
+scripts[] = js/collapse.js
+scripts[] = js/transition.js
 scripts[] = js/script.js
 
 ; Google Webfonts

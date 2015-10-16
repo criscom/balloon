@@ -58,6 +58,9 @@ ul.nice-menu li
         color: lighten($font-color, 15%);
         text-decoration: underline;
        }
+       &:visited {
+        color: $font-color;
+       }
         // @extend %base-font-weight;
         // padding-right: 0 !important;
     }

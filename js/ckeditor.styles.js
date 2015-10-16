@@ -16,14 +16,15 @@ if(typeof(CKEDITOR) !== 'undefined') {
             // not needed here by default. You may enable them to avoid placing the
             // "Format" drop-down list in the toolbar, maintaining the same features.
             
-            { name : 'Paragraph'		, element : 'p' }, 
+            { name : 'Paragraph'		, element : 'p' },
+            { name : 'Two columns'      , element : 'p' , attributes : { 'class' : 'two-col'} },
             { name : 'Heading 1'		, element : 'h1' },
             { name : 'Heading 2'		, element : 'h2' },
             { name : 'Heading 3'		, element : 'h3' },
             /* { name : 'Heading 4'		, element : 'h4' },
             { name : 'Heading 5'		, element : 'h5' },
             { name : 'Heading 6'		, element : 'h6' }, */
-            { name : 'Preformatted Text', element : 'pre' },
+            /* { name : 'Preformatted Text', element : 'pre' }, */
             { name : 'Address'			, element : 'address' },
 
 /*

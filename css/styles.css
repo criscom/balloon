@@ -3401,12 +3401,27 @@ body {
 .main-content h1 {
   font-size: 24px;
   font-size: 1.5rem;
+  font-size: 18px;
   font-weight: 700;
   margin-top: 0;
   padding-top: 1rem;
   padding-top: 16px;
   text-transform: uppercase;
   flex: 1 16px;
+}
+
+/* line 46, ../sass/sl-components/_default.scss */
+.section-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 0;
+  text-transform: uppercase;
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
 }
 
 /* CSS code for the fonts integration
@@ -3936,20 +3951,25 @@ ul.nice-menu li a:hover {
   color: #666666;
   text-decoration: underline;
 }
-/* line 68, ../sass/sl-components/_main-menu-desktop.scss */
+/* line 61, ../sass/sl-components/_main-menu-desktop.scss */
+ul.menu li a:visited,
+ul.nice-menu li a:visited {
+  color: #404040;
+}
+/* line 71, ../sass/sl-components/_main-menu-desktop.scss */
 ul.menu li.active-trail a,
 ul.nice-menu li.active-trail a {
   color: #666666;
   text-decoration: underline;
 }
-/* line 72, ../sass/sl-components/_main-menu-desktop.scss */
+/* line 75, ../sass/sl-components/_main-menu-desktop.scss */
 ul.menu li.active-trail a:hover,
 ul.nice-menu li.active-trail a:hover {
   color: black !important;
   text-decoration: none;
 }
 
-/* line 80, ../sass/sl-components/_main-menu-desktop.scss */
+/* line 83, ../sass/sl-components/_main-menu-desktop.scss */
 .menu__item.is-leaf {
   list-style: none;
   list-style-image: none;
@@ -3984,6 +4004,166 @@ ul.nice-menu li.active-trail a:hover {
     display: none;
   }
 }
+/* CSS code for content type 'page' ==> "Einfache Seite 1 (1 od 2 spaltig, Title, Text, Bild, Upload)"
+**
+** machine name: page
+** display powered by DS
+** two columns via class .two-col
+** added by criscom
+** 
+**
+*/
+@media (min-width: 569px) {
+  /* line 15, ../sass/sl-components/_page-buero.scss */
+  .page-node h1 {
+    float: left;
+    width: 25%;
+  }
+
+  /* line 19, ../sass/sl-components/_page-buero.scss */
+  .page-node .node-page {
+    float: left;
+    width: 75%;
+  }
+}
+/* line 26, ../sass/sl-components/_page-buero.scss */
+.node-page {
+  padding-top: 16px;
+  padding-top: 1rem;
+  padding-right: 16px;
+  padding-right: 1rem;
+  margin-bottom: 32px;
+  margin-bottom: 2rem;
+}
+
+/* line 35, ../sass/sl-components/_page-buero.scss */
+.two-col {
+  -moz-column-count: 2;
+  -webkit-column-count: 2;
+  column-count: 2;
+}
+
+/* line 40, ../sass/sl-components/_page-buero.scss */
+.field-name-field-article-link a {
+  color: #404040;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+/* line 44, ../sass/sl-components/_page-buero.scss */
+.field-name-field-article-link a:hover {
+  color: #666666;
+  text-decoration: underline;
+}
+
+/* line 54, ../sass/sl-components/_page-buero.scss */
+.page-node .block-views {
+  clear: both;
+}
+/* line 6, ../sass/library/_clearfix.scss */
+.page-node .block-views:before {
+  content: '';
+  display: table;
+}
+/* line 11, ../sass/library/_clearfix.scss */
+.page-node .block-views:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+@media (min-width: 569px) and (max-width: 768px) {
+  /* line 54, ../sass/sl-components/_page-buero.scss */
+  .page-node .block-views {
+    margin-left: 25%;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 63, ../sass/sl-components/_page-buero.scss */
+  .page-node .view-header,
+  .page-node .view-content {
+    float: left;
+  }
+
+  /* line 67, ../sass/sl-components/_page-buero.scss */
+  .page-node .view-header {
+    width: 25%;
+  }
+
+  /* line 70, ../sass/sl-components/_page-buero.scss */
+  .page-node .view-content {
+    width: 75%;
+  }
+}
+/* line 79, ../sass/sl-components/_page-buero.scss */
+.page-node .view-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* line 82, ../sass/sl-components/_page-buero.scss */
+.page-node .view-content .views-row {
+  flex: 0 0 100%;
+}
+@media (min-width: 768px) {
+  /* line 86, ../sass/sl-components/_page-buero.scss */
+  .page-node .view-content .views-row {
+    flex: 1;
+  }
+}
+
+/* line 92, ../sass/sl-components/_page-buero.scss */
+.inline-label {
+  font-weight: 300;
+}
+
+/* line 97, ../sass/sl-components/_page-buero.scss */
+.telephone {
+  font-weight: 300;
+}
+
+/* line 101, ../sass/sl-components/_page-buero.scss */
+.email {
+  font-weight: 300;
+}
+/* line 103, ../sass/sl-components/_page-buero.scss */
+.email a {
+  color: #404040;
+}
+
+/* line 108, ../sass/sl-components/_page-buero.scss */
+.panel-heading {
+  padding: 0;
+}
+/* line 110, ../sass/sl-components/_page-buero.scss */
+.panel-heading .panel-title {
+  font-size: 18px;
+  font-size: 1.125rem;
+}
+/* line 113, ../sass/sl-components/_page-buero.scss */
+.panel-heading .panel-title a {
+  text-decoration: underline;
+}
+/* line 115, ../sass/sl-components/_page-buero.scss */
+.panel-heading .panel-title a:hover {
+  text-decoration: none;
+}
+
+/* line 122, ../sass/sl-components/_page-buero.scss */
+.panel-body {
+  padding: 0;
+}
+/* line 124, ../sass/sl-components/_page-buero.scss */
+.panel-body p {
+  margin: 0;
+}
+
+/* line 131, ../sass/sl-components/_page-buero.scss */
+.page-node .view-display-id-block_1 {
+  margin-top: 64px;
+  margin-top: 4rem;
+  margin-bottom: 32px;
+  margin-bottom: 2rem;
+}
+
 /* CSS code for panel page one col two rows
 ** PANEL page
 ** added by criscom
@@ -4261,18 +4441,18 @@ ul.nice-menu li.active-trail a:hover {
 }
 
 @media (min-width: 569px) {
-  /* line 23, ../sass/sl-components/_projekte-landing-page.scss */
+  /* line 24, ../sass/sl-components/_projekte-landing-page.scss */
   .isotope-element {
     width: 403px;
     height: 252px;
   }
-  /* line 27, ../sass/sl-components/_projekte-landing-page.scss */
+  /* line 28, ../sass/sl-components/_projekte-landing-page.scss */
   .isotope-element img {
     width: 403px;
   }
 }
 
-/* line 35, ../sass/sl-components/_projekte-landing-page.scss */
+/* line 36, ../sass/sl-components/_projekte-landing-page.scss */
 .isotope-button,
 .isotope-button.selected,
 .isotope-button:hover,
@@ -4283,27 +4463,27 @@ ul.nice-menu li.active-trail a:hover {
   text-shadow: none;
 }
 
-/* line 47, ../sass/sl-components/_projekte-landing-page.scss */
+/* line 48, ../sass/sl-components/_projekte-landing-page.scss */
 .isotope-button {
   text-transform: uppercase;
 }
-/* line 49, ../sass/sl-components/_projekte-landing-page.scss */
+/* line 50, ../sass/sl-components/_projekte-landing-page.scss */
 .isotope-button:before {
   content: "/// ";
 }
 
-/* line 54, ../sass/sl-components/_projekte-landing-page.scss */
+/* line 55, ../sass/sl-components/_projekte-landing-page.scss */
 .isotope-button.selected {
   color: #404040;
   font-weight: 600;
 }
 
-/* line 59, ../sass/sl-components/_projekte-landing-page.scss */
+/* line 60, ../sass/sl-components/_projekte-landing-page.scss */
 .isotope-button:hover {
   color: #666666;
 }
 
-/* line 66, ../sass/sl-components/_projekte-landing-page.scss */
+/* line 67, ../sass/sl-components/_projekte-landing-page.scss */
 .view-projekte-isotope-view {
   padding-top: 6px;
   padding-top: .375rem;
@@ -4320,31 +4500,31 @@ ul.nice-menu li.active-trail a:hover {
   clear: both;
 }
 @media (min-width: 569px) {
-  /* line 71, ../sass/sl-components/_projekte-landing-page.scss */
+  /* line 72, ../sass/sl-components/_projekte-landing-page.scss */
   .view-projekte-isotope-view > .view-header {
     float: left;
     width: 25%;
   }
-  /* line 75, ../sass/sl-components/_projekte-landing-page.scss */
+  /* line 76, ../sass/sl-components/_projekte-landing-page.scss */
   .view-projekte-isotope-view > .view-content {
     float: left;
     width: 75%;
   }
 }
 
-/* line 85, ../sass/sl-components/_projekte-landing-page.scss */
+/* line 86, ../sass/sl-components/_projekte-landing-page.scss */
 .projekte-wrapper-outer {
   position: relative;
 }
 
-/* line 89, ../sass/sl-components/_projekte-landing-page.scss */
+/* line 90, ../sass/sl-components/_projekte-landing-page.scss */
 .projekte-wrapper-inner {
   position: absolute;
   top: 4px;
   top: .375rem;
 }
 
-/* line 95, ../sass/sl-components/_projekte-landing-page.scss */
+/* line 96, ../sass/sl-components/_projekte-landing-page.scss */
 .projekte-titel,
 .projekte-ort {
   width: 400px;
@@ -4353,18 +4533,18 @@ ul.nice-menu li.active-trail a:hover {
   text-align: center;
 }
 
-/* line 103, ../sass/sl-components/_projekte-landing-page.scss */
+/* line 104, ../sass/sl-components/_projekte-landing-page.scss */
 .projekte-titel a {
   color: #404040 !important;
   font-weight: 600;
   text-decoration: none;
 }
-/* line 107, ../sass/sl-components/_projekte-landing-page.scss */
+/* line 108, ../sass/sl-components/_projekte-landing-page.scss */
 .projekte-titel a:hover {
   text-decoration: underline;
 }
 
-/* line 112, ../sass/sl-components/_projekte-landing-page.scss */
+/* line 113, ../sass/sl-components/_projekte-landing-page.scss */
 .projekte-ort {
   color: #404040;
   font-weight: 300;

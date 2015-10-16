@@ -30,6 +30,7 @@ body
 {
     font-size: 24px;
     font-size: 1.5rem;
+    font-size: 18px;
     font-weight: 700;
     // Static Page header on left side
 
@@ -40,4 +41,16 @@ body
     text-transform: uppercase;
 
     flex: 1 16px;
+}
+
+.section-title
+{
+    font-size: 18px;
+    font-weight: 600;
+
+    margin-top: 0;
+
+    text-transform: uppercase;
+
+    @include hyphens();
 }

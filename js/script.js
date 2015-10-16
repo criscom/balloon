@@ -41,7 +41,13 @@
 /* END: Isotope settings for the "Busreisen" view */
 
 /* END: ISOTOPE */
-    });
+
+/* Bootstrap collapse */
+// Biography
+
+    $('.collapse').collapse();
+        });
+
 })(jQuery);
 
 
