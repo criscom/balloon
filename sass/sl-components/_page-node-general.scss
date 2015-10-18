@@ -1,0 +1,39 @@
+/* GENERAL CSS code for content type 'page' ==> "Einfache Seite 1 (1 od 2 spaltig, Title, Text, Bild, Upload)"
+**
+** machine name: page
+** display powered by DS
+** two columns via class .two-col
+** added by criscom
+** 
+**
+*/
+
+.main-content {
+    @include clearfix();
+}
+
+.service-links-optional {
+    @breakpoint($tablet){    
+    margin-top: 64px;
+    margin-top: 4rem;
+    text-align: right;
+}
+    .label-above {
+        text-transform: uppercase;
+        font-weight: 600;
+        color: lighten($font-color, 30%);
+
+
+    }
+}
+
+@include breakpoint($range0-568px) {
+    .node-page {
+        .group-left,
+        .group-right {
+            float: none;
+            width: 100%;
+        }
+    }
+
+}

@@ -3340,9 +3340,7 @@ li a,
 }
 
 /* line 24, ../sass/library/_placeholders.scss */
-.panel-2col-stacked .panel-col-top,
-.panel-2col-stacked .center-wrapper .panel-col-first,
-.panel-2col-stacked .center-wrapper .panel-col-last, .center-wrapper.one .panel-panel, .center-wrapper.two .panel-col-first, .center-wrapper.two .panel-col-last, .node-wohnung .group-top,
+.center-wrapper.one .panel-panel, .center-wrapper.two .panel-col-first, .center-wrapper.two .panel-col-last, .node-wohnung .group-top,
 .node-wohnung .group-left,
 .node-wohnung .group-right {
   background-color: #f5f5f5;
@@ -3365,7 +3363,7 @@ li a,
 }
 
 /* line 51, ../sass/library/_placeholders.scss */
-.panel-2col-stacked .panel-col-top, .center-wrapper.one .panel-panel, .node-wohnung .group-top {
+.center-wrapper.one .panel-panel, .node-wohnung .group-top {
   margin-bottom: 24px;
   margin-bottom: 1.5rem;
 }
@@ -4164,50 +4162,50 @@ ul.nice-menu li.active-trail a:hover {
   margin-bottom: 2rem;
 }
 
-/* CSS code for panel page one col two rows
-** PANEL page
+/* GENERAL CSS code for content type 'page' ==> "Einfache Seite 1 (1 od 2 spaltig, Title, Text, Bild, Upload)"
+**
+** machine name: page
+** display powered by DS
+** two columns via class .two-col
 ** added by criscom
-** /panel-one-two
+** 
 **
 */
-/* line 14, ../sass/sl-components/_panel-one-two.scss */
-.panel-2col-stacked .pane__title {
-  margin-top: 0;
-  margin-bottom: 0;
-}
 /* line 6, ../sass/library/_clearfix.scss */
-.panel-2col-stacked .center-wrapper:before {
+.main-content:before {
   content: '';
   display: table;
 }
 /* line 11, ../sass/library/_clearfix.scss */
-.panel-2col-stacked .center-wrapper:after {
+.main-content:after {
   content: '';
   display: table;
   clear: both;
 }
-/* line 23, ../sass/sl-components/_panel-one-two.scss */
-.panel-2col-stacked .center-wrapper .panel-col-first {
-  width: 68%;
-}
-@media (max-width: 767px) {
-  /* line 23, ../sass/sl-components/_panel-one-two.scss */
-  .panel-2col-stacked .center-wrapper .panel-col-first {
-    width: 100%;
+
+@breakpoint ($tablet) {
+  /* line 15, ../sass/sl-components/_page-node-general.scss */
+  .service-links-optional {
+    margin-top: 64px;
+    margin-top: 4rem;
+    text-align: right;
   }
 }
-/* line 30, ../sass/sl-components/_panel-one-two.scss */
-.panel-2col-stacked .center-wrapper .panel-col-last {
-  width: 30%;
-  margin-left: 2%;
-}
-@media (max-width: 767px) {
-  /* line 30, ../sass/sl-components/_panel-one-two.scss */
-  .panel-2col-stacked .center-wrapper .panel-col-last {
-    width: 100%;
-  }
+/* line 21, ../sass/sl-components/_page-node-general.scss */
+.service-links-optional .label-above {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #8c8c8c;
 }
 
+@media (min-width: 0px) and (max-width: 568px) {
+  /* line 32, ../sass/sl-components/_page-node-general.scss */
+  .node-page .group-left,
+  .node-page .group-right {
+    float: none;
+    width: 100%;
+  }
+}
 /* CSS code for panel page one col / two col
 ** PANEL page
 ** added by criscom
