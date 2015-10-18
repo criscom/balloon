@@ -12,11 +12,11 @@
 
 
 @include breakpoint($tablet){
-    .page-node h1 {
+    .page-node.not-logged-in h1 {
         float: left;
         width: 25%;
     }
-    .page-node .node-page {
+    .page-node.not-logged-in .node-page {
         float: left;
         width: 75%;
 

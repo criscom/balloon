@@ -1,0 +1,19 @@
+/* CSS code for Kontakt page with Google Maps
+**
+** display powered by DS
+** added by criscom
+** 
+**
+*/
+
+// we have to remove the top margin on the body p tag for the google 
+// map to align correctly on the tp
+
+.page-node-52 {
+    .field-name-body p {
+        margin-top: 0 !important;
+        iframe {
+            max-width: 100%;
+        }
+    }
+}

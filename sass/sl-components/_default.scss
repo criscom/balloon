@@ -26,7 +26,7 @@ body
     }
 }
 
-.main-content h1
+.main-content h1 // general settings for h1 inlcuding nodes and views
 {
     font-size: 24px;
     font-size: 1.5rem;
@@ -35,12 +35,19 @@ body
     // Static Page header on left side
 
     margin-top: 0;
-    padding-top: 1rem;
-    padding-top: 16px;
+
 
     text-transform: uppercase;
 
     flex: 1 16px;
+
+}
+
+.page-protected-page .main-content h1,
+.page-node .main-content h1 { // node specific settings for h1
+    // these stylings apply for .view-mode-full on node detail pages
+    margin-top: 16px;
+    margin-top: 1rem;
 }
 
 .section-title
@@ -53,4 +60,13 @@ body
     text-transform: uppercase;
 
     @include hyphens();
+}
+
+.download-file {
+    a {
+        &:hover {
+            color: lighten($font-color, 15%);
+            text-decoration: none;
+        }
+    }
 }

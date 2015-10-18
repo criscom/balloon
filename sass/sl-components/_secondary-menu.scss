@@ -1,0 +1,20 @@
+/* CSS code for secondary menu
+**
+** name: footer menu
+** added by criscom
+**
+*/
+
+.menu-block-2 {
+    ul {
+        margin-top: 0;
+    }
+    a {
+        text-transform: none;
+        color: $font-color;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
