@@ -17,34 +17,41 @@ body {
 [role='main']
 {
     p,
-    ul li
+    ul li,
+    ol li
     {
         @extend %base-font-size;
         @extend %base-font-weight;
+        color: $font-color;
     }
 }
 
-div.download-file a
-{
-    @extend .inline-link;
-    @extend %base-font-size;
+.download-file {
+    a {
+        &:hover {
+            color: lighten($font-color, 15%);
+            text-decoration: none;
+        }
+    }
 }
 
 // all inline links within a div tag
 
 .inline-link
 {
-    @include link-colors($normal: $black, $hover: $brand-primary, $visited: lighten($black, 10%));
+    @include link-colors($normal: $black, $hover: lighten($black, 15%), $visited: $black);
     text-decoration: underline;
-    @extend %base-font-weight;
+    font-weight: 300;
 }
 
 div p a,
 .wohnungsdetails-link a,
 li a,
+ol a,
 .link a,
 .field-slideshow-caption-text a,
-.group-right .field a
+.group-right .field a,
+.group-right .field p a
 {
     @extend .inline-link;
     &:hover {

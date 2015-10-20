@@ -8,18 +8,28 @@
 **
 */
 
-// isotope filters
+// Alignment of content elements inline via floats
 
-
-.isotope-filters {
-    margin-top: 252px;
+.view-projekte-isotope-view {
+    padding-top: 6px;
+    padding-top: .375rem;
+    @include clearfix();
     @include breakpoint($tablet){
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        padding-left: 0;
+        >.view-header {
+            float: left;
+            width: 25%;
+            padding-top: 10px;
+            padding-top: .625rem;
+        }
+        >.view-content {
+            float: left;
+            width: 75%;
+    
+        }
     }
 }
+
+// isotope elements in the main project view (project image)
 
 .isotope-element {
     @include breakpoint($tablet){
@@ -27,6 +37,80 @@
         height: 252px;
         img {
             width: 403px;
+        }
+    }
+}
+
+// Position title and ort as a layer over the image with position:absolute
+
+.projekte-wrapper-outer {
+    position: relative;
+}
+
+.projekte-wrapper-inner {
+    position: absolute;
+    top: 4px;
+    top: .375rem;
+}
+
+.projekte-titel,
+.projekte-ort {
+    width: 400px;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.project-title {
+    margin: 6px 0 0 0;
+    font-size: 18px;
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 24px;
+    line-height: 1.5rem;
+    font-weight: 600;
+
+}
+
+.projekte-titel a {
+    color: $font-color !important;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+    &:visited {
+        color: $font-color;
+    }
+}
+
+.projekte-ort {
+    color: $font-color;
+    font-weight: 300;
+}
+
+// isotope filters
+//////////////////
+
+.isotope-filters {
+    @include breakpoint($tablet){
+        margin-top: 252px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        padding-left: 0;
+    }
+    @media all and (max-width: 889px) {
+        a {
+            white-space: normal;
+            padding-left: 0 !important;
+            text-align: left;
+        }
+    }
+    .no-flexbox & {
+        li {
+            display: block;
         }
     }
 }
@@ -60,59 +144,4 @@
 .isotope-button:hover {
     color: lighten($font-color,15%);
 
-}
-
-// Alignment of content elements inline via floats
-
-.view-projekte-isotope-view {
-    padding-top: 6px;
-    padding-top: .375rem;
-    @include clearfix();
-    @include breakpoint($tablet){
-        >.view-header {
-            float: left;
-            width: 25%;
-            padding-top: 10px;
-            padding-top: .625rem;
-        }
-        >.view-content {
-            float: left;
-            width: 75%;
-    
-        }
-    }
-}
-
-// Position title and ort as a layer over the image with position:absolute
-
-.projekte-wrapper-outer {
-    position: relative;
-}
-
-.projekte-wrapper-inner {
-    position: absolute;
-    top: 4px;
-    top: .375rem;
-}
-
-.projekte-titel,
-.projekte-ort {
-    width: 400px;
-    height: auto;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.projekte-titel a {
-    color: $font-color !important;
-    font-weight: 600;
-    text-decoration: none;
-    &:hover {
-        text-decoration: underline;
-    }
-}
-
-.projekte-ort {
-    color: $font-color;
-    font-weight: 300;
 }

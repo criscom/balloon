@@ -9,22 +9,34 @@
 
 
 // Alignment of content elements inline via flexbox
-@include breakpoint($desktop){
-    .node-type-projekt.not-logged-in { // when logged in the tabs break the design
-        .main-content {
-            display: flex;
-            flex-direction: row;
-            align-items: flex-start;
-        }
+// @include breakpoint($desktop){
+//     .node-type-projekt.not-logged-in { // when logged in the tabs break the design
+//         .main-content {
+//             display: flex;
+//             flex-direction: row;
+//             align-items: flex-start;
+//         }
+//     }
+// }
+
+// Alignment of content elements inline via float
+@include breakpoint($tablet) {
+    .node-type-projekt.not-logged-in h1 {
+        float: left;
+        width: 25%;
+    }
+    .node-type-projekt.not-logged-in .node-projekt {
+        float: left;
+        width: 75%;
     }
 }
 
+// alignment of the whole node adjusting the spacing btw navigation and slider image 
 .node-projekt {
     padding-top: 16px;
     padding-top: 1rem;
     padding-right: 16px;
     padding-right: 1rem;
-    flex: 3 0px;
 }
 
 .flexslider {
@@ -62,12 +74,6 @@
         .field p,
         .field a {
             font-weight: 600;
-        }
-        .field a {
-            text-decoration: none;
-            &:hover {
-                text-decoration: underline;
-            }
         }
 }
 
