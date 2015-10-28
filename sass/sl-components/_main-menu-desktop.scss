@@ -10,11 +10,15 @@
 
 .region-navigation,
 .main-navigation {
-    // display: block;
+    float: left;
     padding: 0;
-    -ms-flex-preferred-size: 70%;
-        -webkit-flex-basis: 70%;
-            flex-basis: 70%;
+    margin-right: 0;
+    width: 10%; 
+    @include breakpoint($desktop) {
+          width: 70.5%;
+          margin-top: 18px;
+          margin-top: 1.125rem;
+    }
 }
 
 #block-menu-block-1 ul.menu,
@@ -35,8 +39,6 @@ ul.nice-menu
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-
-  padding-right: 1rem;
   width: 100%;
     // margin-left: $nav-margin;
 }

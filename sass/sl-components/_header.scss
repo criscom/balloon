@@ -6,11 +6,11 @@
 */
 
 .header {
-    padding-top: 1rem;
-    padding-top: 16px;
+    padding-top: .5rem;
+    padding-top: 8px;
     background: white;
-    margin-left: auto;
-    margin-right: auto;
+    // margin-left: auto;
+    // margin-right: auto;
     border-bottom: 1px dotted black;
     @include breakpoint($iphone5-6) {
         padding-top: 40px;
@@ -20,56 +20,54 @@
 }
 
 .header-wrapper {
-
-  display: -webkit-flex;
-
-  display: -ms-flexbox;
-
-  display: flex;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 2rem;
+  margin-top: 16px;
+  margin-top: 1rem;
 }
 
 .logo-wrapper {
-    @include breakpoint($desktop){
-      -ms-flex-preferred-size: 25%;
-          -webkit-flex-basis: 25%;
-              flex-basis: 25%;
-      padding-right: 1rem;
-    }
-
+  float: left;
+  width: 40%;
+  padding: 0;
+  margin-top: 32px;
+  margin-top: 2rem;
+  @include breakpoint($desktop) {
+    width: 23%;
+    margin: 18px 1.4% 0 0;
+  }
 }
 
 .header__logo-image {
-    width: 100%; 
+    width: 100%;
+    max-width: 100%; 
 }
 
 .header__region {
-
-    @include breakpoint($desktop)
-    {
-      -ms-flex-preferred-size: 5%;
-          -webkit-flex-basis: 5%;
-              flex-basis: 5%;
-    }
+  float: right;  
+  margin: 0;
+  padding: 0;
+  width: 20%;
+  clear: none;
+  @include breakpoint($desktop){
+    margin-left: 1%;
+    width: 3%;
+  }
+  .block {
+    text-align: right;
+    margin-bottom: 0;
+  }
 }
 
 .header-link-1 img,
 .header-link-2 img {
-    display: block;
-    width: auto;
+    width: 50px;
+    height: 50px;
     max-width: 100%;
+    @include breakpoint($desktop) {
+      width: 100%;
+      height: auto;
+
+    }
+    // text-align: right;
 }
 
 .header-link-2 img {
