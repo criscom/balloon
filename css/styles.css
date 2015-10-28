@@ -3498,42 +3498,63 @@ h1.object-title:hover,
   border-top: 1px dotted black;
 }
 
-/* line 16, ../sass/sl-components/_footer.scss */
+@media (min-width: 768px) {
+  /* line 18, ../sass/sl-components/_footer.scss */
+  .no-flexbox .footer-wrapper .block {
+    float: left;
+  }
+}
+
+/* line 24, ../sass/sl-components/_footer.scss */
 .footer-wrapper {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
   margin-top: 16px;
   margin-top: 1rem;
 }
-/* line 33, ../sass/sl-components/_footer.scss */
+@media (min-width: 768px) {
+  /* line 24, ../sass/sl-components/_footer.scss */
+  .footer-wrapper {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+/* line 43, ../sass/sl-components/_footer.scss */
 .footer-wrapper .block p {
   margin: 0;
 }
-/* line 35, ../sass/sl-components/_footer.scss */
+/* line 45, ../sass/sl-components/_footer.scss */
 .footer-wrapper .block p .footer-label {
   padding-right: 16px;
   padding-right: 1rem;
 }
-/* line 40, ../sass/sl-components/_footer.scss */
+/* line 50, ../sass/sl-components/_footer.scss */
 .footer-wrapper .block:first-child {
   padding-left: 10px;
 }
 @media (min-width: 768px) {
-  /* line 43, ../sass/sl-components/_footer.scss */
+  /* line 53, ../sass/sl-components/_footer.scss */
   .footer-wrapper .block:last-child {
     margin-right: 60px;
     margin-right: 3.75rem;
   }
+}
+
+/* line 63, ../sass/sl-components/_footer.scss */
+.footer-content a {
+  text-decoration: none;
+}
+/* line 65, ../sass/sl-components/_footer.scss */
+.footer-content a:hover {
+  text-decoration: underline;
 }
 
 /* CSS code for frontpage BLOCK
@@ -3887,6 +3908,7 @@ h1.object-title:hover,
   overflow: visible;
   display: inline-block;
   padding: 0.5em 1em;
+  padding-left: 0;
   border: 1px solid #d4d4d4;
   margin: 0;
   text-decoration: none;
@@ -3912,7 +3934,7 @@ h1.object-title:hover,
   *display: inline;
 }
 
-/* line 53, ../sass/sl-components/_isotope-filter.scss */
+/* line 54, ../sass/sl-components/_isotope-filter.scss */
 .isotope-button:hover,
 .isotope-button:focus,
 .isotope-button:active,
@@ -3929,7 +3951,7 @@ h1.object-title:hover,
   background-image: linear-gradient(#599bdc, #3072b3);
 }
 
-/* line 69, ../sass/sl-components/_isotope-filter.scss */
+/* line 70, ../sass/sl-components/_isotope-filter.scss */
 .isotope-button:active,
 .isotope-button.selected {
   border-color: #2a65a0;
@@ -3943,7 +3965,7 @@ h1.object-title:hover,
 }
 
 /* overrides extra padding on button elements in Firefox */
-/* line 82, ../sass/sl-components/_isotope-filter.scss */
+/* line 83, ../sass/sl-components/_isotope-filter.scss */
 .isotope-button::-moz-focus-inner {
   padding: 0;
   border: 0;
@@ -4038,32 +4060,33 @@ ul.nice-menu li a {
   text-transform: uppercase;
   font-weight: 600;
   font-style: italic;
+  color: #666666;
 }
-/* line 72, ../sass/sl-components/_main-menu-desktop.scss */
+/* line 73, ../sass/sl-components/_main-menu-desktop.scss */
 #block-menu-block-1 ul.menu li a:hover,
 ul.nice-menu li a:hover {
-  color: #666666;
+  color: gray;
   text-decoration: underline;
 }
-/* line 76, ../sass/sl-components/_main-menu-desktop.scss */
+/* line 77, ../sass/sl-components/_main-menu-desktop.scss */
 #block-menu-block-1 ul.menu li a:visited,
 ul.nice-menu li a:visited {
-  color: #404040;
+  color: #666666;
 }
-/* line 86, ../sass/sl-components/_main-menu-desktop.scss */
+/* line 87, ../sass/sl-components/_main-menu-desktop.scss */
 #block-menu-block-1 ul.menu li.active-trail a,
 ul.nice-menu li.active-trail a {
-  color: #666666;
-  text-decoration: underline;
+  color: black;
+  text-decoration: none;
 }
-/* line 90, ../sass/sl-components/_main-menu-desktop.scss */
+/* line 91, ../sass/sl-components/_main-menu-desktop.scss */
 #block-menu-block-1 ul.menu li.active-trail a:hover,
 ul.nice-menu li.active-trail a:hover {
   color: black !important;
   text-decoration: none;
 }
 
-/* line 98, ../sass/sl-components/_main-menu-desktop.scss */
+/* line 99, ../sass/sl-components/_main-menu-desktop.scss */
 .menu__item.is-leaf {
   list-style: none;
   list-style-image: none;
@@ -4096,8 +4119,6 @@ ul.nice-menu li.active-trail a:hover {
 .node-page {
   padding-top: 16px;
   padding-top: 1rem;
-  padding-right: 16px;
-  padding-right: 1rem;
   margin-bottom: 24px;
   margin-bottom: 1.5rem;
 }
@@ -4162,79 +4183,75 @@ ul.nice-menu li.active-trail a:hover {
 }
 /* line 79, ../sass/sl-components/_page-buero.scss */
 .page-node .view-content {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  margin-top: 10px;
 }
-@media (min-width: 569px) {
-  /* line 90, ../sass/sl-components/_page-buero.scss */
-  .page-node .view-content .views-row {
-    -webkit-flex: 0 0 33%;
-    -ms-flex: 0 0 33%;
-    flex: 0 0 33%;
-  }
+/* line 90, ../sass/sl-components/_page-buero.scss */
+.page-node .view-content .views-row {
+  width: 100%;
+  padding-bottom: 1.5rem;
+  padding-bottom: 24px;
 }
 @media (min-width: 768px) {
-  /* line 98, ../sass/sl-components/_page-buero.scss */
+  /* line 101, ../sass/sl-components/_page-buero.scss */
   .page-node .view-content .views-row {
-    padding-bottom: 1.5rem;
-    padding-bottom: 24px;
+    float: left;
+    width: 32%;
+    margin-left: 1%;
+  }
+  /* line 105, ../sass/sl-components/_page-buero.scss */
+  .page-node .view-content .views-row-1, .page-node .view-content .views-row-4, .page-node .view-content .views-row-7, .page-node .view-content .views-row-10, .page-node .view-content .views-row-13, .page-node .view-content .views-row-16, .page-node .view-content .views-row-19 {
+    clear: both;
+    margin-left: 0;
   }
 }
 
-/* line 105, ../sass/sl-components/_page-buero.scss */
+/* line 113, ../sass/sl-components/_page-buero.scss */
 .inline-label {
   font-weight: 300;
 }
 
-/* line 110, ../sass/sl-components/_page-buero.scss */
+/* line 118, ../sass/sl-components/_page-buero.scss */
 .telephone {
   font-weight: 300;
 }
 
-/* line 114, ../sass/sl-components/_page-buero.scss */
+/* line 122, ../sass/sl-components/_page-buero.scss */
 .email {
   font-weight: 300;
 }
-/* line 116, ../sass/sl-components/_page-buero.scss */
+/* line 124, ../sass/sl-components/_page-buero.scss */
 .email a {
   color: #404040;
 }
 
-/* line 121, ../sass/sl-components/_page-buero.scss */
+/* line 129, ../sass/sl-components/_page-buero.scss */
 .panel-heading {
   padding: 0;
 }
-/* line 123, ../sass/sl-components/_page-buero.scss */
+/* line 131, ../sass/sl-components/_page-buero.scss */
 .panel-heading .panel-title {
   font-size: 18px;
   font-size: 1.125rem;
 }
-/* line 126, ../sass/sl-components/_page-buero.scss */
+/* line 134, ../sass/sl-components/_page-buero.scss */
 .panel-heading .panel-title a {
   text-decoration: underline;
 }
-/* line 128, ../sass/sl-components/_page-buero.scss */
+/* line 136, ../sass/sl-components/_page-buero.scss */
 .panel-heading .panel-title a:hover {
   text-decoration: none;
 }
 
-/* line 135, ../sass/sl-components/_page-buero.scss */
+/* line 143, ../sass/sl-components/_page-buero.scss */
 .panel-body {
   padding: 0;
 }
-/* line 137, ../sass/sl-components/_page-buero.scss */
+/* line 145, ../sass/sl-components/_page-buero.scss */
 .panel-body p {
   margin: 0;
 }
 
-/* line 144, ../sass/sl-components/_page-buero.scss */
+/* line 152, ../sass/sl-components/_page-buero.scss */
 .page-node .view-display-id-block_1 {
   margin-top: 64px;
   margin-top: 4rem;
@@ -4290,6 +4307,10 @@ ul.nice-menu li.active-trail a:hover {
 .node .field-name-body p:first-child {
   margin-top: 10px;
   margin-top: .625rem;
+}
+/* line 46, ../sass/sl-components/_page-node-general.scss */
+.node .field-name-body p {
+  text-align: justify;
 }
 
 /* CSS code for content type 'passwort-page' ==> "Passwort geschützte Seite"
@@ -4402,82 +4423,88 @@ ul.nice-menu li.active-trail a:hover {
 **
 */
 @media (min-width: 569px) {
-  /* line 26, ../sass/sl-components/_projekt-detail.scss */
+  /* line 31, ../sass/sl-components/_projekt-detail.scss */
   .node-type-projekt.not-logged-in h1 {
     float: left;
     width: 25%;
   }
 
-  /* line 30, ../sass/sl-components/_projekt-detail.scss */
+  /* line 35, ../sass/sl-components/_projekt-detail.scss */
   .node-type-projekt.not-logged-in .node-projekt {
     float: left;
     width: 75%;
   }
 }
-/* line 37, ../sass/sl-components/_projekt-detail.scss */
+/* line 42, ../sass/sl-components/_projekt-detail.scss */
 .node-projekt {
   padding-top: 16px;
   padding-top: 1rem;
-  padding-right: 16px;
-  padding-right: 1rem;
 }
 
-/* line 44, ../sass/sl-components/_projekt-detail.scss */
+/* line 49, ../sass/sl-components/_projekt-detail.scss */
 .flexslider, .flexslider-events {
   border: 0;
   border-radius: 0;
+  box-shadow: none;
   margin-bottom: 1.5tem;
   margin-bottom: 24px;
 }
 
-/* line 52, ../sass/sl-components/_projekt-detail.scss */
+/* line 57, ../sass/sl-components/_projekt-detail.scss */
 .node-projekt h2 {
   margin-top: 0;
   font-weight: 600;
+  line-height: 2rem;
+  line-height: 32px;
 }
 
-/* line 57, ../sass/sl-components/_projekt-detail.scss */
+/* line 64, ../sass/sl-components/_projekt-detail.scss */
 .node-projekt .group-left {
   width: 60%;
 }
 
-/* line 61, ../sass/sl-components/_projekt-detail.scss */
+/* line 68, ../sass/sl-components/_projekt-detail.scss */
+.beschreibung p {
+  text-align: justify;
+}
+
+/* line 72, ../sass/sl-components/_projekt-detail.scss */
 .field-name-field-untertitel {
   font-weight: 600;
   color: #666666;
 }
 
-/* line 66, ../sass/sl-components/_projekt-detail.scss */
+/* line 77, ../sass/sl-components/_projekt-detail.scss */
 .node-projekt .group-right {
   width: 40%;
   margin-top: 13px;
   margin-top: .8125rem;
   text-align: right;
 }
-/* line 71, ../sass/sl-components/_projekt-detail.scss */
+/* line 82, ../sass/sl-components/_projekt-detail.scss */
 .node-projekt .group-right .label-above {
   text-transform: uppercase;
   font-weight: 600;
   color: #8d8d8d;
 }
-/* line 76, ../sass/sl-components/_projekt-detail.scss */
+/* line 87, ../sass/sl-components/_projekt-detail.scss */
 .node-projekt .group-right .field p,
 .node-projekt .group-right .field a {
   font-weight: 600;
 }
 
-/* line 84, ../sass/sl-components/_projekt-detail.scss */
+/* line 95, ../sass/sl-components/_projekt-detail.scss */
 .field-name-field-projekt-ort p, .field-name-field-projekt-status p, .field-name-field-projekt-bauherr p, .field-name-field-projekt-wettbewerb p, .field-name-field-projekt-team p {
   margin-top: 0;
 }
 
-/* line 90, ../sass/sl-components/_projekt-detail.scss */
+/* line 101, ../sass/sl-components/_projekt-detail.scss */
 .field-name-field-projekt-kategorie,
 .field-name-field-projekt-links {
   margin-bottom: 20px;
   margin-bottom: 1.5rem;
 }
-/* line 94, ../sass/sl-components/_projekt-detail.scss */
+/* line 105, ../sass/sl-components/_projekt-detail.scss */
 .field-name-field-projekt-kategorie a,
 .field-name-field-projekt-links a {
   display: block;
@@ -4489,7 +4516,7 @@ ul.nice-menu li.active-trail a:hover {
   hyphens: auto;
 }
 
-/* line 100, ../sass/sl-components/_projekt-detail.scss */
+/* line 111, ../sass/sl-components/_projekt-detail.scss */
 .service-links img {
   -moz-border-radius: 32px;
   -webkit-border-radius: 32px;
@@ -4570,6 +4597,12 @@ ul.nice-menu li.active-trail a:hover {
 }
 
 /* line 64, ../sass/sl-components/_projekte-landing-page.scss */
+.projekte-ort {
+  line-height: 12px;
+  line-height: .75rem;
+}
+
+/* line 69, ../sass/sl-components/_projekte-landing-page.scss */
 .project-title {
   margin: 6px 0 0 0;
   font-size: 18px;
@@ -4581,28 +4614,28 @@ ul.nice-menu li.active-trail a:hover {
   font-weight: 600;
 }
 
-/* line 76, ../sass/sl-components/_projekte-landing-page.scss */
+/* line 81, ../sass/sl-components/_projekte-landing-page.scss */
 .projekte-titel a {
   color: #404040 !important;
   text-decoration: none;
 }
-/* line 79, ../sass/sl-components/_projekte-landing-page.scss */
+/* line 84, ../sass/sl-components/_projekte-landing-page.scss */
 .projekte-titel a:hover {
   text-decoration: underline;
 }
-/* line 82, ../sass/sl-components/_projekte-landing-page.scss */
+/* line 87, ../sass/sl-components/_projekte-landing-page.scss */
 .projekte-titel a:visited {
   color: #404040;
 }
 
-/* line 87, ../sass/sl-components/_projekte-landing-page.scss */
+/* line 92, ../sass/sl-components/_projekte-landing-page.scss */
 .projekte-ort {
   color: #404040;
   font-weight: 300;
 }
 
 @media (min-width: 569px) {
-  /* line 95, ../sass/sl-components/_projekte-landing-page.scss */
+  /* line 100, ../sass/sl-components/_projekte-landing-page.scss */
   .isotope-filters {
     margin-top: 252px;
     display: -webkit-flex;
@@ -4621,19 +4654,19 @@ ul.nice-menu li.active-trail a:hover {
   }
 }
 @media all and (max-width: 889px) {
-  /* line 114, ../sass/sl-components/_projekte-landing-page.scss */
+  /* line 119, ../sass/sl-components/_projekte-landing-page.scss */
   .isotope-filters a {
     white-space: normal;
     padding-left: 0 !important;
     text-align: left;
   }
 }
-/* line 121, ../sass/sl-components/_projekte-landing-page.scss */
+/* line 126, ../sass/sl-components/_projekte-landing-page.scss */
 .no-flexbox .isotope-filters li {
   display: block;
 }
 
-/* line 129, ../sass/sl-components/_projekte-landing-page.scss */
+/* line 134, ../sass/sl-components/_projekte-landing-page.scss */
 .isotope-button,
 .isotope-button.selected,
 .isotope-button:hover,
@@ -4644,22 +4677,22 @@ ul.nice-menu li.active-trail a:hover {
   text-shadow: none;
 }
 
-/* line 141, ../sass/sl-components/_projekte-landing-page.scss */
+/* line 146, ../sass/sl-components/_projekte-landing-page.scss */
 .isotope-button {
   text-transform: upperase;
 }
-/* line 143, ../sass/sl-components/_projekte-landing-page.scss */
+/* line 148, ../sass/sl-components/_projekte-landing-page.scss */
 .isotope-button:before {
   content: "/// ";
 }
 
-/* line 148, ../sass/sl-components/_projekte-landing-page.scss */
+/* line 153, ../sass/sl-components/_projekte-landing-page.scss */
 .isotope-button.selected {
   color: #404040;
   font-weight: 600;
 }
 
-/* line 153, ../sass/sl-components/_projekte-landing-page.scss */
+/* line 158, ../sass/sl-components/_projekte-landing-page.scss */
 .isotope-button:hover {
   color: #666666;
 }

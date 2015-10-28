@@ -12,11 +12,16 @@
 // @include breakpoint($desktop){
 //     .node-type-projekt.not-logged-in { // when logged in the tabs break the design
 //         .main-content {
+//             display: -webkit-flex;
+//             display: -ms-flexbox;
 //             display: flex;
 //             -webkit-flex-direction: row;
 //             -webkit-flex-direction: row;
-//             flex-direction: row;
-//             align-items: flex-start;
+//             -ms-flex-direction: row;
+//                 flex-direction: row;
+//             -webkit-align-items: flex-start;
+//                 -ms-flex-align: start;
+//                     align-items: flex-start;
 //         }
 //     }
 // }
@@ -37,14 +42,14 @@
 .node-projekt {
     padding-top: 16px;
     padding-top: 1rem;
-    padding-right: 16px;
-    padding-right: 1rem;
+    // padding-right: 16px;
+    // padding-right: 1rem;
 }
 
 .flexslider {
     border: 0;
     border-radius: 0;
-    // box-shadow: none;
+    box-shadow: none;
     margin-bottom: 1.5tem;
     margin-bottom: 24px;
 }
@@ -52,10 +57,16 @@
 .node-projekt h2 {
     margin-top: 0;
     font-weight: 600;
+    line-height: 2rem;
+    line-height: 32px;
 }
 
 .node-projekt .group-left {
     width: 60%;
+}
+
+.beschreibung p { // Beschreibungstext Blocksatz
+    text-align: justify;
 }
 
 .field-name-field-untertitel {

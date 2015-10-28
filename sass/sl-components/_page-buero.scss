@@ -26,8 +26,8 @@
 .node-page {
     padding-top: 16px;
     padding-top: 1rem;
-    padding-right: 16px;
-    padding-right: 1rem;
+    // padding-right: 16px;
+    // padding-right: 1rem;
     margin-bottom: 24px;
     margin-bottom: 1.5rem;
 }
@@ -77,27 +77,35 @@
 
 
 .page-node .view-content {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-
+    // display: -webkit-flex;
+    // display: -ms-flexbox;
+    // display: flex;
+    // -webkit-flex-wrap: wrap;
+    //     -ms-flex-wrap: wrap;
+    //         flex-wrap: wrap;
+    // -webkit-justify-content: space-between;
+    //     -ms-flex-pack: justify;
+    //         justify-content: space-between;
+    margin-top: 10px;
     .views-row {
-        @include breakpoint($tablet) {
-                -webkit-flex: 0 0 33%;
-                    -ms-flex: 0 0 33%;
-                        flex: 0 0 33%;
-            }
+        width: 100%;
+        padding-bottom: 1.5rem;
+        padding-bottom: 24px;
+        // @include breakpoint($tablet) {
+        //         -webkit-flex: 0 0 33%;
+        //             -ms-flex: 0 0 33%;
+        //                 flex: 0 0 33%;
+        //     }
     }
     @include breakpoint($desktop) {
         .views-row {
-            padding-bottom: 1.5rem;
-            padding-bottom: 24px;
+            float: left;
+            width: 32%;
+            margin-left: 1%;
+            &-1, &-4, &-7, &-10, &-13, &-16, &-19 {
+                clear: both;
+                margin-left: 0;
+            }
         }
     }
 }

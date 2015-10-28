@@ -13,7 +13,16 @@
     border-top: 1px dotted black;
 }
 
+.no-flexbox .footer-wrapper {
+        @include breakpoint($desktop) {
+            .block {
+                float: left;
+            }
+    }
+}
+
 .footer-wrapper {
+    @include breakpoint($desktop){    
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -27,6 +36,7 @@
     -webkit-flex-direction: row;
         -ms-flex-direction: row;
             flex-direction: row;
+        }
     
     margin-top: 16px;
     margin-top: 1rem;
@@ -48,3 +58,32 @@
         }
     }
 }
+
+.footer-content {
+    a {
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+// Absolute positioning of footer to get it to the bottom of the page
+
+
+    // #page  {
+    //     min-height: 100%;
+    //     position: relative;
+    // }
+    
+    // #main {
+    //     padding-bottom: 112px; /* Height of the footer */
+    // }
+    
+    // .footer {
+    //    position:absolute;
+    //    z-index: 1100;
+    //    bottom:0;
+    //    width:100%;
+    //    height:112px;   /* Height of the footer */
+    // }
