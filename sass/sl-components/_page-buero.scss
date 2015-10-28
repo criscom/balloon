@@ -28,8 +28,8 @@
     padding-top: 1rem;
     padding-right: 16px;
     padding-right: 1rem;
-    margin-bottom: 32px;
-    margin-bottom: 2rem;
+    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
 }
 
 .two-col {
@@ -77,14 +77,27 @@
 
 
 .page-node .view-content {
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+
     .views-row {
-        flex: 0 0 100%;
+        @include breakpoint($tablet) {
+                -webkit-flex: 0 0 33%;
+                    -ms-flex: 0 0 33%;
+                        flex: 0 0 33%;
+            }
     }
     @include breakpoint($desktop) {
         .views-row {
-            flex: 1;
+            padding-bottom: 1.5rem;
+            padding-bottom: 24px;
         }
     }
 }

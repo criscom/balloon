@@ -38,7 +38,14 @@ body
 
     text-transform: uppercase;
 
-    flex: 1 16px;
+
+    -webkit-flex: 1 16px;
+
+
+        -ms-flex: 1 16px;
+
+
+            flex: 1 16px;
 
 }
 

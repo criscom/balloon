@@ -12,7 +12,9 @@
 .main-navigation {
     // display: block;
     padding: 0;
-    flex-basis: 70%;
+    -ms-flex-preferred-size: 70%;
+        -webkit-flex-basis: 70%;
+            flex-basis: 70%;
 }
 
 #block-menu-block-1 ul.menu,
@@ -21,10 +23,19 @@ ul.nice-menu
     // margin-top: 50px;
   padding-left: 0;
   margin: 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+
   padding-right: 1rem;
   width: 100%;
     // margin-left: $nav-margin;
@@ -44,7 +55,9 @@ ul.nice-menu li
     }
     &.last {
         padding-right: 0;
-        align-self: flex-end;
+        -ms-flex-item-align: end;
+            -webkit-align-self: flex-end;
+                align-self: flex-end;
     }
     
     a
@@ -54,10 +67,10 @@ ul.nice-menu li
         font-weight: 600;
         font-style: italic;
         @extend %base-font-size;
-       &:hover {
-        color: lighten($font-color, 15%);
-        text-decoration: underline;
-       }
+        &:hover {
+          color: lighten($font-color, 15%);
+          text-decoration: underline;
+        }
        &:visited {
         color: $font-color;
        }
@@ -81,7 +94,7 @@ ul.nice-menu li
 }
 
 .menu__item.is-leaf {
-        list-style: none;
+    list-style: none;
     list-style-image: none;
     list-style-type: none;
 }

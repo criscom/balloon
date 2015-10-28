@@ -13,6 +13,8 @@
 //     .node-type-projekt.not-logged-in { // when logged in the tabs break the design
 //         .main-content {
 //             display: flex;
+//             -webkit-flex-direction: row;
+//             -webkit-flex-direction: row;
 //             flex-direction: row;
 //             align-items: flex-start;
 //         }

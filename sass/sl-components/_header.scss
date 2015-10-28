@@ -20,21 +20,33 @@
 }
 
 .header-wrapper {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
+
   display: -webkit-flex;
+
+  display: -ms-flexbox;
+
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 2rem;
 }
 
 .logo-wrapper {
     @include breakpoint($desktop){
-        flex-basis: 25%;
-        padding-right: 1rem;
+      -ms-flex-preferred-size: 25%;
+          -webkit-flex-basis: 25%;
+              flex-basis: 25%;
+      padding-right: 1rem;
     }
 
 }
@@ -47,7 +59,9 @@
 
     @include breakpoint($desktop)
     {
-        flex-basis: 5%;
+      -ms-flex-preferred-size: 5%;
+          -webkit-flex-basis: 5%;
+              flex-basis: 5%;
     }
 }
 
