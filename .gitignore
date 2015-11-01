@@ -1,0 +1,3 @@
+# remove all files in a directory
+.sass-cache/**
+css/**
