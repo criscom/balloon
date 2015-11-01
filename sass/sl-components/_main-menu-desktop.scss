@@ -67,7 +67,6 @@ ul.nice-menu li
         text-decoration: none;
         text-transform: uppercase;
         font-weight: 600;
-        font-style: italic;
         color: lighten($font-color, 15%);
         @extend %base-font-size;
         &:hover {
