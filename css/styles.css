@@ -4494,7 +4494,7 @@ ul.nice-menu li.active-trail a:hover {
 }
 
 /* line 95, ../sass/sl-components/_projekt-detail.scss */
-.field-name-field-projekt-ort p, .field-name-field-projekt-status p, .field-name-field-projekt-bauherr p, .field-name-field-projekt-wettbewerb p, .field-name-field-projekt-team p {
+.field-name-field-projekt-ort p, .field-name-field-projekt-status p, .field-name-field-projekt-bauherr p, .field-name-field-projekt-wettbewerb p, .field-name-field-projekt-team p, .field-name-field-projekt-planungszeit p, .field-name-field-projekt-hardfacts p, .field-name-field-projekt-arge p {
   margin-top: 0;
 }
 
