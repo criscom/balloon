@@ -3320,11 +3320,11 @@ body, [role='main'] p,
 [role='main'] ul li,
 [role='main'] ol li, #block-menu-block-1 ul.menu li a,
 ul.nice-menu li a {
-  font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 16px;
+  font-size: 1rem;
 }
 
-/* line 12, ../sass/library/_placeholders.scss */
+/* line 14, ../sass/library/_placeholders.scss */
 body, [role='main'] p,
 [role='main'] ul li,
 [role='main'] ol li, h1 {
@@ -4059,7 +4059,6 @@ ul.nice-menu li a {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 600;
-  font-style: italic;
   color: #666666;
 }
 /* line 73, ../sass/sl-components/_main-menu-desktop.scss */
@@ -4494,7 +4493,7 @@ ul.nice-menu li.active-trail a:hover {
 }
 
 /* line 95, ../sass/sl-components/_projekt-detail.scss */
-.field-name-field-projekt-ort p, .field-name-field-projekt-status p, .field-name-field-projekt-bauherr p, .field-name-field-projekt-wettbewerb p, .field-name-field-projekt-team p, .field-name-field-projekt-planungszeit p, .field-name-field-projekt-hardfacts p, .field-name-field-projekt-arge p {
+.field-name-field-projekt-ort p, .field-name-field-projekt-status p, .field-name-field-projekt-bauherr p, .field-name-field-projekt-wettbewerb p, .field-name-field-projekt-team p, .field-name-field-projekt-planungszeit p, .field-name-field-projekt-hardfacts p, .field-name-field-projekt-arge p, .field-name-field-projekt-abbildungen p {
   margin-top: 0;
 }
 
@@ -4680,10 +4679,6 @@ ul.nice-menu li.active-trail a:hover {
 /* line 146, ../sass/sl-components/_projekte-landing-page.scss */
 .isotope-button {
   text-transform: upperase;
-}
-/* line 148, ../sass/sl-components/_projekte-landing-page.scss */
-.isotope-button:before {
-  content: "/// ";
 }
 
 /* line 153, ../sass/sl-components/_projekte-landing-page.scss */
