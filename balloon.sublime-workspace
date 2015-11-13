@@ -4,105 +4,333 @@
 		"selected_items":
 		[
 			[
-				"te",
-				"text-justify: "
-			],
-			[
-				"teal",
-				"text-align: "
-			],
-			[
-				"tex",
-				"text-decoration: "
-			],
-			[
-				"r",
-				"right"
-			],
-			[
-				"ma",
-				"margin: "
+				"fo",
+				"font-size"
 			],
 			[
 				"m",
-				"margin: "
+				"margin-bottom"
 			],
 			[
-				"no",
-				"none"
+				"back",
+				"background-image"
 			],
 			[
-				"w",
-				"width: "
-			],
-			[
-				"ms-flex",
-				"ms-flex-direction"
-			],
-			[
-				"c",
-				"center"
-			],
-			[
-				"wh",
-				"white-space: "
-			],
-			[
-				"n",
-				"normal"
-			],
-			[
-				"fs",
-				"font-size: "
-			],
-			[
-				"fo",
-				"font-size: "
-			],
-			[
-				"inl",
-				"inline-block"
-			],
-			[
-				"fl",
-				"float: "
-			],
-			[
-				"alig",
-				"align-items: "
-			],
-			[
-				"flex-",
-				"flex-direction: "
+				"tex",
+				"text-align"
 			],
 			[
 				"fon",
-				"font-weight: "
+				"font-weight"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"b",
+				"bottom"
+			],
+			[
+				"bordercol",
+				"border-color"
+			],
+			[
+				"l",
+				"line-height"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"font",
+				"font-style"
+			],
+			[
+				"f",
+				"font-variant"
+			],
+			[
+				"te",
+				"text-decoration"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"t",
+				"text-align"
+			],
+			[
+				"bcol",
+				"background-color"
+			],
+			[
+				"bco",
+				"background-color"
+			],
+			[
+				"tab",
+				"table"
 			],
 			[
 				"i",
 				"italic"
 			],
 			[
-				"text-",
-				"text-decoration: "
+				"p",
+				"padding"
+			],
+			[
+				"baco",
+				"background-color"
+			],
+			[
+				"bordr",
+				"border-radius"
+			],
+			[
+				"zen-g",
+				"zen-grid-width"
+			],
+			[
+				"c",
+				"clear"
+			],
+			[
+				"max-",
+				"max-width"
+			],
+			[
+				"clas",
+				"classes"
+			],
+			[
+				"tra",
+				"transitionSpeed"
+			],
+			[
+				"borderc",
+				"border-color"
+			],
+			[
+				"rgb",
+				"rgba()"
+			],
+			[
+				"rg",
+				"rgba()"
+			],
+			[
+				"bor",
+				"bordercolor"
+			],
+			[
+				"bo",
+				"bordercolor"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"ro",
+				"royalSlider"
+			],
+			[
+				"inl",
+				"inline"
+			],
+			[
+				"list",
+				"list-style-type"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"border",
+				"border-left"
+			],
+			[
+				"user",
+				"username"
+			],
+			[
+				"dat",
+				"database"
+			],
+			[
+				"last",
+				"last-child"
+			],
+			[
+				"li",
+				"line-height"
+			],
+			[
+				"mx",
+				"max-width"
+			],
+			[
+				"mato",
+				"margin-bottom"
+			],
+			[
+				"ma",
+				"margin"
 			],
 			[
 				"max",
-				"max-width: "
+				"max-width"
 			],
 			[
-				"he",
-				"header-color"
+				"lis",
+				"list-style-image"
 			],
 			[
-				"margin",
-				"margin-bottom"
+				"le",
+				"letter-spacing"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"marg",
+				"margin-right"
+			],
+			[
+				"75",
+				"75rem"
+			],
+			[
+				"fs",
+				"font-size"
+			],
+			[
+				"mi",
+				"min-height"
+			],
+			[
+				"fi",
+				"first-child"
+			],
+			[
+				"gray",
+				"grayborder"
+			],
+			[
+				"s",
+				"solid"
+			],
+			[
+				"list-",
+				"list-style-type"
+			],
+			[
+				"fos",
+				"font-size"
+			],
+			[
+				"tex-",
+				"text-indent"
+			],
+			[
+				"bg",
+				"background"
+			],
+			[
+				"backc",
+				"background-color"
+			],
+			[
+				"pre",
+				"pre-wrap"
+			],
+			[
+				"tabl",
+				"table-cell"
+			],
+			[
+				"color",
+				"color1"
+			],
+			[
+				"re",
+				"repeat-x"
+			],
+			[
+				"bod",
+				"border"
+			],
+			[
+				"bord",
+				"border"
+			],
+			[
+				"slid",
+				"slider-icons"
+			],
+			[
+				"borderr",
+				"border-radius"
+			],
+			[
+				"cl",
+				"clear"
+			],
+			[
+				"a",
+				"after"
+			],
+			[
+				"the",
+				"thead	Tag"
+			],
+			[
+				"colo",
+				"color2"
+			],
+			[
+				"col",
+				"color2"
+			],
+			[
+				"im",
+				"important"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"d",
+				"display"
+			],
+			[
+				"w",
+				"width"
 			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "sass/sl-components/_projekt-detail.scss",
+			"settings":
+			{
+				"buffer_size": 2512,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -111,39 +339,72 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 392.0,
-		"last_filter": "",
+		"height": 347.0,
+		"last_filter": "gist",
 		"selected_items":
 		[
 			[
-				"package",
-				"Package Control: Remove Package"
+				"gist",
+				"Gist: Open Gist"
 			],
 			[
-				"auto",
-				"Autoprefix CSS"
+				"git",
+				"Gist: Update File"
 			],
 			[
 				"install",
+				"Package Control: Advanced Install Package"
+			],
+			[
+				"instal",
 				"Package Control: Install Package"
 			],
 			[
-				"insta",
+				"Package Control: ",
+				"Package Control: Enable Package"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"pack",
+				"Preferences: Browse Packages"
+			],
+			[
+				"gi",
+				"Gist: Insert Gist"
+			],
+			[
+				"packinst",
 				"Package Control: Install Package"
 			],
 			[
-				"sftp",
-				"SFTP: Map to Remote…"
+				"packcontrolin",
+				"Package Control: Install Package"
+			],
+			[
+				"packconinst",
+				"Package Control: Install Package"
+			],
+			[
+				"packin",
+				"Package Control: Install Package"
+			],
+			[
+				"packins",
+				"Package Control: Install Package"
 			]
 		],
-		"width": 449.0
+		"width": 593.0
 	},
 	"console":
 	{
-		"height": 126.0,
+		"height": 547.0,
 		"history":
 		[
-			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
 		]
 	},
 	"distraction_free":
@@ -157,44 +418,140 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/criscom/Documents/github/balloon"
+		"/Applications/MAMP/htdocs/drupalmaster2015-balloon/sites/all/themes/master2015",
+		"/Applications/MAMP/htdocs/drupalmaster2015-balloon/sites/all/themes/master2015/sass",
+		"/Applications/MAMP/htdocs/drupalmaster2015-balloon/sites/all/themes/master2015/sass/sl-components"
 	],
 	"file_history":
 	[
-		"/Users/criscom/Library/Application Support/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings",
-		"/Users/criscom/Documents/github/balloon/css/styles.css.map",
-		"/Users/criscom/Documents/github/balloon/sass/sl-components/_footer.scss",
-		"/Users/cpotzinger/Documents/github/dev-resch-consulting/sass/library/_placeholders.scss",
-		"/Users/cpotzinger/Documents/github/dev-resch-consulting/css/styles.css.map",
-		"/Users/cpotzinger/Documents/github/dev-resch-consulting/css/sftp-config.json",
-		"/Users/cpotzinger/Documents/github/dev-resch-consulting/sass/sl-components/_fonts.scss",
-		"/Users/cpotzinger/Documents/github/dev-resch-consulting/sass/sl-components/_zitate.scss",
-		"/Users/cpotzinger/Documents/github/dev-resch-consulting/master2015.info",
-		"/Users/cpotzinger/Documents/github/dev-resch-consulting/sass/sl-components/_header-text.scss",
-		"/Users/cpotzinger/Documents/github/dev-resch-consulting/sass/sl-components/_footer.scss",
-		"/Users/cpotzinger/Documents/github/dev-resch-consulting/sass/sl-components/_default.scss",
-		"/Users/cpotzinger/Documents/github/dev-resch-consulting/sass/sl-components/_main-menu-desktop.scss",
-		"/Users/cpotzinger/Documents/github/dev-resch-consulting/sass/sl-components/_secondary-menu.scss",
-		"/Users/cpotzinger/Documents/github/dev-resch-consulting/sass/sl-components/_header.scss",
-		"/Users/cpotzinger/Documents/github/dev-resch-consulting/css/styles.css",
-		"/Users/cpotzinger/Documents/github/dev-resch-consulting/sass/layouts/_responsive.scss",
-		"/Users/cpotzinger/Documents/github/dev-resch-consulting/sass/_variables.scss",
-		"/Users/cpotzinger/Documents/github/dev-resch-consulting/sass/sl-components/_main-menu-mobile.scss",
-		"/Users/cpotzinger/Documents/github/dev-ifz/css/styles.css",
-		"/Users/cpotzinger/Documents/github/dev-ifz/css/styles.css.map",
-		"/Users/cpotzinger/Documents/github/morocutti.at/css/styles.css.map",
-		"/Users/cpotzinger/Documents/github/morocutti.at/.sass-cache/239401beff54ded094ab77d3b10001dfa5de4603/_unternehmensberatung.scssc",
-		"/Users/cpotzinger/Documents/github/morocutti.at/node_modules/gulp-sass/node_modules/node-sass/node_modules/npmconf/node_modules/uid-number/uid-number.js",
-		"/Users/cpotzinger/Documents/github/morocutti.at/node_modules/gulp-uglify/node_modules/.bin/uglifyjs",
-		"/Users/cpotzinger/Documents/github/morocutti.at/css/styles.css",
-		"/Users/cpotzinger/Documents/github/morocutti.at/node_modules/gulp/index.js",
-		"/Users/cpotzinger/Documents/github/morocutti.at/node_modules/gulp/node_modules/gulp-util/lib/isNull.js",
-		"/Users/cpotzinger/Documents/github/morocutti.at/node_modules/gulp-sass/node_modules/node-sass/scripts/install.js",
-		"/Users/cpotzinger/Library/Application Support/Sublime Text 3/Packages/SFTP/SFTP.sublime-settings",
-		"/Users/cpotzinger/Dropbox/sunlime-gmbh/sunlime-it-gmb-signature-christoph",
+		"/var/folders/qg/mzbjmj_97nq15tdwn9s_b52h0000gn/T/manpower-129-taxonomy-term-listings.md",
+		"/var/folders/qg/mzbjmj_97nq15tdwn9s_b52h0000gn/T/mp-taxonomy-topsearchgroups-ids.md",
+		"/var/folders/qg/mzbjmj_97nq15tdwn9s_b52h0000gn/T/mp-bmw-job-ads-new-slogan.md",
+		"/var/folders/qg/mzbjmj_97nq15tdwn9s_b52h0000gn/T/gistfile1.txt",
+		"/Applications/MAMP/htdocs/manpower.at/css/sunlime.css.map",
+		"/Applications/MAMP/htdocs/manpower.at/css/sunlime.css",
+		"/Applications/MAMP/htdocs/manpower.at/.gitignore",
+		"/Users/cpotzinger/Library/Application Support/Sublime Text 3/Packages/User/SassBeautify.sublime-settings",
+		"/Users/cpotzinger/Library/Application Support/Sublime Text 3/Packages/SassBeautify/SassBeautify.sublime-settings",
+		"/Applications/MAMP/htdocs/manpower.at/.sass-cache/b4fd1575a30d18da9e8fb7e55eb0418fb77e936d/_blocks.scssc",
+		"/Users/cpotzinger/Library/Application Support/Sublime Text 3/Packages/User/SideBarEnhancements/Open With/Side Bar.sublime-menu",
+		"/Applications/MAMP/htdocs/manpower.at/sass/sl-components/_bmw-search-block.scss",
+		"/Applications/MAMP/htdocs/drupalmaster2015-zjp.at/sass/sl-components/_partner-landing-page.scss",
+		"/Applications/MAMP/htdocs/drupalmaster2015-zjp.at/.sass-cache/67599a6cec98cbce9ebd31f988f5d47155c9d23c/_projekte-landing-page.scssc",
+		"/Applications/MAMP/htdocs/drupalmaster2015-zjp.at/sass/library/_box_sizing.scss",
+		"/Applications/MAMP/htdocs/drupalmaster2015-zjp.at/sass/layouts/_responsive.scss",
+		"/Applications/MAMP/htdocs/drupalmaster2015-zjp.at/sass/components/_flexslider.scss",
+		"/Applications/MAMP/htdocs/drupalmaster2015-zjp.at/sass/sl-components/_front.scss",
+		"/Applications/MAMP/htdocs/drupalmaster2015-zjp.at/sass/sl-components/_default.scss",
+		"/Applications/MAMP/htdocs/drupalmaster2015-zjp.at/sass/sl-components/_footer.scss",
+		"/Applications/MAMP/htdocs/drupalmaster2015-zjp.at/css/styles.css.map",
+		"/Applications/MAMP/htdocs/drupalmaster2015-zjp.at/sass/sl-components/_main-menu-desktop.scss",
+		"/Applications/MAMP/htdocs/egolife/sites/all/themes/master/sftp-config-alt.json",
+		"/Applications/MAMP/htdocs/egolife/sites/all/themes/master/sftp-config.json",
+		"/Applications/MAMP/htdocs/egolife/sites/all/themes/master/.gitignore",
+		"/Applications/MAMP/htdocs/egolife/sites/all/themes/master/css/styles.css.map",
+		"/Users/cpotzinger/Library/Caches/Cleanup At Startup/Transmit/AEF2AE54-9A14-4498-A8F8-E88966BC2C26/ifz.css",
+		"/Users/cpotzinger/Documents/Einstern/PROJEKTE/Aktive Projekte/paperwhite-studios pilcrow-studios.com/2014-04-29-antonzimmermann/neue-bestellung-gast.html",
+		"/Users/cpotzinger/Documents/Einstern/PROJEKTE/Aktive Projekte/paperwhite-studios pilcrow-studios.com/2014-04-29-antonzimmermann/neue-bestellung.html",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/sites/all/themes/nabe_zen_2014/sass/_header.scss",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/sites/all/themes/nabe_zen_2014/sass/_icons.scss",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/sites/all/modules/date/date_elements.inc",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/includes/date.inc",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/sites/all/themes/nabe_zen_2014/navicon-leiste.html",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/sites/all/libraries/ckeditor/styles.js",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/modules/simpletest/tests/session_test.info",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/includes/session.inc",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/sites/all/themes/nabe_zen_2014/templates/views-view--news--block-2.tpl.php",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/sites/all/themes/nabe_zen_2014/.sass-cache/843b26b936013727fbab7f4b568295ff0079a4d3/_newsletter-block.scssc",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/sites/all/themes/nabe_zen_2014/.sass-cache/843b26b936013727fbab7f4b568295ff0079a4d3/_rsnews.scssc",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/sites/all/themes/nabe_zen_2014/.sass-cache/843b26b936013727fbab7f4b568295ff0079a4d3/_menus.scssc",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/sites/default/default.settings copy.php",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/sites/all/modules/ds/modules/ds_extras/ds_extras.ds_fields_info.inc",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/includes/entity.inc",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/sites/all/modules/entity/tests/entity_feature.info",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/sites/default/files/Beschreibung TCO-Tool fÃ¼r PCs.doc",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/sites/all/themes/nabe_zen_2014/templates/html.tpl.php",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/sites/all/themes/nabe_zen_2014/sass/_placeholders.scss",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/sites/all/themes/nabe_zen_2014/sass/_menus.scss",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/sites/all/themes/nabe_zen_2014/sass/_default.scss",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/sites/all/themes/nabe_zen_2014/.sass-cache/843b26b936013727fbab7f4b568295ff0079a4d3/_default.scssc",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/sites/all/themes/nabe_zen_2014/.sass-cache/843b26b936013727fbab7f4b568295ff0079a4d3/_init.scssc",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/sites/all/themes/nabe_zen_2014/templates/views-view-unformatted--news--block-2.tpl.php",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/sites/all/themes/nabe_zen_2014/nabe_zen_2014.info",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/sites/all/themes/nabe_zen_2014/sass/_init.scss",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/sites/all/themes/nabe_zen_2014/sass/bootstrap/_buttons.scss",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/sites/all/themes/nabe_zen_2014/sass/mixins/_buttons.scss",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/sites/all/themes/nabe_zen_2014/sass/_fonts.scss",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/sites/all/themes/nabe_zen_2014/sass/_accordion-tools.scss",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/sites/all/themes/nabe_zen_2014/sass/components/_misc.scss",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/sites/all/themes/nabe_zen_2014/sass/_node.scss",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/sites/all/themes/nabe_zen_2014/sass/styles.scss",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/sites/all/themes/nabe_zen_2014/sass/bootstrap/_mixins.scss",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/sites/all/themes/nabe_zen_2014/templates/!!!views-view-field--field-slideshow-home-image.tpl.php",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/sites/all/themes/nabe_zen_2014/templates/\nviews-view--tools-links-uebersicht--block-1.tpl.php",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/sites/all/themes/nabe_zen_2014/templates/views-view--tools-links-uebersicht--block-1.tpl.php",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/sites/all/themes/omega/omega/includes/scripts.inc",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/sites/all/themes/nabe_zen_2014/js/script.js",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/sites/all/modules/views/help/style-comment-rss.html",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/sites/all/themes/nabe_zen_2014/sass/layouts/_responsive.scss",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/sites/all/themes/omega/ohm/sass/ohm.styles.scss",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/sites/all/libraries/ckeditor/_source/skins/kama/icons.css",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/sites/all/modules/ctools/plugins/content_types/page/page_feed_icons.inc",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/sites/all/modules/advanced_help/help-icon.css",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/sites/all/themes/nabe_zen_2014/icon-leiste-no-images.html",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/sites/all/themes/nabe_zen_2014/css/layouts/_responsive.css",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/sites/all/themes/nabe_zen_2014/.sass-cache/979669a4feb82426d885fb35bb10ca783e6b472b/_responsive.scssc",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/includes/file.inc",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/modules/filter/tests/filter.url-output.txt",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/sites/all/modules/fontyourface/fontyourface.info",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/sites/default/files/fontyourface/font.css",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/sites/default/files/BÃ¼romaterial_naBe_Kernkriterien.doc",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/sites/all/themes/omega/ohm/sass/components/blocks/_nav-bar.scss",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/modules/node/tests/node_access_test.info",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/modules/node/node.css",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/index.php",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/sites/default/files/js/js_9ShGYTf43nOBrCLvgNig-glXmLXAGHN7r-iNgOJScUs.js",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/sites/all/modules/advanced_help/help/ini-file.html",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/modules/simpletest/tests/common_test_info.txt",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/themes/garland/style.css",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/sites/default/!settings-D6.php",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/sites/all/themes/nabe_zen_2014/css/styles.css",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/sites/default/files/.htaccess",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/sites/default/settings.php",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/sites/all/themes/nabe_zen_2014/iconleiste.html",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/sites/all/themes/omega/ohm/package.json",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/sites/all/modules/panels/templates/panels-add-content-link.tpl.php",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/sites/all/modules/ctools/help/plugins-api.html",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/includes/pager.inc",
 		"/Users/cpotzinger/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/Users/cpotzinger/Library/Application Support/Sublime Text 3/Packages/User/Plain text.sublime-settings",
-		"/Users/cpotzinger/Library/Caches/Cleanup At Startup/Transmit/BE1686AF-5AC9-4561-B1E9-4A9477955022/sites.php"
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/robots.txt",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/sites/all/modules/panels/plugins/display_renderers/panels_renderer_editor.class.php",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/themes/seven/reset.css",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/sites/all/themes/zen/js/respond.js",
+		"/Applications/MAMP/htdocs/nachhaltigebeschaffung_20140901/sites/all/themes/nabe_zen_2014/sass/_gabersdorf.scss",
+		"/Applications/MAMP/htdocs/pedersenandpartners-20140901/sites/all/themes/einstern_2014/css/custom.css",
+		"/Applications/MAMP/htdocs/pedersenandpartners-RELAUNCH-20140715/sass/_placeholders.scss",
+		"/Applications/MAMP/htdocs/pedersenandpartners-RELAUNCH-20140715/sass/_teamviews-minwidth0-767.scss",
+		"/Applications/MAMP/htdocs/pedersenandpartners-RELAUNCH-20140715/sass/_minwidth480-567.scss",
+		"/Applications/MAMP/htdocs/pedersenandpartners-RELAUNCH-20140715/20140812diff.txt",
+		"/Applications/MAMP/htdocs/pedersenandpartners-RELAUNCH-20140715/sass/_minwidth980-1199.scss",
+		"/Applications/MAMP/htdocs/pedersenandpartners-RELAUNCH-20140715/css/custom.css",
+		"/Applications/MAMP/htdocs/pedersenandpartners-RELAUNCH-20140715/sass/_minwidth0-480.scss",
+		"/Applications/MAMP/htdocs/pedersenandpartners-RELAUNCH-20140715/sass/_teamview-minwidth0-767.scss",
+		"/Applications/MAMP/htdocs/pedersenandpartners-RELAUNCH-20140715/sass/_minwidth569-767.scss",
+		"/Applications/MAMP/htdocs/pedersenandpartners-RELAUNCH-20140715/sass/_minwidth569-767px.scss",
+		"/Applications/MAMP/htdocs/pedersenandpartners-RELAUNCH-20140715/sass/_minwidth569-767px",
+		"/Applications/MAMP/htdocs/pedersenandpartners-RELAUNCH-20140715/html/submit-your-cv-follow-us-inline-buttons.html",
+		"/Applications/MAMP/htdocs/pedersenandpartners-RELAUNCH-20140715/sass/_init.scss",
+		"/Applications/MAMP/htdocs/pedersenandpartners-RELAUNCH-20140715/html/frontpage-slider-section-consultant-latest-news-newsletter-after-changes.html",
+		"/Applications/MAMP/htdocs/pedersenandpartners-RELAUNCH-20140715/html/frontpage-slider-section-latest-news2-consultant-before-changes.html",
+		"/Applications/MAMP/htdocs/pedersenandpartners-RELAUNCH-20140715/sass/custom.scss",
+		"/Applications/MAMP/htdocs/pedersenandpartners-RELAUNCH-20140715/.gitignore",
+		"/Applications/MAMP/htdocs/pedersenandpartners-RELAUNCH-20140715/sass/_normalize.scss",
+		"/Users/cpotzinger/Library/Caches/Cleanup At Startup/Transmit/F892947A-15AB-4BA1-B88B-CF451F6A15BA/sites.php",
+		"/Users/cpotzinger/Library/Caches/Cleanup At Startup/Transmit/DE6198AE-270F-48E3-9A11-D01349CB3C2A/contactuslandingpage.css",
+		"/Users/cpotzinger/Library/Caches/Cleanup At Startup/Transmit/D6979A68-F7B0-45CA-9B20-3E4552662C22/template.js",
+		"/Applications/MAMP/htdocs/pedersenandpartners-RELAUNCH-20140715/html/dropdown-menu.html"
 	],
 	"find":
 	{
@@ -205,9 +562,6 @@
 		"height": 93.0,
 		"where_history":
 		[
-			"",
-			"/Users/criscom/Documents/github/balloon/sass/sl-components,/Users/criscom/Documents/github/balloon/sass/sl-components",
-			"/Users/criscom/Documents/github/balloon/sass/sl-components",
 			""
 		]
 	},
@@ -216,26 +570,134 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"41",
-			"criscom",
-			"vertical-align",
-			"-webkit",
-			"-webkit-flex-wrap: wrap;",
-			"justify-content: space-between;",
-			"flex-direction: row;",
-			"display: flex;",
-			"350",
-			"280",
-			"(Release notes)",
-			"(Versionshinweise)",
-			"(Release notes)",
-			".header",
-			"breakpoint",
-			" \n",
-			"left",
-			"ul.nice-menu>ul",
-			".front",
-			";"
+			"0",
+			"5",
+			"4",
+			"[2]",
+			"[1]",
+			"[0]",
+			"title",
+			"BMW",
+			"BMW15",
+			"BMW",
+			"top",
+			".pager",
+			"10",
+			"id=\"page-title\"",
+			"$view->human_name",
+			"$view->name",
+			"items_per_page",
+			"10",
+			"pager",
+			"field_job_region",
+			"$teaser_location",
+			"$teaser_terms",
+			".block--manpower-custom-manpower-custom-save-search",
+			"float: left; margin-right: 20px;",
+			".block--manpower-custom-manpower-custom-save-search",
+			";\n",
+			"margin: 10px 0;",
+			"margin",
+			"color: $bmwfarbe;",
+			"line-height: 2.5em;",
+			"margin: 10px 0;",
+			"br",
+			"bmw",
+			"Jobtitel",
+			"Jobtitel, Branche",
+			"Standort",
+			"body.page-search-job",
+			"body.page-search-job-bmw",
+			"body.page-search-jobs-bmw",
+			"body.page-search-job",
+			"page-search-jobs-bmw",
+			"page-search-job",
+			"width: 55.7%;",
+			"body.page-search-job",
+			"library",
+			"body.page-search-job",
+			"<p>-",
+			"li:not(:first-child)",
+			"!important",
+			"boxes",
+			"padding",
+			"80",
+			".isotope-button.selected",
+			"51",
+			"186",
+			"161",
+			"186",
+			"solid $box",
+			"$border",
+			"border",
+			"221",
+			"box",
+			"width: 49%;",
+			"Ausbildung",
+			"Top Jobs",
+			"Ausbildungen",
+			"front",
+			"slider",
+			"front",
+			"form",
+			"1.75rem",
+			"Reinigung",
+			"glyphicons",
+			"Roboto-Black-webfont",
+			"#mc_embed_signup .button",
+			"@include no-bullets;",
+			"<a href=\"",
+			"& {",
+			"Gartenbau",
+			"#navigation",
+			"@extend .navicons-",
+			"navicons-",
+			".icons",
+			"icons",
+			"beschaffungsgruppen",
+			"1px dotted $bordercolor",
+			": $default-border",
+			"false",
+			"border-",
+			"false",
+			"btn-warning-border",
+			"$border",
+			"hover",
+			"button",
+			"brand-warning",
+			"page-node-221",
+			"header",
+			"top",
+			"margin",
+			"solid",
+			"#ccc",
+			"icon",
+			"body-page-node-1",
+			"span",
+			"icon",
+			".png\"",
+			"><img",
+			"Fahrzeuge",
+			"Tiefbau",
+			"inline",
+			"inline-none",
+			"</a><a",
+			"</a></span>",
+			"none\"><a",
+			"</span><span",
+			"http://www.nachhaltigebeschaffung.at",
+			"news",
+			".field-name-body",
+			".block-pedersenandpartners-mobile-navigation",
+			"practice group",
+			"footer",
+			"iframe",
+			"services",
+			"newsletter",
+			"news",
+			"body.node-type-offices .view-office-team-members .views-row",
+			"		// .views-row-3,\n		// .views-row-6,\n		// .views-row-9,\n		// .views-row-12,\n		// .views-row-15 {\n		// 	margin-right: 0;\n		// }",
+			"margin-right: 2%;"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -243,8 +705,9 @@
 		"regex": false,
 		"replace_history":
 		[
-			"-webkit-justify-content: space-between;\njustify-content: space-between;\nflex-direction: row;",
-			"-webkit-flex-direction: row;\nflex-direction: row;"
+			"page-search-job-bmw",
+			"$border",
+			"</td><td>"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -255,8 +718,45 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "sass/sl-components/_projekt-detail.scss",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 2512,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"WordCountShouldRun": true,
+							"WordCountSyntax": "scss",
+							"color_scheme": "Packages/User/Color Highlighter/themes/Solarized (Light).tmTheme",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1205.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -317,16 +817,124 @@
 		"selected_items":
 		[
 			[
-				"conf",
-				"config.rb"
+				"front",
+				"sass/sl-components/_front.scss"
 			],
 			[
-				"scri",
-				"js/script.js"
+				"footer",
+				"sass/sl-components/_footer.scss"
 			],
 			[
-				"unter",
-				"sass/sl-components/_unternehmensberatung.scss"
+				"projland",
+				"sass/sl-components/_projekte-landing-page.scss"
+			],
+			[
+				"proje",
+				".sass-cache/67599a6cec98cbce9ebd31f988f5d47155c9d23c/_projekte-landing-page.scssc"
+			],
+			[
+				"proj",
+				"sass/sl-components/_projekte-detail.scss"
+			],
+			[
+				"news",
+				"sass/sl-components/_news-landing-page.scss"
+			],
+			[
+				"responsive.scss",
+				"sass/layouts/_responsive.scss"
+			],
+			[
+				"",
+				"sass/_variables.scss"
+			],
+			[
+				"respon",
+				"css/layouts/responsive.css"
+			],
+			[
+				"default",
+				"sites/all/themes/nabe_zen_2014/sass/_default.scss"
+			],
+			[
+				"styles.css",
+				"sites/all/themes/nabe_zen_2014/css/styles.css"
+			],
+			[
+				"default.css",
+				"sites/all/themes/nabe_zen_2014/sass/_default.scss"
+			],
+			[
+				"scripts",
+				"sites/all/themes/nabe_zen_2014/js/script.js"
+			],
+			[
+				"_icon.scss",
+				"sites/all/libraries/ckeditor/_source/skins/kama/icons.css"
+			],
+			[
+				"_respo",
+				"sites/all/themes/nabe_zen_2014/sass/layouts/_responsive.scss"
+			],
+			[
+				"_fon",
+				"sites/all/themes/nabe_zen_2014/sass/_fonts.scss"
+			],
+			[
+				"nabe_zen",
+				"sites/all/themes/nabe_zen_2014/nabe_zen_2014.info"
+			],
+			[
+				"styles",
+				"sites/all/themes/nabe_zen_2014/sass/styles.scss"
+			],
+			[
+				"_res",
+				"sites/all/themes/nabe_zen_2014/sass/layouts/_responsive.scss"
+			],
+			[
+				"def",
+				"sass/_default.scss"
+			],
+			[
+				"1200",
+				"sass/_minwidth1200.scss"
+			],
+			[
+				"ini",
+				"sass/_init.scss"
+			],
+			[
+				"de",
+				"sass/_default.scss"
+			],
+			[
+				"cus",
+				"sass/_custom.scss"
+			],
+			[
+				"html",
+				"index.html"
+			],
+			[
+				"cu",
+				"sass/_custom.scss"
+			],
+			[
+				"in",
+				"sass/_init.scss"
+			],
+			[
+				"s",
+				"private/templates/css/styles.css"
+			],
+			[
+				"i",
+				"private/templates/sass/_init.scss"
+			],
+			[
+				"styl",
+				"private/templates/sass/styles.scss"
 			]
 		],
 		"width": 0.0
@@ -357,7 +965,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 263.0,
+	"side_bar_width": 444.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
