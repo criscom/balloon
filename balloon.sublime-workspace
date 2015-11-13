@@ -1,0 +1,365 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"te",
+				"text-justify: "
+			],
+			[
+				"teal",
+				"text-align: "
+			],
+			[
+				"tex",
+				"text-decoration: "
+			],
+			[
+				"r",
+				"right"
+			],
+			[
+				"ma",
+				"margin: "
+			],
+			[
+				"m",
+				"margin: "
+			],
+			[
+				"no",
+				"none"
+			],
+			[
+				"w",
+				"width: "
+			],
+			[
+				"ms-flex",
+				"ms-flex-direction"
+			],
+			[
+				"c",
+				"center"
+			],
+			[
+				"wh",
+				"white-space: "
+			],
+			[
+				"n",
+				"normal"
+			],
+			[
+				"fs",
+				"font-size: "
+			],
+			[
+				"fo",
+				"font-size: "
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"fl",
+				"float: "
+			],
+			[
+				"alig",
+				"align-items: "
+			],
+			[
+				"flex-",
+				"flex-direction: "
+			],
+			[
+				"fon",
+				"font-weight: "
+			],
+			[
+				"i",
+				"italic"
+			],
+			[
+				"text-",
+				"text-decoration: "
+			],
+			[
+				"max",
+				"max-width: "
+			],
+			[
+				"he",
+				"header-color"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"package",
+				"Package Control: Remove Package"
+			],
+			[
+				"auto",
+				"Autoprefix CSS"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"sftp",
+				"SFTP: Map to Remote…"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/criscom/Documents/github/balloon"
+	],
+	"file_history":
+	[
+		"/Users/criscom/Library/Application Support/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings",
+		"/Users/criscom/Documents/github/balloon/css/styles.css.map",
+		"/Users/criscom/Documents/github/balloon/sass/sl-components/_footer.scss",
+		"/Users/cpotzinger/Documents/github/dev-resch-consulting/sass/library/_placeholders.scss",
+		"/Users/cpotzinger/Documents/github/dev-resch-consulting/css/styles.css.map",
+		"/Users/cpotzinger/Documents/github/dev-resch-consulting/css/sftp-config.json",
+		"/Users/cpotzinger/Documents/github/dev-resch-consulting/sass/sl-components/_fonts.scss",
+		"/Users/cpotzinger/Documents/github/dev-resch-consulting/sass/sl-components/_zitate.scss",
+		"/Users/cpotzinger/Documents/github/dev-resch-consulting/master2015.info",
+		"/Users/cpotzinger/Documents/github/dev-resch-consulting/sass/sl-components/_header-text.scss",
+		"/Users/cpotzinger/Documents/github/dev-resch-consulting/sass/sl-components/_footer.scss",
+		"/Users/cpotzinger/Documents/github/dev-resch-consulting/sass/sl-components/_default.scss",
+		"/Users/cpotzinger/Documents/github/dev-resch-consulting/sass/sl-components/_main-menu-desktop.scss",
+		"/Users/cpotzinger/Documents/github/dev-resch-consulting/sass/sl-components/_secondary-menu.scss",
+		"/Users/cpotzinger/Documents/github/dev-resch-consulting/sass/sl-components/_header.scss",
+		"/Users/cpotzinger/Documents/github/dev-resch-consulting/css/styles.css",
+		"/Users/cpotzinger/Documents/github/dev-resch-consulting/sass/layouts/_responsive.scss",
+		"/Users/cpotzinger/Documents/github/dev-resch-consulting/sass/_variables.scss",
+		"/Users/cpotzinger/Documents/github/dev-resch-consulting/sass/sl-components/_main-menu-mobile.scss",
+		"/Users/cpotzinger/Documents/github/dev-ifz/css/styles.css",
+		"/Users/cpotzinger/Documents/github/dev-ifz/css/styles.css.map",
+		"/Users/cpotzinger/Documents/github/morocutti.at/css/styles.css.map",
+		"/Users/cpotzinger/Documents/github/morocutti.at/.sass-cache/239401beff54ded094ab77d3b10001dfa5de4603/_unternehmensberatung.scssc",
+		"/Users/cpotzinger/Documents/github/morocutti.at/node_modules/gulp-sass/node_modules/node-sass/node_modules/npmconf/node_modules/uid-number/uid-number.js",
+		"/Users/cpotzinger/Documents/github/morocutti.at/node_modules/gulp-uglify/node_modules/.bin/uglifyjs",
+		"/Users/cpotzinger/Documents/github/morocutti.at/css/styles.css",
+		"/Users/cpotzinger/Documents/github/morocutti.at/node_modules/gulp/index.js",
+		"/Users/cpotzinger/Documents/github/morocutti.at/node_modules/gulp/node_modules/gulp-util/lib/isNull.js",
+		"/Users/cpotzinger/Documents/github/morocutti.at/node_modules/gulp-sass/node_modules/node-sass/scripts/install.js",
+		"/Users/cpotzinger/Library/Application Support/Sublime Text 3/Packages/SFTP/SFTP.sublime-settings",
+		"/Users/cpotzinger/Dropbox/sunlime-gmbh/sunlime-it-gmb-signature-christoph",
+		"/Users/cpotzinger/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/cpotzinger/Library/Application Support/Sublime Text 3/Packages/User/Plain text.sublime-settings",
+		"/Users/cpotzinger/Library/Caches/Cleanup At Startup/Transmit/BE1686AF-5AC9-4561-B1E9-4A9477955022/sites.php"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"",
+			"/Users/criscom/Documents/github/balloon/sass/sl-components,/Users/criscom/Documents/github/balloon/sass/sl-components",
+			"/Users/criscom/Documents/github/balloon/sass/sl-components",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"41",
+			"criscom",
+			"vertical-align",
+			"-webkit",
+			"-webkit-flex-wrap: wrap;",
+			"justify-content: space-between;",
+			"flex-direction: row;",
+			"display: flex;",
+			"350",
+			"280",
+			"(Release notes)",
+			"(Versionshinweise)",
+			"(Release notes)",
+			".header",
+			"breakpoint",
+			" \n",
+			"left",
+			"ul.nice-menu>ul",
+			".front",
+			";"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"-webkit-justify-content: space-between;\njustify-content: space-between;\nflex-direction: row;",
+			"-webkit-flex-direction: row;\nflex-direction: row;"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 118.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 118.0
+	},
+	"pinned_build_system": "",
+	"project": "balloon.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"conf",
+				"config.rb"
+			],
+			[
+				"scri",
+				"js/script.js"
+			],
+			[
+				"unter",
+				"sass/sl-components/_unternehmensberatung.scss"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 263.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
