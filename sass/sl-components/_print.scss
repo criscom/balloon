@@ -100,3 +100,25 @@
         list-style-image: none;
     }
 }
+
+// hide long urls on project pages in sidebar
+
+@media print {
+    .group-right {
+        .field-name-field-projekt-ort,
+        .field-name-field-projekt-status,
+        .field-name-field-projekt-kategorie,
+        .field-name-field-projekt-bauherr,
+        .field-name-field-projekt-wettbewerb,
+        .field-name-field-projekt-team,
+        .field-name-field-projekt-abbildungen,
+        .field-name-field-projekt-links {
+            a[href]:after {
+                content: " " !important;
+            }
+        }
+    .service-links a[href]:after {
+        content: " " !important;
+        }
+    }
+}
