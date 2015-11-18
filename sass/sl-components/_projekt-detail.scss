@@ -27,91 +27,151 @@
 // }
 
 // Alignment of content elements inline via float
-@include breakpoint($tablet) {
-    .node-type-projekt.not-logged-in h1 {
+@include breakpoint($tablet)
+{
+    .node-type-projekt.not-logged-in h1
+    {
         float: left;
+
         width: 25%;
     }
-    .node-type-projekt.not-logged-in .node-projekt {
+    .node-type-projekt.not-logged-in .node-projekt
+    {
         float: left;
+
         width: 75%;
     }
 }
 
 // alignment of the whole node adjusting the spacing btw navigation and slider image 
-.node-projekt {
+.node-projekt
+{
     padding-top: 16px;
     padding-top: 1rem;
     // padding-right: 16px;
     // padding-right: 1rem;
 }
 
-.flexslider {
+.flexslider
+{
+    margin-bottom: 1.5tem;
+    margin-bottom: 24px;
+
     border: 0;
     border-radius: 0;
     box-shadow: none;
-    margin-bottom: 1.5tem;
-    margin-bottom: 24px;
 }
 
-.node-projekt h2 {
-    margin-top: 0;
+.flex-control-nav { // bullets below slider ==> on K.I.S.S
+    display: none;
+}
+
+.node-projekt h2
+{
     font-weight: 600;
     line-height: 2rem;
     line-height: 32px;
+
+    margin-top: 0;
 }
 
-.node-projekt .group-left {
+.node-projekt .group-left
+{
     width: 60%;
+
+    @include breakpoint($range0-568)
+    {
+        float: none;
+
+        width: 100%;
+    }
 }
 
-.beschreibung p { // Beschreibungstext Blocksatz
+.beschreibung p
+{
+    // Beschreibungstext Blocksatz
     text-align: justify;
 }
 
-.field-name-field-untertitel {
+.field-name-field-untertitel
+{
     font-weight: 600;
+
     color: lighten($font-color, 15%);
 }
 
-.node-projekt .group-right {
+.node-projekt .group-right
+{
     width: 40%;
     margin-top: 13px;
     margin-top: .8125rem;
+
     text-align: right;
-        .label-above {
-            text-transform: uppercase;
-            font-weight: 600;
-            color: lighten($font-color, 30%);
-        }
-        .field p,
-        .field a {
-            font-weight: 600;
-        }
+
+    @include breakpoint($range0-568)
+    {
+        float: none;
+
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 24px;
+        margin-bottom: 1.5rem;
+
+        text-align: left;
+    }
+    .label-above
+    {
+        font-weight: 600;
+
+        text-transform: uppercase;
+
+        color: lighten($font-color, 30%);
+    }
+    .field p,
+    .field a
+    {
+        font-weight: 600;
+    }
 }
 
-.field-name-field-projekt- {
-    &ort, &status, &bauherr, &wettbewerb, &team, &planungszeit, &hardfacts, &arge, &abbildungen {
-        p {
+.field-name-field-projekt-
+{
+    &ort,
+    &status,
+    &bauherr,
+    &wettbewerb,
+    &team,
+    &planungszeit,
+    &hardfacts,
+    &arge,
+    &abbildungen
+    {
+        p
+        {
             margin-top: 0;
         }
     }
 }
 
 .field-name-field-projekt-kategorie,
-.field-name-field-projekt-links {
+.field-name-field-projekt-links
+{
     margin-bottom: 20px;
     margin-bottom: 1.5rem;
-    a {
+    a
+    {
         display: block;
+
         @include hyphens(auto);
     }
 }
 
-.field-name-field-projekt-kategorie span {
+.field-name-field-projekt-kategorie span
+{
     display: block;
 }
 
-.service-links img {
+.service-links img
+{
     @include border-radius(32px);
 }

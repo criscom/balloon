@@ -10,32 +10,54 @@
 
 // Alignment of content elements inline via floats
 
-.view-projekte-isotope-view {
+.view-projekte-isotope-view
+{
     padding-top: 6px;
     padding-top: .375rem;
+
     @include clearfix();
-    @include breakpoint($tablet){
-        >.view-header {
+    @include breakpoint($tablet)
+    {
+        > .view-header
+        {
             float: left;
+
             width: 25%;
             padding-top: 10px;
             padding-top: .625rem;
         }
-        >.view-content {
+        > .view-content
+        {
             float: left;
+
             width: 75%;
-    
         }
     }
 }
 
 // isotope elements in the main project view (project image)
 
-.isotope-element {
-    @include breakpoint($tablet){
+.isotope-element
+{
+    @include breakpoint($range0-480)
+    {
+        margin-left: 1px;
+    }
+    @include breakpoint($range0-568)
+    {
+        width: 100%;
+        height: auto;
+        img
+        {
+            width: 100%;
+        }
+    }
+    @include breakpoint($tablet)
+    {
         width: 403px;
         height: 252px;
-        img {
+        img
+        {
             width: 403px;
         }
     }
@@ -43,87 +65,132 @@
 
 // Position title and ort as a layer over the image with position:absolute
 
-.projekte-wrapper-outer {
+.projekte-wrapper-outer
+{
     position: relative;
 }
 
-.projekte-wrapper-inner {
+.projekte-wrapper-inner
+{
     position: absolute;
     top: 4px;
     top: .375rem;
 }
 
 .projekte-titel,
-.projekte-ort {
-    width: 400px;
-    height: auto;
-    margin: 0 auto;
-    text-align: center;
+.projekte-ort
+{
+    padding-left: 10px;
+
+    @include breakpoint($desktop)
+    {
+        width: 400px;
+        height: auto;
+        margin: 0 auto;
+        padding-left: 0;
+
+        text-align: center;
+    }
 }
 
-.projekte-ort {
+.projekte-ort
+{
     line-height: 12px;
     line-height: .75rem;
 }
 
-.project-title {
-    margin: 6px 0 0 0;
+.project-title
+{
     font-size: 18px;
     font-size: 1.125rem;
     font-weight: 700;
-    text-transform: uppercase;
+    font-weight: 600;
     line-height: 24px;
     line-height: 1.5rem;
-    font-weight: 600;
 
+    margin: 6px 0 0 0;
+
+    text-transform: uppercase;
 }
 
-.projekte-titel a {
-    color: $font-color !important;
+.projekte-titel a
+{
     text-decoration: none;
-    &:hover {
+
+    color: $font-color !important;
+    &:hover
+    {
         text-decoration: underline;
     }
-    &:visited {
+    &:visited
+    {
         color: $font-color;
     }
 }
 
-.projekte-ort {
-    color: $font-color;
+.projekte-ort
+{
     font-weight: 300;
+
+    color: $font-color;
 }
 
 // isotope filters
 //////////////////
 
-.isotope-filters {
-    @include breakpoint($tablet){
-        margin-top: 252px;
+.isotope-filters
+{
+    @include breakpoint($range0-568)
+    {
+        margin-top: 0;
+        margin-left: 0;
+        padding-left: 0;
+        li
+        {
+            display: inline;
 
+            margin-right: 0;
+            padding-right: 1%;
+            a
+            {
+                margin-right: 0;
+                padding-right: 0;
+            }
+        }
+    }
+    @include breakpoint($tablet)
+    {
         display: -webkit-flex;
         display: -ms-flexbox;
-        display: flex;
+        display:         flex;
+                flex-direction: column;
+
+        margin-top: 252px;
+        padding-left: 0;
+
         -webkit-flex-direction: column;
             -ms-flex-direction: column;
-                flex-direction: column;
         -webkit-align-items: flex-start;
-            -ms-flex-align: start;
+        -ms-flex-align: start;
                 align-items: flex-start;
         -webkit-flex-wrap: wrap;
             -ms-flex-wrap: wrap;
                 flex-wrap: wrap;
-        padding-left: 0;
     }
-    @media all and (max-width: 889px) {
-        a {
-            white-space: normal;
+    @media all and (max-width: 889px)
+    {
+        a
+        {
             padding-left: 0 !important;
+
             text-align: left;
+            white-space: normal;
         }
     }
-    .no-flexbox & {
-        li {
+    .no-flexbox &
+    {
+        li
+        {
             display: block;
         }
     }
@@ -134,7 +201,8 @@
 .isotope-button,
 .isotope-button.selected,
 .isotope-button:hover,
-.isotope-button.selected:hover {
+.isotope-button.selected:hover
+{
     border-color: transparent;
     background-color: transparent;
     background-image: none;
@@ -143,19 +211,23 @@
 
 // apply our own stylings
 
-.isotope-button {
+.isotope-button
+{
     text-transform: upperase;
-    &:before {
+    &:before
+    {
         // content: "/// ";
     }
 }
 
-.isotope-button.selected {
-    color: $font-color;
+.isotope-button.selected
+{
     font-weight: 600;
+
+    color: $font-color;
 }
 
-.isotope-button:hover {
+.isotope-button:hover
+{
     color: lighten($font-color,15%);
-
 }

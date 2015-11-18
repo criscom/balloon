@@ -5,85 +5,120 @@
 **
 */
 
-.footer {
-    padding-top: 0;
-    background: white;
-    margin-left: auto;
+.footer
+{
     margin-right: auto;
+    margin-left: auto;
+    padding-top: 0;
+
     border-top: 1px dotted black;
+    background: white;
 }
 
-.no-flexbox .footer-wrapper {
-        @include breakpoint($desktop) {
-            .block {
-                float: left;
-            }
+.no-flexbox .footer-wrapper
+{
+    @include breakpoint($desktop)
+    {
+        .block
+        {
+            float: left;
+        }
     }
 }
 
-.footer-wrapper {
-    @include breakpoint($desktop){    
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
+.footer-wrapper
+{
+    @include breakpoint($desktop)
+    {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display:         flex;
+                flex-direction: row;
+                flex-direction: row;
 
-    -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-justify-content: space-between;
+        margin-top: 16px;
+        margin-top: 1rem;
+
+        -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+        -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-            flex-direction: row;
-        }
-    
-    margin-top: 16px;
-    margin-top: 1rem;
-    .block p {
+                justify-content: space-between;
+        -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+    }
+    .block p
+    {
         margin: 0;
-        .footer-label {
+        .footer-label
+        {
             padding-right: 16px;
             padding-right: 1rem;
         }
     }
-    .block:first-child {
+    .block:first-child
+    {
         padding-left: 10px;
     }
-    .block:last-child {
+    .block:last-child
+    {
         @include breakpoint($desktop)
-            {
+        {
             margin-right: 60px;
             margin-right: 3.75rem;
         }
     }
 }
 
-.footer-content {
-    a {
+.footer-content
+{
+    a
+    {
         text-decoration: none;
-        &:hover {
+        &:hover
+        {
             text-decoration: underline;
         }
     }
 }
 
-// Absolute positioning of footer to get it to the bottom of the page
+// .no-flexboxtweener,
+// for IE 10
+.no-flexbox
+{
+    .footer-wrapper .block
+    {
+        float: left;
 
+        padding-right: 2%;
+    }
+}
 
-    // #page  {
-    //     min-height: 100%;
-    //     position: relative;
-    // }
-    
-    // #main {
-    //     padding-bottom: 112px; /* Height of the footer */
-    // }
-    
-    // .footer {
-    //    position:absolute;
-    //    z-index: 1100;
-    //    bottom:0;
-    //    width:100%;
-    //    height:112px;   /* Height of the footer */
-    // }
+@include breakpoint($range481-767)
+{
+    // normal styling for iphones excluding ipad
+    .footer-wrapper .block
+    {
+        float: left;
+
+        padding-right: 2%;
+    }
+}
+
+@include breakpoint($range0-480)
+{
+    .footer-wrapper .block,
+    .footer-wrapper .menu-block-wrapper
+    {
+        float: none !important;
+        margin: 0;
+        padding: 0;
+        ul {
+            padding: 0;
+        }
+    }
+    .footer-wrapper .block:first-child {
+        margin: 0;
+        padding: 0;
+    }
+}

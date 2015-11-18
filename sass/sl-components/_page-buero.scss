@@ -55,9 +55,10 @@
     clear: both;
     @include clearfix();
     @include breakpoint($range569-768) {
-        margin-left: 25%;
+        // margin-left: 25%;
     }
 }
+
 
 @include breakpoint($desktop) {
     .page-node .view-header,
