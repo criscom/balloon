@@ -15,10 +15,11 @@
     .field-name-body p,
     .download-file li,
     span.telephone,
-    span.email
+    span.email,
+    .panel-body p // Biografie
      {
         a[href]:after {
-            content: " ";
+            content: " " !important;
         }
     }
     .element-invisible {

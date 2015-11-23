@@ -3552,59 +3552,64 @@ h1.object-title:hover,
   margin: 0;
 }
 /* line 53, ../sass/sl-components/_footer.scss */
-.footer-wrapper .block p .footer-label {
-  padding-right: 16px;
-  padding-right: 1rem;
+.footer-wrapper .block p .footer-content {
+  padding-left: 16px;
+  padding-left: 1rem;
 }
-/* line 59, ../sass/sl-components/_footer.scss */
+/* line 60, ../sass/sl-components/_footer.scss */
+.footer-wrapper .block p:last-child .footer-content {
+  padding-left: 12px;
+  padding-left: .75rem;
+}
+/* line 65, ../sass/sl-components/_footer.scss */
 .footer-wrapper .block:first-child {
   padding-left: 10px;
 }
 @media (min-width: 768px) {
-  /* line 63, ../sass/sl-components/_footer.scss */
+  /* line 69, ../sass/sl-components/_footer.scss */
   .footer-wrapper .block:last-child {
     margin-right: 60px;
     margin-right: 3.75rem;
   }
 }
 
-/* line 75, ../sass/sl-components/_footer.scss */
+/* line 81, ../sass/sl-components/_footer.scss */
 .footer-content a {
   text-decoration: none;
 }
-/* line 78, ../sass/sl-components/_footer.scss */
+/* line 84, ../sass/sl-components/_footer.scss */
 .footer-content a:hover {
   text-decoration: underline;
 }
 
-/* line 89, ../sass/sl-components/_footer.scss */
+/* line 95, ../sass/sl-components/_footer.scss */
 .no-flexbox .footer-wrapper .block {
   float: left;
   padding-right: 2%;
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
-  /* line 100, ../sass/sl-components/_footer.scss */
+  /* line 106, ../sass/sl-components/_footer.scss */
   .footer-wrapper .block {
     float: left;
     padding-right: 2%;
   }
 }
 @media (min-width: 0px) and (max-width: 480px) {
-  /* line 110, ../sass/sl-components/_footer.scss */
+  /* line 116, ../sass/sl-components/_footer.scss */
   .footer-wrapper .block,
   .footer-wrapper .menu-block-wrapper {
     float: none !important;
     margin: 0;
     padding: 0;
   }
-  /* line 116, ../sass/sl-components/_footer.scss */
+  /* line 122, ../sass/sl-components/_footer.scss */
   .footer-wrapper .block ul,
   .footer-wrapper .menu-block-wrapper ul {
     padding: 0;
   }
 
-  /* line 120, ../sass/sl-components/_footer.scss */
+  /* line 126, ../sass/sl-components/_footer.scss */
   .footer-wrapper .block:first-child {
     margin: 0;
     padding: 0;
@@ -4466,7 +4471,7 @@ ul.nice-menu li.active-trail a:hover {
 **
 */
 @media print {
-  /* line 20, ../sass/sl-components/_print.scss */
+  /* line 21, ../sass/sl-components/_print.scss */
   .logo-wrapper a[href]:after,
   .main-content a[href]:after,
   .feature-link a[href]:after,
@@ -4476,22 +4481,23 @@ ul.nice-menu li.active-trail a:hover {
   .field-name-body p a[href]:after,
   .download-file li a[href]:after,
   span.telephone a[href]:after,
-  span.email a[href]:after {
-    content: " ";
+  span.email a[href]:after,
+  .panel-body p a[href]:after {
+    content: " " !important;
   }
 
-  /* line 24, ../sass/sl-components/_print.scss */
+  /* line 25, ../sass/sl-components/_print.scss */
   .element-invisible {
     display: none;
   }
 }
 @media print {
-  /* line 31, ../sass/sl-components/_print.scss */
+  /* line 32, ../sass/sl-components/_print.scss */
   #block-block-4 {
     display: none;
   }
 
-  /* line 35, ../sass/sl-components/_print.scss */
+  /* line 36, ../sass/sl-components/_print.scss */
   .region-navigation,
   .main-navigation {
     display: none;
@@ -4501,7 +4507,7 @@ ul.nice-menu li.active-trail a:hover {
     padding: 0;
   }
 
-  /* line 46, ../sass/sl-components/_print.scss */
+  /* line 47, ../sass/sl-components/_print.scss */
   #block-menu-block-1 ul.menu,
   ul.nice-menu {
     width: 100%;
@@ -4509,7 +4515,7 @@ ul.nice-menu li.active-trail a:hover {
     padding-left: 0;
   }
 
-  /* line 57, ../sass/sl-components/_print.scss */
+  /* line 58, ../sass/sl-components/_print.scss */
   #block-menu-block-1 ul.menu li,
   ul.nice-menu li {
     display: inline-block;
@@ -4518,17 +4524,17 @@ ul.nice-menu li.active-trail a:hover {
     border: 0;
     background-color: transparent;
   }
-  /* line 66, ../sass/sl-components/_print.scss */
+  /* line 67, ../sass/sl-components/_print.scss */
   #block-menu-block-1 ul.menu li.first,
   ul.nice-menu li.first {
     padding-left: 0;
   }
-  /* line 70, ../sass/sl-components/_print.scss */
+  /* line 71, ../sass/sl-components/_print.scss */
   #block-menu-block-1 ul.menu li.last,
   ul.nice-menu li.last {
     padding-right: 0;
   }
-  /* line 74, ../sass/sl-components/_print.scss */
+  /* line 75, ../sass/sl-components/_print.scss */
   #block-menu-block-1 ul.menu li a,
   ul.nice-menu li a {
     font-weight: 600;
@@ -4537,31 +4543,31 @@ ul.nice-menu li.active-trail a:hover {
     color: #666666;
     font-size: 16px;
   }
-  /* line 85, ../sass/sl-components/_print.scss */
+  /* line 86, ../sass/sl-components/_print.scss */
   #block-menu-block-1 ul.menu li a:hover,
   ul.nice-menu li a:hover {
     text-decoration: underline;
     color: gray;
   }
-  /* line 91, ../sass/sl-components/_print.scss */
+  /* line 92, ../sass/sl-components/_print.scss */
   #block-menu-block-1 ul.menu li a:visited,
   ul.nice-menu li a:visited {
     color: #666666;
   }
-  /* line 103, ../sass/sl-components/_print.scss */
+  /* line 104, ../sass/sl-components/_print.scss */
   #block-menu-block-1 ul.menu li.active-trail a,
   ul.nice-menu li.active-trail a {
     text-decoration: none;
     color: black;
   }
-  /* line 108, ../sass/sl-components/_print.scss */
+  /* line 109, ../sass/sl-components/_print.scss */
   #block-menu-block-1 ul.menu li.active-trail a:hover,
   ul.nice-menu li.active-trail a:hover {
     text-decoration: none;
     color: black !important;
   }
 
-  /* line 118, ../sass/sl-components/_print.scss */
+  /* line 119, ../sass/sl-components/_print.scss */
   .menu__item.is-leaf {
     list-style: none;
     list-style-type: none;
@@ -4569,7 +4575,7 @@ ul.nice-menu li.active-trail a:hover {
   }
 }
 @media print {
-  /* line 138, ../sass/sl-components/_print.scss */
+  /* line 139, ../sass/sl-components/_print.scss */
   .group-right .field-name-field-projekt-ort a[href]:after,
   .group-right .field-name-field-projekt-status a[href]:after,
   .group-right .field-name-field-projekt-kategorie a[href]:after,
@@ -4580,64 +4586,64 @@ ul.nice-menu li.active-trail a:hover {
   .group-right .field-name-field-projekt-links a[href]:after {
     content: " " !important;
   }
-  /* line 142, ../sass/sl-components/_print.scss */
+  /* line 143, ../sass/sl-components/_print.scss */
   .group-right .service-links a[href]:after {
     content: " " !important;
   }
 }
 @media print {
-  /* line 155, ../sass/sl-components/_print.scss */
+  /* line 156, ../sass/sl-components/_print.scss */
   .view-frontpage-aktuell .view-content {
     margin-left: 25% !important;
   }
 
-  /* line 160, ../sass/sl-components/_print.scss */
+  /* line 161, ../sass/sl-components/_print.scss */
   .view-projekte-isotope-view > .view-header > .view {
     display: none;
   }
-  /* line 163, ../sass/sl-components/_print.scss */
+  /* line 164, ../sass/sl-components/_print.scss */
   .view-projekte-isotope-view > .view-content {
     margin-left: 10% !important;
   }
-  /* line 165, ../sass/sl-components/_print.scss */
+  /* line 166, ../sass/sl-components/_print.scss */
   .view-projekte-isotope-view > .view-content .views-field-body {
     page-break-inside: avoid;
   }
 
-  /* line 170, ../sass/sl-components/_print.scss */
+  /* line 171, ../sass/sl-components/_print.scss */
   .node-type-projekt.not-logged-in .node-projekt {
     margin-left: 25% !important;
   }
 
-  /* line 173, ../sass/sl-components/_print.scss */
+  /* line 174, ../sass/sl-components/_print.scss */
   .page-node .view-content {
     margin-left: 25% !important;
   }
 
-  /* line 176, ../sass/sl-components/_print.scss */
+  /* line 177, ../sass/sl-components/_print.scss */
   .view-partnerinnen-und-mitarbeiter .views-row {
     page-break-inside: avoid;
   }
 
-  /* line 179, ../sass/sl-components/_print.scss */
+  /* line 180, ../sass/sl-components/_print.scss */
   .page-node.not-logged-in .node-page {
     margin-left: 25% !important;
   }
-  /* line 181, ../sass/sl-components/_print.scss */
+  /* line 182, ../sass/sl-components/_print.scss */
   .page-node.not-logged-in .node-page .group-left {
     width: 100%;
   }
-  /* line 184, ../sass/sl-components/_print.scss */
+  /* line 185, ../sass/sl-components/_print.scss */
   .page-node.not-logged-in .node-page .group-right {
     display: none;
   }
 
-  /* line 189, ../sass/sl-components/_print.scss */
+  /* line 190, ../sass/sl-components/_print.scss */
   .section-kontakt .footer {
     display: inherit !important;
     visibility: inherit !important;
   }
-  /* line 192, ../sass/sl-components/_print.scss */
+  /* line 193, ../sass/sl-components/_print.scss */
   .section-kontakt .footer a[href]:after {
     content: " " !important;
   }
@@ -4751,13 +4757,19 @@ ul.nice-menu li.active-trail a:hover {
 
 /* line 156, ../sass/sl-components/_projekt-detail.scss */
 .field-name-field-projekt-kategorie,
-.field-name-field-projekt-links {
+.field-name-field-projekt-bauherr,
+.field-name-field-projekt-links,
+.field-name-field-projekt-team,
+.field-name-service-links-displays-group {
   margin-bottom: 20px;
   margin-bottom: 1.5rem;
 }
-/* line 161, ../sass/sl-components/_projekt-detail.scss */
+/* line 164, ../sass/sl-components/_projekt-detail.scss */
 .field-name-field-projekt-kategorie a,
-.field-name-field-projekt-links a {
+.field-name-field-projekt-bauherr a,
+.field-name-field-projekt-links a,
+.field-name-field-projekt-team a,
+.field-name-service-links-displays-group a {
   display: block;
   word-wrap: break-word;
   -webkit-hyphens: auto;
@@ -4767,12 +4779,12 @@ ul.nice-menu li.active-trail a:hover {
   hyphens: auto;
 }
 
-/* line 169, ../sass/sl-components/_projekt-detail.scss */
+/* line 172, ../sass/sl-components/_projekt-detail.scss */
 .field-name-field-projekt-kategorie span {
   display: block;
 }
 
-/* line 174, ../sass/sl-components/_projekt-detail.scss */
+/* line 177, ../sass/sl-components/_projekt-detail.scss */
 .service-links img {
   -moz-border-radius: 32px;
   -webkit-border-radius: 32px;
