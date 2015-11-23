@@ -11,7 +11,7 @@
 // Alignment of content elements inline via float
 
 
-@include breakpoint($tablet){
+@include breakpoint($desktop){
     .page-node.not-logged-in h1 {
         float: left;
         width: 25%;
@@ -33,7 +33,9 @@
 }
 
 .two-col {
-    @include column-count(2);
+    @include breakpoint($desktop) {
+        @include column-count(2);
+    }
 }
 
 .field-name-field-article-link {
@@ -54,9 +56,6 @@
 .page-node .block-views {
     clear: both;
     @include clearfix();
-    @include breakpoint($range569-768) {
-        // margin-left: 25%;
-    }
 }
 
 
@@ -70,8 +69,6 @@
     }
     .page-node .view-content {
         width: 75%;
-        // margin-top: 1rem;
-        // margin-top: 13px;
     }
 }
 
@@ -89,14 +86,10 @@
     //         justify-content: space-between;
     margin-top: 10px;
     .views-row {
-        width: 100%;
+        width: 100%; // for mobile devices we set the width of the mitarbeiterinnen
+        // blocks to 100% because the names differ in length.
         padding-bottom: 1.5rem;
         padding-bottom: 24px;
-        // @include breakpoint($tablet) {
-        //         -webkit-flex: 0 0 33%;
-        //             -ms-flex: 0 0 33%;
-        //                 flex: 0 0 33%;
-        //     }
     }
     @include breakpoint($desktop) {
         .views-row {
@@ -130,8 +123,8 @@
 .panel-heading {
     padding: 0;
     .panel-title {
-        font-size: 18px;
-        font-size: 1.125rem;
+        font-size: 16px;
+        font-size: 1rem;
         a {
             text-decoration: underline;
             &:hover {

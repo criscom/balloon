@@ -17,7 +17,7 @@
 
 .no-flexbox .footer-wrapper
 {
-    @include breakpoint($desktop)
+    @include breakpoint($tablet)
     {
         .block
         {
@@ -28,7 +28,7 @@
 
 .footer-wrapper
 {
-    @include breakpoint($desktop)
+    @include breakpoint($tablet)
     {
         display: -webkit-flex;
         display: -ms-flexbox;

@@ -32,6 +32,13 @@
     background-color: $box;
 }
 
+.view-frontpage-aktuell .views-row {
+    // fix alignment problem on iPad mini 
+    // https://www.evernote.com/l/ARB4z5EHZa9I_L_LO6md5kuyqeNrUtzus7s
+    @media (min-width: 1001px) and (max-width: 1030px) {
+        min-height: 324px;
+    }
+}
 // Position title and ort as a layer over the image with position:absolute
 
 .feature-wrapper-outer {
