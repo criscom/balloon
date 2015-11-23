@@ -50,17 +50,7 @@
     .block p
     {
         margin: 0;
-        .footer-content
-        {
-            padding-left: 16px;
-            padding-left: 1rem;
-        }
-    }
-    .block p:last-child { // align office@balloon-rgw.at with above content
-        .footer-content {
-            padding-left: 12px;
-            padding-left: .75rem;
-        }
+        padding-left: 2px;
     }
     .block:first-child
     {

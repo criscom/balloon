@@ -155,6 +155,9 @@
         }
         .view-content {
             margin-left: 25%!important;
+            .views-row {
+                page-break-inside: avoid;
+            }
         }
     }
     .view-projekte-isotope-view { // Projekte landing page

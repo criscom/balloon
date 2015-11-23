@@ -8,26 +8,8 @@
 */
 
 
-// Alignment of content elements inline via flexbox
-// @include breakpoint($desktop){
-//     .node-type-projekt.not-logged-in { // when logged in the tabs break the design
-//         .main-content {
-//             display: -webkit-flex;
-//             display: -ms-flexbox;
-//             display: flex;
-//             -webkit-flex-direction: row;
-//             -webkit-flex-direction: row;
-//             -ms-flex-direction: row;
-//                 flex-direction: row;
-//             -webkit-align-items: flex-start;
-//                 -ms-flex-align: start;
-//                     align-items: flex-start;
-//         }
-//     }
-// }
-
 // Alignment of content elements inline via float
-@include breakpoint($tablet)
+@include breakpoint($desktop)
 {
     .node-type-projekt.not-logged-in h1
     {
