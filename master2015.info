@@ -118,6 +118,7 @@ scripts[] = js/flexslider.js
 scripts[] = js/collapse.js
 scripts[] = js/transition.js
 scripts[] = js/script.js
+scripts[] = js/imagesloaded.min.js
 
 ; Google Webfonts
 fonts[google_fonts_api][] = "Source Sans Pro&subset=latin#200"
