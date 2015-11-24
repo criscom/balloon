@@ -3573,34 +3573,43 @@ h1.object-title:hover,
   text-decoration: underline;
 }
 
-/* line 85, ../sass/sl-components/_footer.scss */
+/* line 81, ../sass/sl-components/_footer.scss */
+.footer-label {
+  display: inline-block;
+  width: 12px;
+  width: .75rem;
+  margin-right: 8px;
+  margin-right: .5rem;
+}
+
+/* line 93, ../sass/sl-components/_footer.scss */
 .no-flexbox .footer-wrapper .block {
   float: left;
   padding-right: 2%;
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
-  /* line 96, ../sass/sl-components/_footer.scss */
+  /* line 104, ../sass/sl-components/_footer.scss */
   .footer-wrapper .block {
     float: left;
     padding-right: 2%;
   }
 }
 @media (min-width: 0px) and (max-width: 480px) {
-  /* line 106, ../sass/sl-components/_footer.scss */
+  /* line 114, ../sass/sl-components/_footer.scss */
   .footer-wrapper .block,
   .footer-wrapper .menu-block-wrapper {
     float: none !important;
     margin: 0;
     padding: 0;
   }
-  /* line 112, ../sass/sl-components/_footer.scss */
+  /* line 120, ../sass/sl-components/_footer.scss */
   .footer-wrapper .block ul,
   .footer-wrapper .menu-block-wrapper ul {
     padding: 0;
   }
 
-  /* line 116, ../sass/sl-components/_footer.scss */
+  /* line 124, ../sass/sl-components/_footer.scss */
   .footer-wrapper .block:first-child {
     margin: 0;
     padding: 0;
@@ -3862,11 +3871,24 @@ h1.object-title:hover,
 
 /* line 22, ../sass/sl-components/_header.scss */
 .header-wrapper {
-  margin-top: 16px;
-  margin-top: 1rem;
+  margin-top: 12px;
+  margin-top: .75rem;
+  margin-bottom: 12px;
+  margin-bottom: .75rem;
+}
+/* line 6, ../sass/library/_clearfix.scss */
+.header-wrapper:before {
+  content: '';
+  display: table;
+}
+/* line 11, ../sass/library/_clearfix.scss */
+.header-wrapper:after {
+  content: '';
+  display: table;
+  clear: both;
 }
 
-/* line 27, ../sass/sl-components/_header.scss */
+/* line 30, ../sass/sl-components/_header.scss */
 .logo-wrapper {
   float: left;
   width: 40%;
@@ -3875,20 +3897,20 @@ h1.object-title:hover,
   margin-top: 2rem;
 }
 @media (min-width: 768px) {
-  /* line 27, ../sass/sl-components/_header.scss */
+  /* line 30, ../sass/sl-components/_header.scss */
   .logo-wrapper {
     width: 23%;
     margin: 18px 1.4% 0 0;
   }
 }
 
-/* line 39, ../sass/sl-components/_header.scss */
+/* line 42, ../sass/sl-components/_header.scss */
 .header__logo-image {
   width: 100%;
   max-width: 100%;
 }
 
-/* line 44, ../sass/sl-components/_header.scss */
+/* line 47, ../sass/sl-components/_header.scss */
 .header__region {
   float: right;
   margin: 0;
@@ -3897,19 +3919,19 @@ h1.object-title:hover,
   clear: none;
 }
 @media (min-width: 768px) {
-  /* line 44, ../sass/sl-components/_header.scss */
+  /* line 47, ../sass/sl-components/_header.scss */
   .header__region {
     margin-left: 1%;
     width: 3%;
   }
 }
-/* line 54, ../sass/sl-components/_header.scss */
+/* line 57, ../sass/sl-components/_header.scss */
 .header__region .block {
   text-align: right;
   margin-bottom: 0;
 }
 
-/* line 60, ../sass/sl-components/_header.scss */
+/* line 63, ../sass/sl-components/_header.scss */
 .header-link-1 img,
 .header-link-2 img {
   width: 50px;
@@ -3917,7 +3939,7 @@ h1.object-title:hover,
   max-width: 100%;
 }
 @media (min-width: 768px) {
-  /* line 60, ../sass/sl-components/_header.scss */
+  /* line 63, ../sass/sl-components/_header.scss */
   .header-link-1 img,
   .header-link-2 img {
     width: 100%;
@@ -3925,7 +3947,7 @@ h1.object-title:hover,
   }
 }
 
-/* line 73, ../sass/sl-components/_header.scss */
+/* line 76, ../sass/sl-components/_header.scss */
 .header-link-2 img {
   margin-top: 8px;
   margin-top: .5rem;

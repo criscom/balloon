@@ -20,8 +20,11 @@
 }
 
 .header-wrapper {
-  margin-top: 16px;
-  margin-top: 1rem;
+  @include clearfix();
+  margin-top: 12px;
+  margin-top: .75rem;
+  margin-bottom: 12px;
+  margin-bottom: .75rem;
 }
 
 .logo-wrapper {
