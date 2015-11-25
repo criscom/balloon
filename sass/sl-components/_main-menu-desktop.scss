@@ -46,12 +46,12 @@ ul.nice-menu {
 }
 
 .flexbox #block-menu-block-1 ul.menu,
+.ie1 #block-menu-block-1 ul.menu,
 .flexbox ul.nice-menu
 {
     display: -webkit-flex;
     display: -ms-flexbox;
     display:         flex;
-    flex-direction: row;
 
     // width: 100%;
     // margin: 0;
@@ -60,13 +60,15 @@ ul.nice-menu {
 
     -webkit-flex-direction: row;
         -ms-flex-direction: row;
-    -webkit-flex-wrap: nowrap;
-        -ms-flex-wrap: nowrap;
-            flex-wrap: nowrap;
+            flex-direction: row;
+    // -webkit-flex-wrap: nowrap;
+    //     -ms-flex-wrap: nowrap;
+    //         flex-wrap: nowrap;
+
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
             justify-content: space-between;
-    // margin-left: $nav-margin;
+    
 }
 
 
