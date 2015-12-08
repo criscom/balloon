@@ -14,11 +14,11 @@
 @include breakpoint($desktop){
     .page-node.not-logged-in h1 {
         float: left;
-        width: 25%;
+        width: 24%; // 25%;
     }
     .page-node.not-logged-in .node-page {
         float: left;
-        width: 75%;
+        width: 72.5%;//75%;
 
     }
 }

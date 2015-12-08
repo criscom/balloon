@@ -20,8 +20,8 @@ body
 
     @include breakpoint($desktop)
     {
-        margin-right: 52px;
-        margin-right: 3.25rem;
+        margin-right: 92px; // 52px;
+        margin-right: 5.75rem; // 3.25rem;
     }
 }
 

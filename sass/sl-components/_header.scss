@@ -34,7 +34,7 @@
   margin-top: 32px;
   margin-top: 2rem;
   @include breakpoint($desktop) {
-    width: 23%;
+    width: 21.5%; // 23%;
     margin: 18px 1.4% 0 0;
   }
 }
@@ -46,36 +46,57 @@
 
 .header__region {
   float: right;  
-  margin: 0;
+  margin: 18px 0 0 0;
+  margin: 1.125rem 0 0 0;
   padding: 0;
   width: 20%;
   clear: none;
   @include breakpoint($desktop){
-    margin-left: 1%;
-    width: 3%;
+    // margin-left: 1%;
+    width:  11%; // 3%;
   }
   .block {
     text-align: right;
     margin-bottom: 0;
+    @include clearfix();
+    ul {
+      @include clearfix();
+        list-style: none;
+        list-style-type: none;
+        list-style-image: none;
+        padding-left: 0;
+        margin: 0;
+        text-align: right;
+      }
+    li {
+      float: left;
+    }
   }
 }
 
 .header-link-1 img,
-.header-link-2 img {
-    width: 50px;
-    height: 50px;
+.header-link-2 img,
+.header-link-3 img {
+    width: 36px;
+    height: 36px;
     max-width: 100%;
     @include breakpoint($desktop) {
-      width: 100%;
-      height: auto;
+      // width: 100%;
+      // height: auto;
 
     }
     // text-align: right;
 }
 
-.header-link-2 img {
-    margin-top: 8px;
-    margin-top: .5rem;
-    // margin-left: 4px;
-    @include border-radius(28px);
+.header-link-1 {
+  padding-left: 14px;
+}
+
+.header-link-1,
+.header-link-2 {
+  padding-right: 6px;
+  // padding-right: 0.875rem;
+}
+.header-link-3 {
+  padding-right: 0;
 }
