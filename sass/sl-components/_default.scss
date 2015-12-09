@@ -14,14 +14,20 @@ body
     // background-size: 60px 60px;
 }
 
+@include breakpoint($desktop) {
+    .header, .main-content, .main-navigation, .region-sidebar-first, .region-sidebar-second, .footer {
+        padding: 0; 
+    }
+}
+
 .main-content
 {
     background-color: white;
 
     @include breakpoint($desktop)
     {
-        margin-right: 92px; // 52px;
-        margin-right: 5.75rem; // 3.25rem;
+        // margin-right: 92px; // 52px;
+        // margin-right: 5.75rem; // 3.25rem;
     }
 }
 
