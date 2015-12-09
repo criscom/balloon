@@ -22,16 +22,20 @@
         {
             float: left;
 
-            width: 24%; //25%;
+            // width: 24%; //25%;
+            @include block-first-width;
             padding-top: 10px;
             padding-top: .625rem;
+            h1 {
+                margin-left: 10px;
+            }
         }
         > .view-content
         {
             float: left;
 
             width: 73%; // 75%;
-            margin-left: 0.5%;
+            //margin-left: 0.5%;
         }
     }
 }
@@ -65,6 +69,14 @@
             width: 390px;
         }
     }
+}
+
+.isotope-element:nth-child(odd) {
+    margin-left: 0;
+}
+
+.isotope-element:nth-child(even) {
+    margin-right: 0;
 }
 
 // Position title and ort as a layer over the image with position:absolute
