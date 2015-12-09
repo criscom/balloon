@@ -15,13 +15,16 @@
     {
         float: left;
 
-        width: 24%; // 25%;
+        // width: 24%; // 25%;
+        @include block-first-width;
+        padding-left: 10px;
     }
     .node-type-projekt.not-logged-in .node-projekt
     {
         float: left;
 
-        width: 72.5%; // 75%;
+        // width: 72.5%; // 75%;
+        @include block-second-width;
     }
 }
 
