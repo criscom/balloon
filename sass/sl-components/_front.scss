@@ -17,11 +17,16 @@
     @include breakpoint($desktop) {
         >.view-header {
             float: left;
-            width: 24%; // 25%;
+            width: 21.5%; // 25%;
+            margin-right: 1.5%;
+            h1 {
+                margin-left: 10px;
+            }
         }
         >.view-content {
             float: left;
-            width: 72.5%; // 75%;
+            width: 62%; // 75%;
+            margin-right: 14%;
         }
     }
 }

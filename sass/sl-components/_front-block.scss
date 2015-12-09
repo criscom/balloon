@@ -17,11 +17,14 @@
     @include breakpoint($desktop) {
         >.view-header {
             float: left;
-            width: 24%; // 25%;
+            @include block-first-width;
+            h2 {
+                margin-left: 10px;
+            }
         }
         >.view-content {
             float: left;
-            width: 72.5%;// 75%;
+            @include block-second-width;
         }
     }
 }
@@ -37,7 +40,8 @@
         float: left;
     }
     &-odd {
-        margin-right: 1%
+        margin-right: 1%;
+        clear: left;
     }
     &-even {
         margin-left: 1%;
