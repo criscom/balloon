@@ -1,0 +1,15 @@
+// defines the dimensions for the three main blocks of the site
+// .region-navigation {@include block-first-width}
+
+@mixin block-first-width {
+    width: 21.5%;
+    margin-right: 1.5%;
+}
+
+@mixin block-second-width {
+    width: 62%;
+}
+
+@mixin block-third-width {
+    width: 14%;
+}
