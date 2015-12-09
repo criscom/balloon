@@ -30,12 +30,13 @@
 .logo-wrapper {
   float: left;
   width: 40%;
-  padding: 0;
   margin-top: 32px;
   margin-top: 2rem;
   @include breakpoint($desktop) {
-    width: 21.5%; // 23%;
-    margin: 18px 1.4% 0 0;
+    @include block-first-width;
+    padding: 0 0 0 10px;
+    margin-top: 18px;
+    margin-top: 1.125rem;
   }
 }
 
@@ -45,28 +46,32 @@
 }
 
 .header__region {
-  float: right;  
-  margin: 18px 0 0 0;
-  margin: 1.125rem 0 0 0;
+  float: right; 
+  margin-top: 32px;
   padding: 0;
-  width: 20%;
+  @include breakpoint($desktop) {  
+    margin: 18px 0 0 0;
+    margin: 1.125rem 0 0 0;
+    padding: 0 10px 0 0;
+  }  
+  width: 50%;
   clear: none;
+  text-align: right;
   @include breakpoint($desktop){
-    // margin-left: 1%;
-    width:  11%; // 3%;
+    @include block-third-width;
   }
   .block {
-    text-align: right;
+    display: inline-block;
     margin-bottom: 0;
-    @include clearfix();
+    min-width: 118px;
+    min-width: 7.375rem;
+    
     ul {
-      @include clearfix();
         list-style: none;
         list-style-type: none;
         list-style-image: none;
         padding-left: 0;
         margin: 0;
-        text-align: right;
       }
     li {
       float: left;
@@ -79,23 +84,34 @@
 .header-link-3 img {
     width: 36px;
     height: 36px;
+    // width: 24%;
     max-width: 100%;
     @include breakpoint($desktop) {
-      // width: 100%;
-      // height: auto;
-
+      width: 32px;
+      height: 32px;
     }
-    // text-align: right;
+    @include breakpoint($large) {
+      width: 36px;
+      height: 36px;
+    }
 }
 
 .header-link-1 {
-  padding-left: 14px;
 }
 
 .header-link-1,
 .header-link-2 {
-  padding-right: 6px;
-  // padding-right: 0.875rem;
+  padding-right: 4%;
+  @include breakpoint($desktop) {
+    padding-right: 4px;
+  }
+  @include breakpoint($large){  
+    padding-right: 8px;
+  }  
+  @include breakpoint($xlarge) {
+    padding-right: 16px;
+    padding-right: 1rem;
+  }
 }
 .header-link-3 {
   padding-right: 0;

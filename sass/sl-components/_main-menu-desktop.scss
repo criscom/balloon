@@ -19,7 +19,7 @@
 
     @include breakpoint($desktop)
     {
-        width: 65.8%; // 70.5%;
+       @include block-second-width;
         margin-top: 18px;
         margin-top: 1.125rem;
     }
