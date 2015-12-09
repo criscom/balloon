@@ -14,11 +14,14 @@
 @include breakpoint($desktop){
     .page-node.not-logged-in h1 {
         float: left;
-        width: 24%; // 25%;
+        // width: 24%; // 25%;
+        @include block-first-width;
+        padding-left: 10px;
     }
     .page-node.not-logged-in .node-page {
         float: left;
-        width: 72.5%;//75%;
+        // width: 72.5%;//75%;
+        @include block-second-width;
 
     }
 }
@@ -65,10 +68,15 @@
             float: left;
         }
     .page-node .view-header {
-        width: 25%;
+        // width: 25%;
+        @include block-first-width;
+        h2 {
+            padding-left: 10px;
+        }
     }
     .page-node .view-content {
-        width: 75%;
+        // width: 75%;
+        @include block-second-width;
     }
 }
 
