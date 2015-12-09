@@ -47,23 +47,25 @@
 {
     width: 100%;
     height: auto;
+    margin: 10px 0;
     img
         {
             width: 100%;
         }
-    @include breakpoint($range0-480)
-    {
-        margin-left: 1px;
-    }
-    @include breakpoint($range0-568)
-    {
-    }
     @include breakpoint($large) {
         width: 294px;
         height: 184px;
         margin: 10px;
         img {
             width: 294px;
+        }
+    }
+    @include breakpoint($ipad) {
+        width: 306px;
+        height: 191px;
+        margin: 10px;
+        img {
+            width: 306px;
         }
     }
     @include breakpoint($xlarge)
