@@ -1,5 +1,6 @@
 # remove all files in a directory
 .sass-cache/**
 css/**
+css/
 balloon.sublime-workspace
 balloon.sublime-project
