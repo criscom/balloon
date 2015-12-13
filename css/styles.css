@@ -4988,7 +4988,7 @@ ul.nice-menu li.active-trail a:hover {
 .isotope-element {
   width: 100%;
   height: auto;
-  margin: 10px 0;
+  margin: 10px;
 }
 /* line 51, ../sass/sl-components/_projekte-landing-page.scss */
 .isotope-element img {
@@ -4997,8 +4997,8 @@ ul.nice-menu li.active-trail a:hover {
 @media (min-width: 980px) {
   /* line 46, ../sass/sl-components/_projekte-landing-page.scss */
   .isotope-element {
-    width: 294px;
-    height: 184px;
+    width: 284px;
+    height: 178px;
     margin: 10px;
   }
   /* line 59, ../sass/sl-components/_projekte-landing-page.scss */
@@ -5009,8 +5009,8 @@ ul.nice-menu li.active-trail a:hover {
 @media (min-width: 1024px) {
   /* line 46, ../sass/sl-components/_projekte-landing-page.scss */
   .isotope-element {
-    width: 306px;
-    height: 191px;
+    width: 296px;
+    height: 185px;
     margin: 10px;
   }
   /* line 67, ../sass/sl-components/_projekte-landing-page.scss */
@@ -5021,8 +5021,8 @@ ul.nice-menu li.active-trail a:hover {
 @media (min-width: 1240px) {
   /* line 46, ../sass/sl-components/_projekte-landing-page.scss */
   .isotope-element {
-    width: 374px;
-    height: 234px;
+    width: 364px;
+    height: 228px;
     margin: 10px;
   }
   /* line 80, ../sass/sl-components/_projekte-landing-page.scss */
@@ -5031,17 +5031,6 @@ ul.nice-menu li.active-trail a:hover {
   }
 }
 
-@media (min-width: 980px) {
-  /* line 88, ../sass/sl-components/_projekte-landing-page.scss */
-  .isotope-element:nth-child(odd) {
-    margin-left: 0;
-  }
-
-  /* line 92, ../sass/sl-components/_projekte-landing-page.scss */
-  .isotope-element:nth-child(even) {
-    margin-right: 0;
-  }
-}
 /* line 99, ../sass/sl-components/_projekte-landing-page.scss */
 .projekte-wrapper-outer {
   position: relative;
@@ -5165,20 +5154,22 @@ ul.nice-menu li.active-trail a:hover {
   background-color: transparent;
   background-image: none;
   text-shadow: none;
+  text-decoration: none !important;
 }
 
-/* line 241, ../sass/sl-components/_projekte-landing-page.scss */
+/* line 242, ../sass/sl-components/_projekte-landing-page.scss */
 .isotope-button {
   text-transform: upperase;
 }
 
-/* line 250, ../sass/sl-components/_projekte-landing-page.scss */
-.isotope-button.selected {
-  font-weight: 600;
-  color: #404040;
+/* line 251, ../sass/sl-components/_projekte-landing-page.scss */
+.isotope-button.selected,
+.isotope-filters li a.selected {
+  font-weight: 600 !important;
+  color: #404040 !important;
 }
 
-/* line 257, ../sass/sl-components/_projekte-landing-page.scss */
+/* line 259, ../sass/sl-components/_projekte-landing-page.scss */
 .isotope-button:hover {
   color: #666666;
 }
