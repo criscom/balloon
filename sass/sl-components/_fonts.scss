@@ -26,6 +26,7 @@ body {
     }
 }
 
+.field-name-field-document,
 .download-file {
     a {
         &:hover {
@@ -33,6 +34,10 @@ body {
             text-decoration: none;
         }
     }
+}
+
+.field-name-field-document > span {
+    display: block;
 }
 
 // all inline links within a div tag
@@ -51,7 +56,8 @@ ol a,
 .link a,
 .field-slideshow-caption-text a,
 .group-right .field a,
-.group-right .field p a
+.group-right .field p a,
+.field-name-field-document a
 {
     @extend .inline-link;
     &:hover {
